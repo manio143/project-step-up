@@ -14,7 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup .NET
+    - name: Setup .NET v5 (Target)
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: "5.0.300"
+
+    - name: Setup .NET v6 (Host)
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: "6.0"
