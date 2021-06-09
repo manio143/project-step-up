@@ -21,7 +21,7 @@ jobs:
         include-prerelease: True
 
     - name: Setup Stride fork packages access
-      run: dotnet nuget add source --username ${{ secret.USERNAME }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/manio143/index.json"
+      run: dotnet nuget add source --username ${{ secrets.USERNAME }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/manio143/index.json"
     
     - name: Restore dependencies
       run: dotnet restore
