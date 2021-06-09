@@ -1,11 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 16
+# Visual Studio Version 16
 VisualStudioVersion = 16.0.0.0
 MinimumVisualStudioVersion = 16.0.0.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectStepUp.Windows", "ProjectStepUp.Windows\ProjectStepUp.Windows.csproj", "{FD94D41F-2FBD-4ED7-AEC3-33499BC5CAA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectStepUp.Windows", "ProjectStepUp.Windows\ProjectStepUp.Windows.csproj", "{FD94D41F-2FBD-4ED7-AEC3-33499BC5CAA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectStepUp", "ProjectStepUp\ProjectStepUp.csproj", "{D734104A-683B-4CCE-8251-21D635F8637B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectStepUp", "ProjectStepUp\ProjectStepUp.csproj", "{D734104A-683B-4CCE-8251-21D635F8637B}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD94D41F-2FBD-4ED7-AEC3-33499BC5CAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD94D41F-2FBD-4ED7-AEC3-33499BC5CAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD94D41F-2FBD-4ED7-AEC3-33499BC5CAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD94D41F-2FBD-4ED7-AEC3-33499BC5CAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D734104A-683B-4CCE-8251-21D635F8637B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D734104A-683B-4CCE-8251-21D635F8637B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D734104A-683B-4CCE-8251-21D635F8637B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D734104A-683B-4CCE-8251-21D635F8637B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC02BBAF-65C6-47A4-87F5-E105BC62156F}
+	EndGlobalSection
 EndGlobal

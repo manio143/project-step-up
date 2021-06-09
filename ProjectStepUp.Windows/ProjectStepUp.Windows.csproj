@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
@@ -10,6 +10,11 @@
     <OutputPath>..\Bin\Windows\$(Configuration)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesInSingleFile>false</IncludeNativeLibrariesInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>false</IncludeNativeLibrariesForSelfExtract>
+
     <!-- Force msbuild to check to rebuild this assembly instead of letting VS IDE guess -->
     <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
   </PropertyGroup>
@@ -17,5 +22,28 @@
   <ItemGroup>
     <ProjectReference Include="..\ProjectStepUp\ProjectStepUp.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="win-x64\msvcp140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="win-x64\vcruntime140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="win-x64\vcruntime140_1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="RemoveUnusedFilesFromPublish" AfterTargets="Publish">
+    <RemoveDir Directories="$(OutputPath)\publish\linux-x64;$(OutputPath)\publish\osx-x64;$(OutputPath)\publish\win-x86" />
+    
+    <ItemGroup>
+      <FilesToDelete Include="$(OutputPath)publish\*.xml"/>
+      <FilesToDelete Include="$(OutputPath)publish\*.pdb"/>
+      <FilesToDelete Include="$(OutputPath)publish\*.ssdeps"/>
+    </ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
+  </Target>
 
 </Project>
