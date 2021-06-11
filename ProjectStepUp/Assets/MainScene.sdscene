@@ -11,6 +11,8 @@ Hierarchy:
         - ref!! 1bcf3639-ba61-46df-a75b-703704728212
         - ref!! d7242d5c-1d3a-4a5b-9d67-d00b44962765
         - ref!! 07a2cad4-95d3-4843-bde4-6f71c4d7e750
+        - ref!! 9e487fba-f783-45cd-9240-93e1e508d043
+        - ref!! 42ff930f-cf17-4ab6-8ab9-43d4e09f038c
     Parts:
         -   Entity:
                 Id: 07a2cad4-95d3-4843-bde4-6f71c4d7e750
@@ -18,14 +20,39 @@ Hierarchy:
                 Components:
                     fad7f365f7044f129c8a9d6452634383: !TransformComponent
                         Id: e1812f2a-0e8a-40ff-9218-4e37b04fb081
-                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Position: {X: 0.0, Y: 0.2, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 0.7, Y: 0.7, Z: 0.7}
                         Children: {}
                     4ee1353525fdf4e829a0643da3e8fcbc: !ModelComponent
                         Id: d0dc99c3-4226-46e0-90f1-3182690f6f77
                         Model: 4082d602-d5ca-456c-ab0b-7644f8b24b37:Sphere
                         Materials: {}
+                    6ef73184de76f80df402a0e1a4eb053b: !CharacterComponent
+                        Id: 660de57f-8a9a-4495-8d29-6879ccefee7b
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 3.3
+                        Gravity: {X: 0.0, Y: -5.0, Z: 0.0}
+                        ColliderShapes:
+                            2263f473a0e12b916663484040c5247a: !SphereColliderShapeDesc
+                                Is2D: false
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    5d1611087902c966a8d79a0bff53fb11: !ProjectStepUp.Character.CharacterController,ProjectStepUp
+                        Id: c0f300c6-b099-4a66-a483-41f986ada29a
+                        State: StandBy
+                        Movement:
+                            MaxWalkVelocity: 5.0
+                        Energy:
+                            Type: Light
+                            Value: 100.0
         -   Entity:
                 Id: 14ebcde4-5dfd-4b37-9710-249bcf27f6c9
                 Name: Directional light
@@ -69,29 +96,75 @@ Hierarchy:
                         Type: !LightSkybox
                             Skybox: a1bde38e-05a6-4add-82e3-2c48738a5178:Skybox
         -   Entity:
+                Id: 42ff930f-cf17-4ab6-8ab9-43d4e09f038c
+                Name: InputManager
+                Components:
+                    353f17dccd975eccfc946eab2b09f1cd: !TransformComponent
+                        Id: 62606069-aa60-4463-8d62-50743aabe79c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.InputManager,ProjectStepUp
+                        Id: f79e1fe3-0c54-4448-8010-bf7095533e96
+                        LightCharacter: ref!! c0f300c6-b099-4a66-a483-41f986ada29a
+                        HeavyCharacter: ref!! 4dc4915e-d136-458b-aa51-e8cbf09e1bc8
+        -   Entity:
                 Id: 68394c76-1d17-4987-b1ab-92119da94c85
                 Name: Camera
                 Components:
                     13a7acbf77a58b447aa1936e8a93b225: !TransformComponent
                         Id: e6c0012b-84d6-4398-aa14-a03ace8437b6
-                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
-                        Rotation: {X: 0.0, Y: 0.82903755, Z: 0.0, W: 0.5591929}
+                        Position: {X: 0.0, Y: 0.5, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     3236cf40cae6479341ec25897d806299: !CameraComponent
                         Id: 86d1bce6-b714-4455-ae25-da09d9339800
                         Name: null
                         Projection: Perspective
+                        VerticalFieldOfView: 66.0
+                        OrthographicSize: 5.0
                         Slot: e6bec542-ae3c-4f10-8ab6-7f189bbd9d5d
-                    b48c48cacee7f5088a0fb664531d389f: !ProjectStepUp.BasicCameraController,ProjectStepUp
-                        Id: d8f6d571-fbd8-4644-9d1f-15a1161a3af0
-                        Gamepad: false
-                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
-                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
-                        SpeedFactor: 5.0
-                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
-                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
-                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: 9e487fba-f783-45cd-9240-93e1e508d043
+                Name: Cylinder
+                Components:
+                    95409549040adc4cdd8bde70a097da5c: !TransformComponent
+                        Id: 18694c0e-d762-4420-909e-aa0f485a4e78
+                        Position: {X: 1.0, Y: 0.32, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.6, Y: 0.6, Z: 0.6}
+                        Children: {}
+                    8bf45e67c38c2c9973c600ae4ed6878b: !ModelComponent
+                        Id: 2733a854-2c4b-4e63-8731-073bbbf819b7
+                        Model: 7c2028d1-b2b7-49f0-b3e5-d6e21c72e2e4:Cylinder
+                        Materials: {}
+                    8f85d8a61300bd79982a069d4b08e357: !CharacterComponent
+                        Id: 375812d6-61c0-49cb-890b-94103744e72f
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 15.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 3.3
+                        Gravity: {X: 0.0, Y: -12.0, Z: 0.0}
+                        ColliderShapes:
+                            f42c78cc06bd0c801e55f158f8971cfb: !CylinderColliderShapeDesc
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    b0e20513d2c0f74dde13eadcabf42be0: !ProjectStepUp.Character.CharacterController,ProjectStepUp
+                        Id: 4dc4915e-d136-458b-aa51-e8cbf09e1bc8
+                        State: StandBy
+                        Movement:
+                            MaxWalkVelocity: 5.0
+                        Energy:
+                            Type: Heavy
+                            Value: 100.0
         -   Entity:
                 Id: d7242d5c-1d3a-4a5b-9d67-d00b44962765
                 Name: Ground
@@ -106,3 +179,18 @@ Hierarchy:
                         Id: e7c07573-3546-461f-895a-9b140c934f9a
                         Model: b025fe7d-1759-4984-a91c-848bbe71c5b6:Ground
                         Materials: {}
+                    a11437d3f8483f567d02631038d9fc57: !StaticColliderComponent
+                        Id: 1e2dbddd-5365-4821-948b-2db30d9a215c
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            ffdc562f251dc63ee6e0eb7b90428289: !StaticPlaneColliderShapeDesc
+                                Normal: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Offset: 0.0
