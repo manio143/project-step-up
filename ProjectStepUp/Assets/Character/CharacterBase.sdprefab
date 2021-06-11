@@ -1,0 +1,65 @@
+!PrefabAsset
+Id: ec74b878-87d1-4089-b55d-1fd3be328118
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! f86caa72-8fcb-4c16-bbff-ef43d7c33337
+    Parts:
+        -   Entity:
+                Id: 5e6386a6-f79d-4d2a-99a0-10fa9968b463
+                Name: Model
+                Components:
+                    26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
+                        Id: 48de1039-0289-40fa-baf1-95391d51986e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.4, Y: 0.4, Z: 0.4}
+                        Children: {}
+                    3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
+                        Id: ac750abf-b4a4-45fe-a6ea-822f1091e9d5
+                        Model: 4a9c7e4b-979e-4469-94e9-111bc44432be:Character/Models/characterMedium
+                        Materials: {}
+                    b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
+                        Id: 51e7337d-6789-4431-bbc8-3b8d5bf6842a
+                        Animations:
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 52ea8773-793a-42dd-a70f-88bc407d7e83:Character/Animations/idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 844bdd7f-d64d-4eb1-915c-1fcc8bc9bfa2:Character/Animations/jump
+                            1e6de28eb1e49635b6608bce16333852~Run: 0d5c4bf6-be61-48cb-9cac-f46a6bffdac7:Character/Animations/run
+        -   Entity:
+                Id: f86caa72-8fcb-4c16-bbff-ef43d7c33337
+                Name: CharacterBase
+                Components:
+                    392d824795dc0c39ea9be08ad64bc8cc: !TransformComponent
+                        Id: 585e7d37-2c9d-4502-83a8-8c47a9984d73
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            4759548bc0eb8bec363e192fa0f24bab: ref!! 48de1039-0289-40fa-baf1-95391d51986e
+                    5cfa2798efa6bc3a07f9f2965e01f44c: !CharacterComponent
+                        Id: 3c5b5ec5-49a4-4b88-91cc-2a1505608913
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 3.3
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            bfee449589ad96d903637d1db1846edb: !CapsuleColliderShapeDesc
+                                Length: 0.9
+                                LocalOffset: {X: 0.0, Y: 0.7, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    c7f98680912f7476b1a38a82bd9342ea: !ProjectStepUp.Character.CharacterController,ProjectStepUp
+                        Id: 2d1f1b87-7b91-4028-a9ff-eda57a103f3e
+                        State: StandBy
+                        Movement:
+                            MaxWalkVelocity: 3.0
+                        Energy:
+                            Type: Light
+                            Value: 100.0

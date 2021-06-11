@@ -1,0 +1,70 @@
+!Skeleton
+Id: af29b48d-c34a-449b-9e6c-a2f09f475522
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/characterMedium.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    105e8dc1148641b5c99b4c6016cf15b0: {Name: RootNode, Depth: 0}
+    b12ec42469e637848f8a8fadc13cfc18: {Name: Root, Depth: 1}
+    49c5b93b608f568329dec44ca84d25fd: {Name: LeftFootCtrl, Depth: 2}
+    7c508147bd4389f3b76389a4279e28c3: {Name: LeftHeelRoll, Depth: 3}
+    7a20168ad835eae2b8bd05333c51da65: {Name: LeftToeRoll, Depth: 4}
+    dde6680a337c8b88c9ef8d2c40781863: {Name: LeftFootIK, Depth: 5}
+    0ae18b468aa737267c4f1fff5fea77e4: {Name: LeftFootIK_end, Depth: 6}
+    3a602b60be8092a727defa42093538a3: {Name: LeftFootRollCtrl, Depth: 3}
+    ec57711aec74ca96033c963fe350f02d: {Name: LeftFootRollCtrl_end, Depth: 4}
+    493d4d473967ad1a22e2fd2ac0bdafe7: {Name: LeftKneeCtrl, Depth: 3}
+    0604b26d94315f5d28c43350f8166f30: {Name: LeftKneeCtrl_end, Depth: 4}
+    9a9346f3024e8a04dc69897bbd5b4e2e: {Name: RightFootCtrl, Depth: 2}
+    7b8a1e6b8df7cf999cda8d480a361371: {Name: RightHeelRoll, Depth: 3}
+    47ae98b3fb364514bc2cc595656db7c1: {Name: RightToeRoll, Depth: 4}
+    7869b55fea0bbdce6288fc0c7f848c74: {Name: RightFootIK, Depth: 5}
+    f0704c8f08319248482963008b48b8f0: {Name: RightFootIK_end, Depth: 6}
+    4534c67603f6e64aca84e1aff6f8d4a3: {Name: RightFootRollCtrl, Depth: 3}
+    e36b85008d2afdc699a662239c6a5b6f: {Name: RightFootRollCtrl_end, Depth: 4}
+    a59d455a4f15f34c16b740866f4a8ee4: {Name: RightKneeCtrl, Depth: 3}
+    bab48c94147e2feaadb68681b8180d43: {Name: RightKneeCtrl_end, Depth: 4}
+    6b01aa62df52a5d901f8e1ec54bd60f1: {Name: HipsCtrl, Depth: 2}
+    e2ed07cc967f7febe924d48a2a9b6c5b: {Name: Hips, Depth: 3}
+    0726ccb21acb2e19b516bff153d2a225: {Name: Spine, Depth: 4}
+    cfa92abb8def05b6703b0bb6076b8906: {Name: Chest, Depth: 5}
+    0c535cb3f1c21d2f672045f5a5f0e942: {Name: UpperChest, Depth: 6}
+    06fbccc18a7eb9a9380ed9d8f5e76d8f: {Name: Neck, Depth: 7}
+    7659d2a0ea14529dc2c03da9ddf97d2f: {Name: Head, Depth: 8}
+    6fdee34477071691949434947ead4a57: {Name: Head_end, Depth: 9}
+    d52e1e97276f46be640358f01410d04a: {Name: LeftShoulder, Depth: 7}
+    b86848d523da61ff09dc532b8a9afb93: {Name: LeftArm, Depth: 8}
+    f7165c169f4c5d2ef856055c14e25d00: {Name: LeftForeArm, Depth: 9}
+    f972733be5948aeb58acaeaa7e056092: {Name: LeftHand, Depth: 10}
+    e9abdd2dca028b16610f95381c1a5e1f: {Name: LeftHandIndex1, Depth: 11}
+    b38bcdf6da571515aa901bb8eadcad5b: {Name: LeftHandIndex2, Depth: 12}
+    1bbf6e2a948b1e6439550555e5fc3a7e: {Name: LeftHandIndex3, Depth: 13}
+    18b62867c1a4025799a6ce3a4d6ee735: {Name: LeftHandIndex3_end, Depth: 14}
+    b3346059915da69a647b59a43bf323e1: {Name: LeftHandThumb1, Depth: 11}
+    5fd8632b69ce1b303d8c94a877157f55: {Name: LeftHandThumb2, Depth: 12}
+    484019baeba1f17b1ac5ed529eba4acc: {Name: LeftHandThumb2_end, Depth: 13}
+    6c55d5af108609f30ddd8b2b14b90de8: {Name: RightShoulder, Depth: 7}
+    8dd2d5674bdf31839d2a9e0cb169fd51: {Name: RightArm, Depth: 8}
+    ab113f8fb2437443c9e2dc60a4994b58: {Name: RightForeArm, Depth: 9}
+    947bef63b07c3045d59d1e4580a57c85: {Name: RightHand, Depth: 10}
+    632e0ce8c0730dd9a01c76511bcde526: {Name: RightHandIndex1, Depth: 11}
+    bbc84ca6c122681d443c8c8838624b8d: {Name: RightHandIndex2, Depth: 12}
+    1d42016f2f66a3d88184f135212fda10: {Name: RightHandIndex3, Depth: 13}
+    ca00f95b083538107577f6ed45068a02: {Name: RightHandIndex3_end, Depth: 14}
+    2ad03a22747d809142b8cde29d25212f: {Name: RightHandThumb1, Depth: 11}
+    b214595b72e483e436861f6f07955ae0: {Name: RightHandThumb2, Depth: 12}
+    5d47fce5055da7c7c16acec01f789752: {Name: RightHandThumb2_end, Depth: 13}
+    0ab76de1bfbc84324ff0f379a1970b2c: {Name: LeftUpLeg, Depth: 4}
+    2664fe6354e08048e2676e01cff664b1: {Name: LeftLeg, Depth: 5}
+    8240c3882610535ca510b3cf3cb00d02: {Name: LeftFoot, Depth: 6}
+    3f23ea88afe2c6e822d921e915cb2286: {Name: LeftToes, Depth: 7}
+    015f0b0a9cc19add26eecaf2a0bf6bad: {Name: LeftToes_end, Depth: 8}
+    3c0995180682a50c33c9eafa8d72c05a: {Name: RightUpLeg, Depth: 4}
+    f25ee45178f0a12e9050015e113996b6: {Name: RightLeg, Depth: 5}
+    a651913c88b1c286b43686bf8864c077: {Name: RightFoot, Depth: 6}
+    6dc48c69538bcbf3702ddf8f57525b4b: {Name: RightToes, Depth: 7}
+    7c10dbd4cf0c6b8ea08bca5aac2ecf58: {Name: RightToes_end, Depth: 8}
+    15fb34277b59044098fa0f7fad2af9f1: {Name: characterMedium, Depth: 1}
+~SourceHashes:
+    41c93d9a6205cda8ac696d287f26a37d~../../../Resources/characterMedium.fbx: 924d2de7f657fcd3fb69441656645643

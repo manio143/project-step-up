@@ -1,0 +1,19 @@
+!Animation
+Id: 0d5c4bf6-be61-48cb-9cac-f46a6bffdac7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/run.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: af29b48d-c34a-449b-9e6c-a2f09f475522:Character/Models/characterMedium Skeleton
+RootMotion: true
+PreviewModel: 4a9c7e4b-979e-4469-94e9-111bc44432be:Character/Models/characterMedium
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:00.0416600
+~SourceHashes:
+    f62ba2bab34e7c47cce4a413e1b91c90~../../../Resources/run.fbx: e3169a6c7cdbd4bfc7c3d27867519d79

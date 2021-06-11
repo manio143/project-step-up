@@ -1,0 +1,15 @@
+!Model
+Id: 4a9c7e4b-979e-4469-94e9-111bc44432be
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/characterMedium.fbx
+Skeleton: af29b48d-c34a-449b-9e6c-a2f09f475522:Character/Models/characterMedium Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    05e2adf920d491f580972ac5d256da0f:
+        Name: skin
+        MaterialInstance:
+            Material: cb84a92b-d1b6-4ec2-ae9f-2c7caa1fcba6:Character/Models/LightSkin
+Modifiers: {}
+~SourceHashes:
+    4e13fceb18d501c6b62633d4c46f07fb~../../../Resources/characterMedium.fbx: 924d2de7f657fcd3fb69441656645643
