@@ -20,7 +20,7 @@ Hierarchy:
                         Id: c2cf2b8f-1421-4075-808a-e4db99f2bba0
                         Model: 4082d602-d5ca-456c-ab0b-7644f8b24b37:Sphere
                         Materials:
-                            07ef91590bf1c70b6fb53076fa2914e0~0: 9158caf4-1ee2-4e0c-926b-40ba5759cd2b:Material
+                            07ef91590bf1c70b6fb53076fa2914e0~0: a091a8b4-aca4-4c60-984b-76158c2004f4:Material
                     78648a4600f7b3659282d36cc919577e: !RigidbodyComponent
                         Id: ca98d459-fe94-4d04-8dfd-264e75399b15
                         CanSleep: false
