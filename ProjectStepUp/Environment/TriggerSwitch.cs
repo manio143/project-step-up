@@ -7,29 +7,34 @@ using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
 using Stride.Physics;
+using Stride.Engine.Events;
 
 namespace ProjectStepUp
 {
-    public class TriggerSwitch : AsyncScript
+    public class TriggerSwitch : SyncScript
     {
-        // Declared public member fields and properties will show in the game studio
+        public static readonly EventKey<(string, SwitchState)> SwitchStateChange = new("General");
+        private StaticColliderComponent sc;
+        private Entity lever;
+        private SwitchState state = SwitchState.OFF;
+        private bool StateBool {get {return state == SwitchState.ON;}}
 
-        public override async Task Execute()
+        public override void Start()
         {
-            var rbc = Entity.Get<StaticColliderComponent>();
-            var lever = Entity.GetChild(0);
-            int state = -1;
-            while(Game.IsRunning)
+            sc = Entity.Get<StaticColliderComponent>();
+            lever = Entity.GetChild(0);
+        }
+
+        public override void Update()
+        {
+            if(sc.Collisions.Any(x => x.ColliderA is CharacterComponent || x.ColliderB is CharacterComponent))
             {
-                // Do stuff every new frame
-                var c = await rbc.NewCollision();
-                if(c.ColliderA is CharacterComponent || c.ColliderB is CharacterComponent)
+                if(Input.IsKeyPressed(Keys.U))
                 {
-                    if(Input.IsKeyPressed(Keys.U))
-                    {
-                        state *= -1;
-                        lever.Transform.Rotation *= Quaternion.RotationZ(state * 60);
-                    }    
+                    state = state == SwitchState.ON ? SwitchState.OFF : SwitchState.OFF;
+                    SwitchStateChange.Broadcast((Entity.GetParent()?.Name,state));
+                    LevelEventManager.ConditionMet.Broadcast(Entity.GetParent()?.Name);
+                    lever.Transform.Rotation *= Quaternion.RotationZ((int)state * 15);
                 }
             }
         }

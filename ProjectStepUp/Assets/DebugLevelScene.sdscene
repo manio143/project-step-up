@@ -12,6 +12,8 @@ Hierarchy:
         - ref!! 6651ce5a-bc0b-4135-bde0-177152e024aa
         - ref!! f81d0b5e-9a95-4b13-afd5-bf7e0400ed6a
         - ref!! cbc8b5d9-3b16-45a4-937e-40607c261782
+        - ref!! 36c6b36b-73ef-4c75-bc6b-18f1b08bf48e
+        - ref!! 53ba8906-f69a-480b-8ab8-7cede039be9f
     Parts:
         -   Entity:
                 Id: 034eeab5-e508-451a-b022-b4a8e7eb4612
@@ -20,7 +22,7 @@ Hierarchy:
                     b0799820dad3953d9f045df9e861fc37: !TransformComponent
                         Id: 5e02b919-7e6e-4477-9473-7dc62c85b985
                         Position: {X: 0.0, Y: -0.2, Z: 0.0}
-                        Rotation: {X: -0.0, Y: 0.0, Z: -0.25881904, W: 0.9659258}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     1d9403e90707ad85828d02fd81813cc9: !ModelComponent
@@ -108,6 +110,41 @@ Hierarchy:
                 BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
                 InstanceId: 8f315ebd-6198-4232-aea5-1917bc4b4a5a
         -   Entity:
+                Id: 36c6b36b-73ef-4c75-bc6b-18f1b08bf48e
+                Name: LevelManager
+                Components:
+                    6f405b0eb37d949b6a460607350e37a1: !TransformComponent
+                        Id: ff93f77d-85a8-46c9-ba11-8b5860c873c2
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1a2098736dcab69aa8000a5e4361faf9: !ProjectStepUp.LevelEventManager,ProjectStepUp
+                        Id: f62fbccd-6967-429e-9ab0-b2779553c3b9
+                        EntityTriggerNames:
+                            f37d08897e0a8726b82498d6472e8d69: Switch1
+                        DoorName: Door1
+        -   Entity:
+                Id: 46333766-9bb6-4087-93da-329a1bc4367f
+                Name: Door
+                Components:
+                    f446ea9fa424df2c30e834d4e99825b8: !TransformComponent
+                        Id: 1fcc2d30-d3a5-4de8-a1be-76475e7e7312
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5ee035b3a321bf5f8d83ce4852ebd9a0: !ModelComponent
+                        Id: 9763e108-3749-4a34-a0dd-80913a851207
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    9cf816ac1605c996fea2d823f3d1b67b: !ProjectStepUp.DoorOpen,ProjectStepUp
+                        Id: 679420ed-e3d8-4747-8c8f-1aabccf09890
+            Base:
+                BasePartAsset: 70fe0b92-b415-4a1a-927e-9858b8b593ec:Door
+                BasePartId: 0ef7fb93-925e-4542-a3a6-5459fe9ccaa5
+                InstanceId: 39306bc4-1e42-42a3-98f5-1dd92b05c06a
+        -   Entity:
                 Id: 4bd172b2-1074-4ac0-8ab6-b72f423d7ecf
                 Name: InputPlatform
                 Components:
@@ -142,6 +179,17 @@ Hierarchy:
                 BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Switch lever
                 BasePartId: 57df9304-3d6c-467c-99e6-759bd0dbadb9
                 InstanceId: e16fb30a-2bbb-46ce-b67b-55c4d144d8c0
+        -   Entity:
+                Id: 53ba8906-f69a-480b-8ab8-7cede039be9f
+                Name: Door1
+                Components:
+                    484e71e588fbb1bc40d1aaaa1c6ecfac: !TransformComponent
+                        Id: 102a60e8-22ff-4e75-b50b-b906c791cd72
+                        Position: {X: 3.9173856, Y: 0.0, Z: 1.0285883}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d4fc9be59890cef7e604f4573e71b5f8: ref!! 1fcc2d30-d3a5-4de8-a1be-76475e7e7312
         -   Entity:
                 Id: 57a50a03-d72d-4a97-8017-11bb13bb75af
                 Name: Button
@@ -250,7 +298,7 @@ Hierarchy:
                 InstanceId: 8c89dca4-601b-4201-a900-66cdcd1f27e7
         -   Entity:
                 Id: cbc8b5d9-3b16-45a4-937e-40607c261782
-                Name: Switch lever
+                Name: Switch1
                 Components:
                     31401948e7b6f4af4b93c06034723959: !TransformComponent
                         Id: a6f82ffe-8839-4509-80e0-bdfa93554786
