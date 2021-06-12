@@ -52,7 +52,7 @@ namespace ProjectStepUp
                 InterpolationType = AnimationCurveInterpolationType.Linear,
                 KeyFrames = new FastList<KeyFrameData<Vector3>>
                 (
-                    positions.Select((x,i) => CreateKF(x, i * positions.Count/ duration)).ToList()
+                    positions.Select((x,i) => CreateKF(x, duration * i/ positions.Count)).ToList()
                 )
             };
         }
