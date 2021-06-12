@@ -10,3 +10,4 @@ Type: !CylinderProceduralModel
     NumberOfTextureCoordinates: 10
     MaterialInstance:
         Material: a091a8b4-aca4-4c60-984b-76158c2004f4:Material
+

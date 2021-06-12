@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net5.0</TargetFrameworks>
-    <StrideBuild>1467</StrideBuild>
+    <StrideBuild>1469</StrideBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Stride.Engine" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" />

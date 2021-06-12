@@ -1,0 +1,117 @@
+!PrefabAsset
+Id: f013481f-1312-40aa-b81b-10a299d61267
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 76e68f1e-5dc0-4a13-98d7-707509f45050
+    Parts:
+        -   Entity:
+                Id: 15f38808-d889-445a-abea-6037d5802bf2
+                Name: LinkAttachment
+                Components:
+                    8aaebd323e456689adb4c5714cd1306f: !TransformComponent
+                        Id: c9c33582-7132-4ec2-ba03-1d8e32df4ad1
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    689461f77e8734df28a6825f5ad4a055: !RigidbodyComponent
+                        Id: 80b68fc0-5cf2-41ab-bc32-94f8581908e5
+                        CollisionGroup: CustomFilter1
+                        CanCollideWith: 0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            8e6db4ba41025f184432615ab6e0dfff: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 0.1
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+            Base:
+                BasePartAsset: ec74b878-87d1-4089-b55d-1fd3be328118:Character/CharacterBase
+                BasePartId: 623a39ed-b690-4a4e-910a-4863de4d012a
+                InstanceId: 1a440f5e-19ba-4f68-9723-5b4204fcc769
+        -   Entity:
+                Id: 76e68f1e-5dc0-4a13-98d7-707509f45050
+                Name: CharacterBase
+                Components:
+                    392d824795dc0c39ea9be08ad64bc8cc: !TransformComponent
+                        Id: ebdcf55b-e84c-43dc-9581-7f422359135b
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale*: {X: 0.6, Y: 0.6, Z: 0.6}
+                        Children:
+                            6b0624f447f32cb280e146cbfcc5e750: ref!! 7e67c914-56ea-461d-9d22-bc847f58b3a6
+                            df70ad5404114b0aa4500cdf0a1713ca: ref!! c9c33582-7132-4ec2-ba03-1d8e32df4ad1
+                    5cfa2798efa6bc3a07f9f2965e01f44c: !CharacterComponent
+                        Id: a69cab8c-669f-430f-82a3-9860d098bf54
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 3.3
+                        Gravity*: {X: 0.0, Y: -12.0, Z: 0.0}
+                        ColliderShapes:
+                            bfee449589ad96d903637d1db1846edb: !CapsuleColliderShapeDesc
+                                Length: 0.9
+                                LocalOffset: {X: 0.0, Y: 0.7, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    c7f98680912f7476b1a38a82bd9342ea: !ProjectStepUp.Character.CharacterController,ProjectStepUp
+                        Id: b1024bbc-fe99-4423-bb88-6f5c4df29b47
+                        MovementState: StandBy
+                        LinkState: NotLinked
+                        Movement:
+                            MaxWalkVelocity: 3.0
+                        Animation:
+                            AnimationCrossfadeTime: 0:00:00:01.0000000
+                            Animation: ref!! e6396d75-5bbf-49ae-a632-9f9fb41bd177
+                        Energy:
+                            Type*: Heavy
+                            Value: 100.0
+            Base:
+                BasePartAsset: ec74b878-87d1-4089-b55d-1fd3be328118:Character/CharacterBase
+                BasePartId: f86caa72-8fcb-4c16-bbff-ef43d7c33337
+                InstanceId: 1a440f5e-19ba-4f68-9723-5b4204fcc769
+        -   Entity:
+                Id: 852c10b2-92f1-40e1-b8df-8e32a6ba3823
+                Name: Model
+                Components:
+                    26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
+                        Id: 7e67c914-56ea-461d-9d22-bc847f58b3a6
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
+                        Id: cca083c3-161e-4f25-af24-98e7a5e43029
+                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Materials:
+                            bc64ab8bf77020f29b4d6ddc19c7b054*~0: 11f4d8a3-dbd8-4695-bab3-05fca9606707:Character/Models/SecondaryBodyColorLightHeavy
+                            27af64117dee46be2c5369d13a68b848*~1: 51f99519-8e16-4603-8d44-2ccea1973118:Character/Models/PrimaryBodyColorHeavy
+                    b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
+                        Id: e6396d75-5bbf-49ae-a632-9f9fb41bd177
+                        Animations:
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
+                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+            Base:
+                BasePartAsset: ec74b878-87d1-4089-b55d-1fd3be328118:Character/CharacterBase
+                BasePartId: 5e6386a6-f79d-4d2a-99a0-10fa9968b463
+                InstanceId: 1a440f5e-19ba-4f68-9723-5b4204fcc769

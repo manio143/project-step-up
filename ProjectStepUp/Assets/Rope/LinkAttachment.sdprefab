@@ -1,0 +1,24 @@
+!PrefabAsset
+Id: 84eb938d-3e5c-402b-bc2a-85c37f59d6ad
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 31707b1c-5166-40da-9979-0f36c27fbc91
+    Parts:
+        -   Entity:
+                Id: 31707b1c-5166-40da-9979-0f36c27fbc91
+                Name: RoupeWithSceleton
+                Components:
+                    3ea6d149c4dc6e303430bbeb3855bed3: !TransformComponent
+                        Id: 3d427777-42aa-4608-8857-e7648c501d1d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 5.0, Y: 5.0, Z: 5.0}
+                        Children: {}
+                    28c35b1b40060246953f0d1f1ecb5096: !ModelComponent
+                        Id: ee8bd65b-5f33-4b4d-ac09-f7b1f23d3ed3
+                        Model: 6e7a3657-2b40-4dee-9f29-93598624a5bf:Rope/RoupeWithSceleton
+                        Materials: {}
+                    dd8aa0aa54fa1a985ecd0abe8c1a81f8: !ProjectStepUp.Link.LinkPhysics,ProjectStepUp
+                        Id: 678b8c46-8fd6-4a43-8e45-ae6b6803a1e2
