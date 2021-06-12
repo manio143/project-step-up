@@ -107,17 +107,24 @@ Hierarchy:
                 Id: 42ff930f-cf17-4ab6-8ab9-43d4e09f038c
                 Name: InputManager
                 Components:
+                    8b484f62caf94e583c13e8c4bc3f9f4c: !ProjectStepUp.Input.InputManager,ProjectStepUp
+                        Id: b78be214-ac3f-4152-af3a-763a2ce2049a
+                        LightCharacter: ref!! ec89728d-79e8-4b45-83d5-de3b679044be
+                        HeavyCharacter: ref!! 176ccad6-4fe6-4740-ab94-09a2af27cc06
+                        InputConfiguration:
+                            5a39f216d0afc0fc9b13fe55a375b408~LightCharacterRight: D
+                            a9f0eb67463b1d45086c387f29053fb6~LightCharacterLeft: A
+                            f1577daf692613b7185148f689cd4b46~LightCharacterJump: W
+                            a81e1f49a6fe40a8a485be6217e1c1c3~HeavyCharacterRight: Right
+                            1c35b710302cb1f4bf0b26130abb7d38~HeavyCharacterLeft: Left
+                            1e3bbbbbcd798255f8dc0add37e4bdc6~HeavyCharacterJump: Up
+                            11213980dd4c40f6fe5313158eedba2f~ToggleSwitch: U
                     353f17dccd975eccfc946eab2b09f1cd: !TransformComponent
                         Id: 62606069-aa60-4463-8d62-50743aabe79c
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.Input.InputManager,ProjectStepUp
-                        Id: f79e1fe3-0c54-4448-8010-bf7095533e96
-                        LightCharacter: ref!! ec89728d-79e8-4b45-83d5-de3b679044be
-                        HeavyCharacter: ref!! 176ccad6-4fe6-4740-ab94-09a2af27cc06
-                        InputConfiguration: null
         -   Entity:
                 Id: 63e8c83a-15ff-49e7-bae0-2e5177040fc1
                 Name: LinkAttachment
