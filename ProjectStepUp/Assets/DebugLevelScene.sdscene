@@ -334,7 +334,7 @@ Hierarchy:
                 Components:
                     f446ea9fa424df2c30e834d4e99825b8: !TransformComponent
                         Id: 1fcc2d30-d3a5-4de8-a1be-76475e7e7312
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: -0.6056809, Y: 0.0, Z: -0.8618489}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -545,7 +545,7 @@ Hierarchy:
                 Components:
                     13a7acbf77a58b447aa1936e8a93b225: !TransformComponent
                         Id: e6c0012b-84d6-4398-aa14-a03ace8437b6
-                        Position: {X: 0.0, Y: 1.6930766, Z: 5.0}
+                        Position: {X: 0.33861256, Y: 1.6930766, Z: 5.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -778,11 +778,18 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.Input.InputManager,ProjectStepUp
-                        Id: 9bfb689b-2d4b-48d2-a73d-fcb2906b6580
+                    00ce0f69ea1cf5d61a4e48199e6527cc: !ProjectStepUp.Input.InputManager,ProjectStepUp
+                        Id: b947f386-da5e-4cd3-a8a3-36ff0c104f3d
                         LightCharacter: ref!! e4cc9d32-978c-4d5d-842e-0360307969dc
                         HeavyCharacter: ref!! 32677b33-21cd-4fd3-8f1e-145f1ed81557
-                        InputConfiguration: null
+                        InputConfiguration:
+                            5a39f216d0afc0fc9b13fe55a375b408~LightCharacterRight: D
+                            a9f0eb67463b1d45086c387f29053fb6~LightCharacterLeft: A
+                            f1577daf692613b7185148f689cd4b46~LightCharacterJump: W
+                            a81e1f49a6fe40a8a485be6217e1c1c3~HeavyCharacterRight: Right
+                            1c35b710302cb1f4bf0b26130abb7d38~HeavyCharacterLeft: Left
+                            1e3bbbbbcd798255f8dc0add37e4bdc6~HeavyCharacterJump: Up
+                            11213980dd4c40f6fe5313158eedba2f~ToggleSwitch: U
         -   Entity:
                 Id: f81d0b5e-9a95-4b13-afd5-bf7e0400ed6a
                 Name: PressurePlate
