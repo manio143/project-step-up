@@ -1,0 +1,24 @@
+!PrefabAsset
+Id: 70fe0b92-b415-4a1a-927e-9858b8b593ec
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 0ef7fb93-925e-4542-a3a6-5459fe9ccaa5
+    Parts:
+        -   Entity:
+                Id: 0ef7fb93-925e-4542-a3a6-5459fe9ccaa5
+                Name: Door
+                Components:
+                    f446ea9fa424df2c30e834d4e99825b8: !TransformComponent
+                        Id: 0ddfe9de-4372-41be-9b97-e07c853e82d9
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5ee035b3a321bf5f8d83ce4852ebd9a0: !ModelComponent
+                        Id: 83502f5e-0ee6-4205-a256-06099e91b511
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    9cf816ac1605c996fea2d823f3d1b67b: !ProjectStepUp.DoorOpen,ProjectStepUp
+                        Id: 32b83c3f-6383-43d4-9eb3-e9257b1616da

@@ -1,11 +1,13 @@
 !ProceduralModelAsset
-Id: 7c2028d1-b2b7-49f0-b3e5-d6e21c72e2e4
+Id: 7a6fa5c0-09f9-47a4-8bf6-d5673b7bc97b
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Type: !CylinderProceduralModel
+    Radius: 0.1
     Scale: {X: 1.0, Y: 1.0, Z: 1.0}
     UvScale: {X: 1.0, Y: 1.0}
-    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
     NumberOfTextureCoordinates: 10
     MaterialInstance:
-        Material: 9192b45f-4804-4232-8d0f-d2a78c9acf22:Sphere Material
+        Material: a091a8b4-aca4-4c60-984b-76158c2004f4:Material
+

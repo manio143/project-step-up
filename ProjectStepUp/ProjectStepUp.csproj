@@ -1,19 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net5.0</TargetFrameworks>
     <StrideBuild>1469</StrideBuild>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Stride.Engine" Version="4.1.0.$(StrideBuild)-manio143-gmtk-gamejam-2021" />
-
-    <PackageReference Include="Stride.Video" Version="4.1.0.$(StrideBuild)-manio143-gmtk-gamejam-2021" />
-    <PackageReference Include="Stride.Physics" Version="4.1.0.$(StrideBuild)-manio143-gmtk-gamejam-2021" />
-    <PackageReference Include="Stride.Navigation" Version="4.1.0.$(StrideBuild)-manio143-gmtk-gamejam-2021" />
-    <PackageReference Include="Stride.Particles" Version="4.1.0.$(StrideBuild)-manio143-gmtk-gamejam-2021" />
-    <PackageReference Include="Stride.UI" Version="4.1.0.$(StrideBuild)-manio143-gmtk-gamejam-2021" />
-
-    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.$(StrideBuild)-manio143-gmtk-gamejam-2021" IncludeAssets="build;buildTransitive" />
+    <PackageReference Include="Stride.Engine" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" />
+    <PackageReference Include="Stride.Video" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" />
+    <PackageReference Include="Stride.Physics" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" />
+    <PackageReference Include="Stride.Navigation" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" />
+    <PackageReference Include="Stride.Particles" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" />
+    <PackageReference Include="Stride.UI" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" />
+    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.1469-manio143-gmtk-gamejam-2021" IncludeAssets="build;buildTransitive" />
   </ItemGroup>
 </Project>
