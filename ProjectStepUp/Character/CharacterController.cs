@@ -9,7 +9,7 @@ namespace ProjectStepUp.Character
     public class CharacterController : SyncScript
     {
         private static Logger log = GlobalLogger.GetLogger(nameof(CharacterController));
-        private const float EnergyDecreasePerSecond = 100 / 15;
+        private const float EnergyDecreasePerSecond = 100 / 10;
         private const float EnergyIncreasePerSecond = 100 / 5;
 
         private CharacterComponent physicsCharacter;
@@ -37,6 +37,8 @@ namespace ProjectStepUp.Character
             UpdateEnergy();
             UpdateMovementState();
             UpdateAnimation();
+
+            DebugText.Print($"Energy: {Energy.Value:0}", new Int2(10, 10));
         }
 
         public void Jump() => Movement.Jump();
@@ -50,18 +52,25 @@ namespace ProjectStepUp.Character
         private void UpdateEnergy()
         {
             double deltaTime = Game.UpdateTime.Elapsed.TotalSeconds;
+            float previousEnergyValue = Energy.Value;
             float newEnergyValue;
 
             if (LinkState == CharacterLinkState.Linked)
             {
-                newEnergyValue = Energy.Value + (float)(deltaTime * EnergyIncreasePerSecond);
+                newEnergyValue = previousEnergyValue + (float)(deltaTime * EnergyIncreasePerSecond);
             }
             else
             {
-                newEnergyValue = Energy.Value + (float)(deltaTime * EnergyDecreasePerSecond);
+                newEnergyValue = previousEnergyValue - (float)(deltaTime * EnergyDecreasePerSecond);
             }
 
             Energy.Value = MathUtil.Clamp(newEnergyValue, CharacterEnergy.MIN_ENERGY, CharacterEnergy.MAX_ENERGY);
+            
+            if (Energy.Value == CharacterEnergy.MIN_ENERGY && Energy.Value != previousEnergyValue)
+            {
+                // there was a change in energy levels and now we're at zero
+                CharacterEnergy.NoEnergy.Broadcast(Energy.Type);
+            }
         }
 
         private void UpdateMovementState()
