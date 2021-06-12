@@ -1,0 +1,81 @@
+!PrefabAsset
+Id: b760a6d1-bcdf-4f8f-ac55-5afd7173badd
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! cee6b78f-790c-4c92-a08a-b12f3dc6f351
+        - ref!! 1a28eb29-9826-4291-ad57-da6d3bb51dad
+    Parts:
+        -   Entity:
+                Id: 1a28eb29-9826-4291-ad57-da6d3bb51dad
+                Name: Plate
+                Components:
+                    b96481d65f6ad5e723122c95e4e44dc5: !TransformComponent
+                        Id: 55de7a86-73a7-4c33-b046-997be91dc806
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    03b15822c7f618abb7974338e4bd22a3: !ModelComponent
+                        Id: 8d001447-f0b6-492e-81c2-4708d75b4039
+                        Model: 2e8a7ab3-c28b-4b43-9736-58435daa4578:Plate
+                        IsShadowCaster: false
+                        Materials:
+                            d13f6da954fd7bf50ca30063dfbcdb1d~0: f3a48be9-26a6-4c9f-9381-d51b78655a12:Ground Material
+                    4f94cb2f6da429ff6678fbc6d71d0609: !ProjectStepUp.TriggerButton,ProjectStepUp
+                        Id: af03021b-f3ca-4b4a-8a6c-8e67ddd5820a
+                    9fa6374b3e47e63bd804443ee97f0969: !RigidbodyComponent
+                        Id: b218ae79-661b-4257-8752-6472010b8abf
+                        CollisionGroup: SensorTrigger
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            3ae4721af8dff1966d357e6722a192b1: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.9, Y: 0.25, Z: 0.9}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: cee6b78f-790c-4c92-a08a-b12f3dc6f351
+                Name: Button
+                Components:
+                    58d0d79ac7116eac38171ab495fcad64: !TransformComponent
+                        Id: 48b6c610-b746-4b75-8ac8-101aae340a03
+                        Position: {X: 0.0, Y: -0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    381c787a2483021c11036e9943e4146f: !ModelComponent
+                        Id: 4958fcf1-28ea-4da3-a4f0-05798d28cd02
+                        Model: c85ddb43-5a1b-4c04-a9d2-398e58c0a1c3:InputPlatform
+                        Materials: {}
+                    0d764aaa7288dbcfa2a26162f3eafa47: !StaticColliderComponent
+                        Id: ed697c0d-885e-4bb9-82dd-432899a5999f
+                        CanCollideWith: DefaultFilter, StaticFilter, KinematicFilter, DebrisFilter, CharacterFilter, CustomFilter1, CustomFilter2, CustomFilter3, CustomFilter4, CustomFilter5, CustomFilter6, CustomFilter7, CustomFilter8, CustomFilter9, CustomFilter10
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            72e58aaec7691baf11eb14b57f16c6b1: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
