@@ -22,25 +22,3 @@ Hierarchy:
                         Materials: {}
                     9cf816ac1605c996fea2d823f3d1b67b: !ProjectStepUp.DoorOpen,ProjectStepUp
                         Id: 32b83c3f-6383-43d4-9eb3-e9257b1616da
-                    df7de61f110732ee6ab078be61de3d59: !RigidbodyComponent
-                        Id: 0f48af7d-1965-492d-a79d-f83f427d2de5
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        IsKinematic: true
-                        Mass: 1.0
-                        LinearDamping: 0.0
-                        AngularDamping: 0.0
-                        OverrideGravity: false
-                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
-                        NodeName: null
-                        ColliderShapes:
-                            71f6b07f39b6ef6f14fcc21b0ba56552: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 0.25, Y: 2.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

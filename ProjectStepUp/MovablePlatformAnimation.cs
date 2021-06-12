@@ -20,7 +20,7 @@ namespace ProjectStepUp
         public override void Start()
         {
             Positions.Add(Positions[0]);
-            animC = Entity.GetParent().GetOrCreate<AnimationComponent>();
+            animC = Entity.GetOrCreate<AnimationComponent>();
             var clip = new AnimationClip{Duration = TimeSpan.FromSeconds(Duration)};
 
             clip.RepeatMode = AnimationRepeatMode.LoopInfinite;
@@ -58,7 +58,7 @@ namespace ProjectStepUp
         }
         public static KeyFrameData<T> CreateKF<T>(T data, double time)
         {
-            return new KeyFrameData<T>(CompressedTimeSpan.FromSeconds(time),data);
+            return new KeyFrameData<T>(CompressedTimeSpan.FromSeconds(time), data);
         }
     }
 }
