@@ -470,10 +470,18 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.InputManager,ProjectStepUp
+                    aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.Input.InputManager,ProjectStepUp
                         Id: f515d725-d7b0-44c1-b42b-6a720e446963
                         LightCharacter: ref!! cc497c92-5a15-4007-9686-31649df131f1
                         HeavyCharacter: ref!! f8059c04-6e9b-43a2-8a31-4068043a56f1
+                        InputConfiguration:
+                            5a39f216d0afc0fc9b13fe55a375b408~LightCharacterRight: D
+                            a9f0eb67463b1d45086c387f29053fb6~LightCharacterLeft: A
+                            f1577daf692613b7185148f689cd4b46~LightCharacterJump: W
+                            a81e1f49a6fe40a8a485be6217e1c1c3~HeavyCharacterRight: Right
+                            1c35b710302cb1f4bf0b26130abb7d38~HeavyCharacterLeft: Left
+                            1e3bbbbbcd798255f8dc0add37e4bdc6~HeavyCharacterJump: Up
+                            11213980dd4c40f6fe5313158eedba2f~ToggleSwitch: U
         -   Entity:
                 Id: 629b805a-c802-413e-af03-3152e28b0d80
                 Name: Button
