@@ -14,19 +14,18 @@ Hierarchy:
                         Id: 31564f61-e136-4adb-a4f4-bb7b5fd102e4
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.4, Y: 0.4, Z: 0.4}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
                         Children: {}
                     3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
                         Id: effba7a0-9ab2-4c91-88c9-c6b93fd9b32e
-                        Model: 4a9c7e4b-979e-4469-94e9-111bc44432be:Character/Models/characterMedium
-                        Materials:
-                            4f60be3320f6b4e95b7750cc3abddfd3*~0: cb84a92b-d1b6-4ec2-ae9f-2c7caa1fcba6:Character/Models/LightSkin
+                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Materials: {}
                     b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
                         Id: 7b2e36b3-febb-45bd-8753-c203cccda630
                         Animations:
-                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 52ea8773-793a-42dd-a70f-88bc407d7e83:Character/Animations/idle
-                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 844bdd7f-d64d-4eb1-915c-1fcc8bc9bfa2:Character/Animations/jump
-                            1e6de28eb1e49635b6608bce16333852~Run: 0d5c4bf6-be61-48cb-9cac-f46a6bffdac7:Character/Animations/run
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
+                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
             Base:
                 BasePartAsset: ec74b878-87d1-4089-b55d-1fd3be328118:Character/CharacterBase
                 BasePartId: 5e6386a6-f79d-4d2a-99a0-10fa9968b463
@@ -62,9 +61,13 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     c7f98680912f7476b1a38a82bd9342ea: !ProjectStepUp.Character.CharacterController,ProjectStepUp
                         Id: 7124d9b3-6445-4101-926f-b5831f9ebb8d
-                        State: StandBy
+                        MovementState: StandBy
+                        LinkState: NotLinked
                         Movement:
                             MaxWalkVelocity: 3.0
+                        Animation:
+                            AnimationCrossfadeTime: 0:00:00:01.0000000
+                            Animation: ref!! 7b2e36b3-febb-45bd-8753-c203cccda630
                         Energy:
                             Type: Light
                             Value: 100.0

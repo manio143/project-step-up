@@ -8,6 +8,7 @@ namespace ProjectStepUp.Character
     [DataContract]
     public class CharacterMovement
     {
+        public const float MovementEpsilon = 0.0001f;
         private const float StepUpBase = 16f;
 
         private int movementStepUpRight = 0;
@@ -20,6 +21,11 @@ namespace ProjectStepUp.Character
         
         [DataMemberIgnore]
         public float Velocity { get; set; }
+
+        public CharacterMovementDirection Direction
+            => Velocity > MovementEpsilon ? CharacterMovementDirection.Right
+             : Velocity < MovementEpsilon ? CharacterMovementDirection.Left
+             : CharacterMovementDirection.None;
 
         public void Jump()
         {

@@ -1,0 +1,19 @@
+!Model
+Id: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Mixamo/xbot.fbx
+Skeleton: 33e0a482-c202-46c6-9257-49b69951994f:Character/Models/xbot Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    236f3522338f02f96801b7da70a3185b:
+        Name: Beta_Joints_MAT
+        MaterialInstance:
+            Material: fcc909f1-9349-4ae7-b19d-a3f4365fab2a:Character/Models/Beta_Joints_MAT
+    227a6de48ba417c52b7fb76818bab68a:
+        Name: asdf1_Beta_HighLimbsGeoSG2
+        MaterialInstance:
+            Material: d52496d8-1044-4b9f-89ca-a74283c9b1c5:Character/Models/asdf1_Beta_HighLimbsGeoSG2
+Modifiers: {}
+~SourceHashes:
+    a3299a5ae1bcab56f745bffba6c9d00f~../../../Resources/Mixamo/xbot.fbx: b45153a399c7e1c583aff327b9a87327

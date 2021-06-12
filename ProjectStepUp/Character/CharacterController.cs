@@ -1,4 +1,5 @@
-﻿using Stride.Core.Diagnostics;
+﻿using System;
+using Stride.Core.Diagnostics;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Physics;
@@ -13,9 +14,12 @@ namespace ProjectStepUp.Character
 
         private CharacterComponent physicsCharacter;
 
-        public CharacterState State { get; set; }
+        public CharacterMovementState MovementState { get; set; }
+        public CharacterLinkState LinkState { get; set; }
 
         public CharacterMovement Movement { get; set; } = new CharacterMovement();
+
+        public CharacterAnimation Animation { get; set; } = new CharacterAnimation();
 
         public CharacterEnergy Energy { get; set; } = new CharacterEnergy();
 
@@ -23,15 +27,15 @@ namespace ProjectStepUp.Character
         {
             physicsCharacter = Entity.Get<CharacterComponent>();
             if (physicsCharacter == null) log.Error("CharacterController requires a CharacterComponent!");
-            
-            Movement.PhysicsCharacter = physicsCharacter;
 
-            State = CharacterState.StandBy;
+            Movement.PhysicsCharacter = physicsCharacter;
         }
 
         public override void Update()
         {
             UpdateEnergy();
+            UpdateMovementState();
+            UpdateAnimation();
         }
 
         public void Jump() => Movement.Jump();
@@ -46,8 +50,8 @@ namespace ProjectStepUp.Character
         {
             double deltaTime = Game.UpdateTime.Elapsed.TotalSeconds;
             float newEnergyValue;
-            
-            if (State.HasFlag(CharacterState.Linked))
+
+            if (LinkState == CharacterLinkState.Linked)
             {
                 newEnergyValue = Energy.Value + (float)(deltaTime * EnergyIncreasePerSecond);
             }
@@ -58,5 +62,23 @@ namespace ProjectStepUp.Character
 
             Energy.Value = MathUtil.Clamp(newEnergyValue, CharacterEnergy.MIN_ENERGY, CharacterEnergy.MAX_ENERGY);
         }
+
+        private void UpdateMovementState()
+        {
+            if (!Movement.PhysicsCharacter.IsGrounded)
+            {
+                MovementState = CharacterMovementState.Jumping;
+            }
+            else if (MathF.Abs(Movement.Velocity) < CharacterMovement.MovementEpsilon)
+            {
+                MovementState = CharacterMovementState.StandBy;
+            }
+            else
+            {
+                MovementState = CharacterMovementState.Walking;
+            }
+        }
+
+        private void UpdateAnimation() => Animation.Update(MovementState, Movement.Direction);
     }
 }

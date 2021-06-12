@@ -1,0 +1,79 @@
+!Skeleton
+Id: 33e0a482-c202-46c6-9257-49b69951994f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Mixamo/xbot.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    ede486487788ce4215cd2f6021352f5e: {Name: RootNode, Depth: 0}
+    b9153a858d4da0259d9cee133f51c9ef: {Name: Hips, Depth: 1}
+    f58876a523e28b5a2a3ca871b11a95c5: {Name: Spine, Depth: 2}
+    06e08465d575114dc0630161d950e5ae: {Name: Spine1, Depth: 3}
+    3ce833d75f4a224741a3602da375ee61: {Name: Spine2, Depth: 4}
+    c810c3b56f0709333f8bcb7839b80b04: {Name: Neck, Depth: 5}
+    73de0fd7e6f5d454b704632d1abd5d0a: {Name: Head, Depth: 6}
+    40781057aa50b3452bf856be0e0b9d85: {Name: HeadTop_End, Depth: 7}
+    a4bc7eb4ce1f0364f6c92cd8ef5986cb: {Name: LeftEye, Depth: 7}
+    270940e9ec06651cb893f8e0f474e27e: {Name: RightEye, Depth: 7}
+    f646df2ad02ce835af6b8b6b15db649b: {Name: LeftShoulder, Depth: 5}
+    a0b07bf5551374e75c49b41c46e007f0: {Name: LeftArm, Depth: 6}
+    9f1284b63346c9b3f72ef87e7e37b628: {Name: LeftForeArm, Depth: 7}
+    a2373e160fc42f8baaa246bdedb0682f: {Name: LeftHand, Depth: 8}
+    d8b7950bfd6f811aedfe7531f3e066cd: {Name: LeftHandThumb1, Depth: 9}
+    9dca5c5c119c38d9f1181b1bc7cef963: {Name: LeftHandThumb2, Depth: 10}
+    2529058cab3f250108565e69f94e4250: {Name: LeftHandThumb3, Depth: 11}
+    817db3396fbd1cabdf4d8426b30f9289: {Name: LeftHandThumb4, Depth: 12}
+    cbdd1a625389488bf308ac2b19f1d115: {Name: LeftHandIndex1, Depth: 9}
+    ae9f88ff6fc6900f1205fe26bf969c7f: {Name: LeftHandIndex2, Depth: 10}
+    7c95e4df3ecfcd2bb40c496f9d540fc1: {Name: LeftHandIndex3, Depth: 11}
+    4d32dcd01dc44c6365db5137ef992c4d: {Name: LeftHandIndex4, Depth: 12}
+    2aeed686a739742d0173886837ef834c: {Name: LeftHandMiddle1, Depth: 9}
+    066ba74f6a47fe7fa0000af19774fed0: {Name: LeftHandMiddle2, Depth: 10}
+    0ca3dff7029ebe499a27f7168179f1c1: {Name: LeftHandMiddle3, Depth: 11}
+    e4abc13e52cd3571135fb1b893fa4f39: {Name: LeftHandMiddle4, Depth: 12}
+    0f61759c6e1cedec72364524aad66f61: {Name: LeftHandRing1, Depth: 9}
+    13a0d5b925056cf1f367ec67e5ba2cba: {Name: LeftHandRing2, Depth: 10}
+    45c7b44299e66120d05f8d2f77d59781: {Name: LeftHandRing3, Depth: 11}
+    5924f65866970e56a89ad43170d3169a: {Name: LeftHandRing4, Depth: 12}
+    cab76636e2fc15f9b440c76add3a54a4: {Name: LeftHandPinky1, Depth: 9}
+    79c2c20aceece696ef0aca46b2b60881: {Name: LeftHandPinky2, Depth: 10}
+    1e6fccdb21b4bb9142eb2ad8e62712ce: {Name: LeftHandPinky3, Depth: 11}
+    ed99061114b5e60f997a632e9e712cd0: {Name: LeftHandPinky4, Depth: 12}
+    a03ec43e75560632ae5219ec405d2340: {Name: RightShoulder, Depth: 5}
+    a66e8c06f1de459263cf95626037c0a7: {Name: RightArm, Depth: 6}
+    b63472abef6ea7388b3b61cdff8b1285: {Name: RightForeArm, Depth: 7}
+    62ed6c065489afdc4f4b1123ed37785c: {Name: RightHand, Depth: 8}
+    25a77511213bc0556ae894e61f039ca8: {Name: RightHandPinky1, Depth: 9}
+    21906ec6ee07f1b65661bc1f9316717d: {Name: RightHandPinky2, Depth: 10}
+    92e1049b2aba96b2757df5429447930a: {Name: RightHandPinky3, Depth: 11}
+    4efa34c7c81adff9782f6ea6e4fcd47d: {Name: RightHandPinky4, Depth: 12}
+    cf4b6ca369c6b2beeb11e6d32b365126: {Name: RightHandRing1, Depth: 9}
+    813a2f4b0eb8fa6b08a5662c91fafdbe: {Name: RightHandRing2, Depth: 10}
+    907d15976c09a691b9c934653cab8de9: {Name: RightHandRing3, Depth: 11}
+    21d0134432fb125663418eb95a8c9524: {Name: RightHandRing4, Depth: 12}
+    7b710af3776958722b38af65cdaad439: {Name: RightHandMiddle1, Depth: 9}
+    b9ed32cf37a6e43483e14ea3d8bfcac6: {Name: RightHandMiddle2, Depth: 10}
+    42fcadc1034ec40a03c5b547217bf2f2: {Name: RightHandMiddle3, Depth: 11}
+    a842d89a8dc101aad81895e4e957252e: {Name: RightHandMiddle4, Depth: 12}
+    50f86da1062759a173d66897871d0bd1: {Name: RightHandIndex1, Depth: 9}
+    1c58431576acdc1a029f69384186b485: {Name: RightHandIndex2, Depth: 10}
+    3e137fc8a0e5a78a7822629ddcf9930c: {Name: RightHandIndex3, Depth: 11}
+    de2792694b85c3deb53b858d04ec9e15: {Name: RightHandIndex4, Depth: 12}
+    92a1de9bb524acf6911f5571f0a1fda0: {Name: RightHandThumb1, Depth: 9}
+    0ee10717a1b07a3ffbf5f2134d4a42a7: {Name: RightHandThumb2, Depth: 10}
+    ea1e0f047558827020b1b978b6ff2f30: {Name: RightHandThumb3, Depth: 11}
+    3467d52a30807d7a7ec6b2956a87bcf7: {Name: RightHandThumb4, Depth: 12}
+    23d3e3e6657c6de5fd4b5106a5c630e5: {Name: LeftUpLeg, Depth: 2}
+    14f2f22818dfbd382b1237e02a55ffd0: {Name: LeftLeg, Depth: 3}
+    8d40a85ab76834854790aac50222bd8c: {Name: LeftFoot, Depth: 4}
+    189856170627f3e60efb08410d123478: {Name: LeftToeBase, Depth: 5}
+    23a5bde334a23905e9b9fb7da0a29813: {Name: LeftToe_End, Depth: 6}
+    1b4b8233f6704af7e8fe09b60a4c2483: {Name: RightUpLeg, Depth: 2}
+    6ca1c165f0d70a0ae73bb6342404ce08: {Name: RightLeg, Depth: 3}
+    8c39e1fa9382b952fa86b1bf809a0f5f: {Name: RightFoot, Depth: 4}
+    4a8d43b009d2899395b2206dcc9ce225: {Name: RightToeBase, Depth: 5}
+    fdb7a60cf90809bf265fcbb59beec1bf: {Name: RightToe_End, Depth: 6}
+    2caaec8357b0db8e2c600839d1c8b460: {Name: Beta_Joints, Depth: 1}
+    944bc0694a209175a15565aa65624a01: {Name: Beta_Surface, Depth: 1}
+~SourceHashes:
+    6db9ae93b4a66c362e618e3ca245f54f~../../../Resources/Mixamo/xbot.fbx: b45153a399c7e1c583aff327b9a87327

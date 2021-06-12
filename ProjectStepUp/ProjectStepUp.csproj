@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0</TargetFrameworks>
-    <StrideBuild>1467</StrideBuild>
+    <StrideBuild>1469</StrideBuild>
   </PropertyGroup>
 
   <ItemGroup>

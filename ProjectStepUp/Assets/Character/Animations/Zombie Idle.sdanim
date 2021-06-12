@@ -1,0 +1,19 @@
+!Animation
+Id: 7aaa35e4-88fc-4560-8069-4e10ced48f60
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Mixamo/Zombie Idle.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: 33e0a482-c202-46c6-9257-49b69951994f:Character/Models/xbot Skeleton
+RootMotion: false
+PreviewModel: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:07.3666600
+~SourceHashes:
+    63208ad2e2e3e64248c625afd27ac628~../../../Resources/Mixamo/Zombie Idle.fbx: 3adc538ffcfe338492e61623345207e9
