@@ -1,0 +1,48 @@
+!PrefabAsset
+Id: 6ef9fe8c-0e39-4441-b7bf-68295746d89a
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 9d75300b-fdb7-4945-b305-7a4a25714ebd
+    Parts:
+        -   Entity:
+                Id: 9d75300b-fdb7-4945-b305-7a4a25714ebd
+                Name: Platform1x2
+                Components:
+                    58974f06a59a820c8651d33fa78c82c1: !TransformComponent
+                        Id: 5f34c4e8-9957-4e04-b382-d80506ed04cc
+                        Position: {X: 0.0, Y: -0.125, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 0.25, Z: 1.0}
+                        Children: {}
+                    636a3a5409966f8171377b33858e2aa6: !ModelComponent
+                        Id: a33438a3-3c62-4457-a013-67ae12992809
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    37d05ad829c64c40b13cbb39b442b7f1: !RigidbodyComponent
+                        Id: ec9c21ee-a785-47e3-9c51-d250373a4ab6
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            43557e287ab5579c7b7a0975b8e45f0f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    e868d41a5f93e4aab93296f5dd2a966b: !ProjectStepUp.MovablePlatformAnimation,ProjectStepUp
+                        Id: eee65137-ec9f-45c2-b4c9-d34fc5772c35
+                        Positions: {}
+                        Duration: 0.0
