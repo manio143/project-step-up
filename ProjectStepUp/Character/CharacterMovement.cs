@@ -24,7 +24,7 @@ namespace ProjectStepUp.Character
 
         public CharacterMovementDirection Direction
             => Velocity > MovementEpsilon ? CharacterMovementDirection.Right
-             : Velocity < MovementEpsilon ? CharacterMovementDirection.Left
+             : Velocity < -MovementEpsilon ? CharacterMovementDirection.Left
              : CharacterMovementDirection.None;
 
         public void Jump()

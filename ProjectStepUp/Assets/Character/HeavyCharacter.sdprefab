@@ -7,6 +7,47 @@ Hierarchy:
         - ref!! 76e68f1e-5dc0-4a13-98d7-707509f45050
     Parts:
         -   Entity:
+                Id: 15f38808-d889-445a-abea-6037d5802bf2
+                Name: LinkAttachment
+                Components:
+                    8aaebd323e456689adb4c5714cd1306f: !TransformComponent
+                        Id: c9c33582-7132-4ec2-ba03-1d8e32df4ad1
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    689461f77e8734df28a6825f5ad4a055: !RigidbodyComponent
+                        Id: 80b68fc0-5cf2-41ab-bc32-94f8581908e5
+                        CollisionGroup: CustomFilter1
+                        CanCollideWith: 0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            8e6db4ba41025f184432615ab6e0dfff: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 0.1
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                    df34f5e389abeb3b012f771f623b4a24: !ProjectStepUp.Link.CharacterLinkAttachment,ProjectStepUp
+                        Id: 81aedfae-faa8-4b76-ba5e-9b87afab4322
+                        Priority: 10
+                        Link: null
+            Base:
+                BasePartAsset: ec74b878-87d1-4089-b55d-1fd3be328118:Character/CharacterBase
+                BasePartId: 623a39ed-b690-4a4e-910a-4863de4d012a
+                InstanceId: 1a440f5e-19ba-4f68-9723-5b4204fcc769
+        -   Entity:
                 Id: 76e68f1e-5dc0-4a13-98d7-707509f45050
                 Name: CharacterBase
                 Components:
@@ -17,6 +58,7 @@ Hierarchy:
                         Scale*: {X: 0.6, Y: 0.6, Z: 0.6}
                         Children:
                             6b0624f447f32cb280e146cbfcc5e750: ref!! 7e67c914-56ea-461d-9d22-bc847f58b3a6
+                            df70ad5404114b0aa4500cdf0a1713ca: ref!! c9c33582-7132-4ec2-ba03-1d8e32df4ad1
                     5cfa2798efa6bc3a07f9f2965e01f44c: !CharacterComponent
                         Id: a69cab8c-669f-430f-82a3-9860d098bf54
                         CollisionGroup: CharacterFilter
