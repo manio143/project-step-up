@@ -34,10 +34,10 @@ namespace ProjectStepUp
             {
                 if (toggleEvent.TryReceive())
                 {
-                    state = state == SwitchState.ON ? SwitchState.OFF : SwitchState.OFF;
+                    state = state == SwitchState.ON ? SwitchState.OFF : SwitchState.ON;
                     SwitchStateChange.Broadcast((Entity.GetParent()?.Name,state));
-                    LevelEventManager.ConditionMet.Broadcast(Entity.GetParent()?.Name);
-                    lever.Transform.Rotation *= Quaternion.RotationZ((int)state * 15);
+                    TriggerButton.SwitchStateChange.Broadcast((Entity.GetParent()?.Name, state));
+                    lever.Transform.Rotation *= Quaternion.RotationZ((int)state * MathUtil.PiOverFour);
                 }
             }
         }

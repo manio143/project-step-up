@@ -27,13 +27,14 @@ namespace ProjectStepUp
                 if(c.ColliderA is CharacterComponent || c.ColliderB is CharacterComponent)
                 {
                     Entity.Transform.Position.Y -= 0.2f;
-                    state = state == SwitchState.ON ? SwitchState.OFF : SwitchState.ON;
+                    state = SwitchState.ON;
                     SwitchStateChange.Broadcast((Entity.GetParent()?.Name, state));
+
                     while(await rbc.CollisionEnded() != c) {}
-                    state = state == SwitchState.ON ? SwitchState.OFF : SwitchState.ON;
+
+                    state = SwitchState.OFF;
                     SwitchStateChange.Broadcast((Entity.GetParent()?.Name, state));
                     Entity.Transform.Position.Y += 0.2f;
-                    SwitchStateChange.Broadcast((Entity.GetParent()?.Name, state));
                 }
             }
         }

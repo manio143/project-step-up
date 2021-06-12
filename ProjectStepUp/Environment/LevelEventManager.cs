@@ -16,24 +16,36 @@ namespace ProjectStepUp
         public string DoorName = "";
         protected Dictionary<string,bool> conditions = new();
         public static readonly EventKey<string> OpenDoor = new("General");
-        public static readonly EventKey<string> ConditionMet = new("General");
         public override async Task Execute()
         {
             AddConditions();
-            var condEv = new EventReceiver<string>(ConditionMet);
-            while(Game.IsRunning)
+            Script.AddTask(ListenForTriggerButtons);
+
+            while (Game.IsRunning)
             {
-                if(conditions.Values.All(x => x))
+                if (conditions.Values.All(x => x))
                 {
                     OpenDoor.Broadcast(DoorName);
+                    break;
                 }
-                var tmp = await condEv.ReceiveAsync();
-                if(conditions.Keys.Contains(tmp))
+
+                await Script.NextFrame();
+            }
+        }
+
+        public async Task ListenForTriggerButtons()
+        {
+            var receiver = new EventReceiver<(string, SwitchState)>(TriggerButton.SwitchStateChange);
+            while (Game.IsRunning)
+            {
+                var (name, state) = await receiver.ReceiveAsync();
+                if (conditions.Keys.Contains(name))
                 {
-                    conditions[tmp] = true;
+                    conditions[name] = (state == SwitchState.ON);
                 }
             }
         }
+
 
         public void AddConditions() {
             EntityTriggerNames.ForEach(
