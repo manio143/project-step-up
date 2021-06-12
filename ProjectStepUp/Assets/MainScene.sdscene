@@ -13,11 +13,7 @@ Hierarchy:
         - ref!! 42ff930f-cf17-4ab6-8ab9-43d4e09f038c
         - ref!! 9e7ef2d4-afc1-440e-90a8-882857f13e7e
         - ref!! 30323a33-9b3b-43b0-9b61-fe554dbd3c1f
-        - ref!! bfafe77e-6ecc-4500-b17e-015f6ba807b9
-        - ref!! de1587a4-7707-4ea4-8f4d-d374106deefd
-        - ref!! c6abc8c7-dbdc-4194-ab16-a373b64856ee
-        - ref!! 593ea017-7647-4451-a89f-e2e53de7ef3a
-        - ref!! a4cdca56-fb72-4cea-a713-e8298142a099
+        - ref!! f6af5ffc-7c0a-4533-af88-7f502c57d910
     Parts:
         -   Entity:
                 Id: 14ebcde4-5dfd-4b37-9710-249bcf27f6c9
@@ -67,7 +63,7 @@ Hierarchy:
                 Components:
                     392d824795dc0c39ea9be08ad64bc8cc: !TransformComponent
                         Id: 98136a83-7a58-459c-965d-1aa921fdba1d
-                        Position*: {X: 1.2788887, Y: 0.0, Z: 0.0}
+                        Position*: {X: 2.408522, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale*: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -121,27 +117,6 @@ Hierarchy:
                         Id: f79e1fe3-0c54-4448-8010-bf7095533e96
                         LightCharacter: ref!! ec89728d-79e8-4b45-83d5-de3b679044be
                         HeavyCharacter: ref!! 176ccad6-4fe6-4740-ab94-09a2af27cc06
-                        LinkManager: ref!! 52556797-323b-41a4-b00c-2ece5923df90
-        -   Entity:
-                Id: 593ea017-7647-4451-a89f-e2e53de7ef3a
-                Name*: Link2
-                Components:
-                    3ea6d149c4dc6e303430bbeb3855bed3: !TransformComponent
-                        Id: 952ae7f1-a55d-42a7-a027-c1298f8da77f
-                        Position*: {X: 0.35360155, Y: 0.92656446, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
-                        Scale: {X: 5.0, Y: 5.0, Z: 5.0}
-                        Children: {}
-                    28c35b1b40060246953f0d1f1ecb5096: !ModelComponent
-                        Id: eb4bcebb-be83-447a-bf01-5a14367a90f7
-                        Model: 6e7a3657-2b40-4dee-9f29-93598624a5bf:Rope/RoupeWithSceleton
-                        Materials: {}
-                    dd8aa0aa54fa1a985ecd0abe8c1a81f8: !ProjectStepUp.Link.LinkPhysics,ProjectStepUp
-                        Id: a899be22-dac8-4a76-b158-ed31cf43f7aa
-            Base:
-                BasePartAsset: 84eb938d-3e5c-402b-bc2a-85c37f59d6ad:Rope/LinkAttachment
-                BasePartId: 31707b1c-5166-40da-9979-0f36c27fbc91
-                InstanceId: e40ec1a7-138e-4e73-a083-5d5ade22cdd3
         -   Entity:
                 Id: 63e8c83a-15ff-49e7-bae0-2e5177040fc1
                 Name: LinkAttachment
@@ -175,10 +150,6 @@ Hierarchy:
                                 Is2D: false
                                 Radius: 0.1
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                    df34f5e389abeb3b012f771f623b4a24: !ProjectStepUp.Link.CharacterLinkAttachment,ProjectStepUp
-                        Id: 45625457-f17a-4899-9c44-f42f76d35071
-                        Priority: 10
-                        Link*: ref!! a899be22-dac8-4a76-b158-ed31cf43f7aa
             Base:
                 BasePartAsset: f013481f-1312-40aa-b81b-10a299d61267:Character/HeavyCharacter
                 BasePartId: 15f38808-d889-445a-abea-6037d5802bf2
@@ -219,13 +190,13 @@ Hierarchy:
                 Components:
                     392d824795dc0c39ea9be08ad64bc8cc: !TransformComponent
                         Id: 8bc32888-676e-4f6f-9bbc-8126ac3ce7b2
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: -0.50114906, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             552cbbfb730f05d275ee921bbe5d4c02: ref!! 4d931094-24ba-4e75-85ba-d0db9d182f20
                             e97d7d6e494f8858236484789ddee9b5: ref!! 46376ee0-0fc7-4167-a7f6-d0e6f9e21246
-                            7542869f426b70099fdc4cb21dddd1a2: ref!! 33593fee-815f-4441-bdd8-8ce83ff7f13c
+                            23c5fdbb48ae33cee1c652aca9afff93: ref!! c75b0461-b9ae-4e7f-a799-2fdeafd2fdeb
                     5cfa2798efa6bc3a07f9f2965e01f44c: !CharacterComponent
                         Id: 44f3db53-d508-4f3a-b915-49339c63a6f7
                         CollisionGroup: CharacterFilter
@@ -261,70 +232,84 @@ Hierarchy:
                 BasePartId: 8a81fd19-8e55-470b-b705-16f20f4c92a6
                 InstanceId: 6e8aec54-f580-4c09-998e-146dff47d55f
         -   Entity:
-                Id: a3e3451c-d3ac-4f16-a26a-cf142d2b8012
-                Name: LinkManager
+                Id: b2d70e6f-3741-41f0-b9b6-3250c2c18f06
+                Name: Model
                 Components:
-                    757190d5af09ada593b6a1410642c478: !TransformComponent
-                        Id: 33593fee-815f-4441-bdd8-8ce83ff7f13c
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                    26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
+                        Id: dca8b7ed-2c65-463f-a463-e95097cbf173
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
                         Children: {}
-                    3766d1c5022f6f9c662f2c57c8aa86c7: !ProjectStepUp.Link.LinkManager,ProjectStepUp
-                        Id: 52556797-323b-41a4-b00c-2ece5923df90
-                        Link1: ref!! b4ef7cfa-0e16-485c-8755-13c2df8b1e5f
-                        Link2: ref!! a899be22-dac8-4a76-b158-ed31cf43f7aa
-                        CharacterLinkAnchor1: ref!! 46376ee0-0fc7-4167-a7f6-d0e6f9e21246
-                        CharacterLinkAnchor2: ref!! bb29af46-efbe-41d8-b1e1-f8310a6519d6
-                        MaxConnectionLength: 3.0
+                    3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
+                        Id: 99ceb542-f784-4fa4-b248-68d9e6ec1d5b
+                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Materials:
+                            bc64ab8bf77020f29b4d6ddc19c7b054~0: 11f4d8a3-dbd8-4695-bab3-05fca9606707:Character/Models/SecondaryBodyColorLightHeavy
+                            27af64117dee46be2c5369d13a68b848~1: 51f99519-8e16-4603-8d44-2ccea1973118:Character/Models/PrimaryBodyColorHeavy
+                    b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
+                        Id: 654b1e0f-235d-4da2-921d-3c3b280432db
+                        Animations:
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
+                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+            Base:
+                BasePartAsset: f013481f-1312-40aa-b81b-10a299d61267:Character/HeavyCharacter
+                BasePartId: 852c10b2-92f1-40e1-b8df-8e32a6ba3823
+                InstanceId: 54c084ba-902c-4416-bd1b-88d1d1dd72a0
         -   Entity:
-                Id: a4cdca56-fb72-4cea-a713-e8298142a099
-                Name: Simple particle system
+                Id: c3c66b9b-46c6-4d81-b9c6-8553f4357ba6
+                Name: Link
                 Components:
-                    d2cb7f90a1de8cc22d6012317fc74413: !TransformComponent
-                        Id: 8d58e6ab-e15c-4d12-bed7-38d75773e95d
-                        Position: {X: 0.55470645, Y: 0.87649685, Z: 0.0}
+                    e9988c5a25da9246892027c02f3b087a: !TransformComponent
+                        Id: c75b0461-b9ae-4e7f-a799-2fdeafd2fdeb
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    23b90d1d33092e9c95d0c2588c1bd762: !ParticleSystemComponent
-                        Id: d94a1812-8dd0-43ec-a428-92b3b89920b6
+                    838e2300af4e9b4c919f78aeae944ac1: !ParticleSystemComponent
+                        Id: adc7e36a-7894-43ed-9d4f-37b918520873
                         Control:
                             ResetSeconds: 5.0
                             Control: Play
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Speed: 1.0
+                        Color: {R: 0.37539062, G: 0.96875, B: 0.7907422, A: 1.0}
+                        Speed: 4.5
                         ParticleSystem:
                             Settings: {}
                             BoundingShape: null
                             Emitters:
-                                6285eb8bd9115abc49f8b020187801f0:
-                                    ParticleLifetime: {X: 1.0, Y: 2.0}
-                                    ShapeBuilder: !ShapeBuilderHexagon
-                                        SamplerPosition: null
-                                        SamplerSize: null
-                                        SamplerRotation: null
+                                481fd7e0ff4f214a8602fadfebb2263a:
+                                    MaxParticlesOverride: 50
+                                    ParticleLifetime: {X: 0.2, Y: 0.2}
+                                    SortingPolicy: ByOrder
+                                    ShapeBuilder: !ShapeBuilderRibbon
+                                        SmoothingPolicy: None
+                                        Segments: 5
+                                        TextureCoordinatePolicy: AsIs
+                                        TexCoordsFactor: 1.0
+                                        UVRotate:
+                                            FlipX: false
+                                            FlipY: false
+                                            UVClockwise: Degree0
                                     Material: !ParticleMaterialComputeColor
-                                        AlphaAdditive: 0.205
+                                        AlphaAdditive: 0.2
                                         ComputeColor: !ComputeTextureColor
-                                            Texture: 5caa09cf-b2c3-49bf-9f0c-b3876a387a87:Rope/Roupe_NM
                                             FallbackValue:
                                                 Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                                             Scale: {X: 1.0, Y: 1.0}
                                             Offset: {X: 0.0, Y: 0.0}
                                             Swizzle: null
-                                        UVBuilder: !UVBuilderScroll
-                                            StartFrame: {X: 0.0, Y: 0.0, Z: 1.0, W: 1.0}
-                                            EndFrame: {X: 0.0, Y: 1.0, Z: 1.0, W: 2.0}
+                                        UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
-                                        743955916c0a882222bb930801c9e97b: !SpawnerPerSecond
+                                        ea6243fa91bb2b44aaffef0644dd28fd: !SpawnerPerFrame
                                             LoopCondition: Looping
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
-                                            SpawnCount: 100.0
+                                            SpawnCount: 15.0
+                                            Framerate: 60.0
                                     Initializers:
-                                        119dffb4f05ff9562b8fe70dfeef1ecc: !InitialSizeSeed
+                                        5c3bc9d67117da4c9365bbcb92248d60: !InitialSizeSeed
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -337,9 +322,8 @@ Hierarchy:
                                             DisplayParticleRotation: false
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
-                                            RandomSize: {X: 0.05, Y: 0.1}
-                                        de94e686940706736d999f5d92430f80: !InitialPositionSeed
-                                            DebugDraw: true
+                                            RandomSize: {X: 0.01, Y: 0.02}
+                                        60f104f2e233f74db11694c75710fd52: !InitialVelocitySeed
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -352,10 +336,9 @@ Hierarchy:
                                             DisplayParticleRotation: true
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
-                                            PositionMin: {X: -1.0, Y: 0.2, Z: -1.0}
-                                            PositionMax: {X: 1.0, Y: 0.2, Z: 1.0}
-                                            Interpolate: false
-                                        b538c95011eef772e409e9e6d8957928: !InitialVelocitySeed
+                                            VelocityMin: {X: -0.5, Y: -0.5, Z: -0.5}
+                                            VelocityMax: {X: 0.5, Y: 0.5, Z: 0.5}
+                                        06dd6d0c7a3aed4098707a1d0dc0e0d5: !InitialPositionArc
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -363,15 +346,19 @@ Hierarchy:
                                             InheritScale: true
                                             Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                                             ScaleUniform: 1.0
-                                            SeedOffset: 0
                                             DisplayParticlePosition: false
+                                            Target*: ref!! bb29af46-efbe-41d8-b1e1-f8310a6519d6
                                             DisplayParticleRotation: true
                                             DisplayParticleScale: false
+                                            FallbackTarget: {X: 0.0, Y: 0.0, Z: -1.0}
                                             DisplayParticleScaleUniform: true
-                                            VelocityMin: {X: -0.5, Y: 1.0, Z: -0.5}
-                                            VelocityMax: {X: 0.5, Y: 3.0, Z: 0.5}
-                                    Updaters:
-                                        73bb56fa23b56900e1e0681bc6696f98: !UpdaterForceField
+                                            ArcHeight: 0.2
+                                            Sequential: true
+                                            FixedLength: 0
+                                            PositionMin: {X: -0.3, Y: -0.3, Z: -0.3}
+                                            PositionMax: {X: 0.3, Y: 0.3, Z: 0.3}
+                                            SeedOffset: 0
+                                        98629572a706f14d9325d057ca87c38f: !InitialSpawnOrder
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -379,92 +366,22 @@ Hierarchy:
                                             InheritScale: true
                                             Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                                             ScaleUniform: 1.0
-                                            DisplayParticlePosition: true
-                                            FieldShape: null
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: true
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
                                             DisplayParticleScaleUniform: false
-                                            FieldFalloff:
-                                                StrengthInside: 1.0
-                                                FalloffStart: 0.1
-                                                StrengthOutside: 1.0
-                                                FalloffEnd: 0.9
-                                            EnergyConservation: 0.205
-                                            ForceDirected: 0.0
-                                            ForceVortex: 0.0
-                                            ForceRepulsive: 0.0
-                                            ForceFixed: {X: 0.0, Y: -3.0, Z: 0.0}
-        -   Entity:
-                Id: b2d70e6f-3741-41f0-b9b6-3250c2c18f06
-                Name: Model
-                Components:
-                    26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
-                        Id: dca8b7ed-2c65-463f-a463-e95097cbf173
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
-                        Children: {}
-                    3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
-                        Id: 99ceb542-f784-4fa4-b248-68d9e6ec1d5b
-                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
-                        Materials: {}
-                    b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
-                        Id: 654b1e0f-235d-4da2-921d-3c3b280432db
-                        Animations:
-                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
-                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
-                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+                                    Updaters: {}
             Base:
-                BasePartAsset: f013481f-1312-40aa-b81b-10a299d61267:Character/HeavyCharacter
-                BasePartId: 852c10b2-92f1-40e1-b8df-8e32a6ba3823
-                InstanceId: 54c084ba-902c-4416-bd1b-88d1d1dd72a0
-        -   Entity:
-                Id: bfafe77e-6ecc-4500-b17e-015f6ba807b9
-                Name: RoupeWithSceleton
-                Components:
-                    3ea6d149c4dc6e303430bbeb3855bed3: !TransformComponent
-                        Id: 798bb890-5aa2-4090-aa9b-0b6369851f27
-                        Position*: {X: 0.0, Y: 1.0, Z: 3.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
-                        Scale: {X: 5.0, Y: 5.0, Z: 5.0}
-                        Children: {}
-                    28c35b1b40060246953f0d1f1ecb5096: !ModelComponent
-                        Id: 4d35a5f6-1f47-4408-bd34-96315cd2a906
-                        Model: 6e7a3657-2b40-4dee-9f29-93598624a5bf:Rope/RoupeWithSceleton
-                        Materials: {}
-                    dd8aa0aa54fa1a985ecd0abe8c1a81f8: !ProjectStepUp.Link.LinkPhysics,ProjectStepUp
-                        Id: c56beb12-b0f8-48bd-ba73-51ec1eaad969
-            Base:
-                BasePartAsset: 84eb938d-3e5c-402b-bc2a-85c37f59d6ad:Rope/LinkAttachment
-                BasePartId: 31707b1c-5166-40da-9979-0f36c27fbc91
-                InstanceId: 86b58814-0d84-4f40-a268-e8171b36095c
-        -   Entity:
-                Id: c6abc8c7-dbdc-4194-ab16-a373b64856ee
-                Name*: Link1
-                Components:
-                    3ea6d149c4dc6e303430bbeb3855bed3: !TransformComponent
-                        Id: 17a09c5f-b83a-43b7-ad5a-0d92f7a5a483
-                        Position*: {X: 0.35360155, Y: 0.92656446, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
-                        Scale: {X: 5.0, Y: 5.0, Z: 5.0}
-                        Children: {}
-                    28c35b1b40060246953f0d1f1ecb5096: !ModelComponent
-                        Id: b100964a-e6d9-4c35-ba24-d58b7388acdd
-                        Model: 6e7a3657-2b40-4dee-9f29-93598624a5bf:Rope/RoupeWithSceleton
-                        Materials: {}
-                    dd8aa0aa54fa1a985ecd0abe8c1a81f8: !ProjectStepUp.Link.LinkPhysics,ProjectStepUp
-                        Id: b4ef7cfa-0e16-485c-8755-13c2df8b1e5f
-            Base:
-                BasePartAsset: 84eb938d-3e5c-402b-bc2a-85c37f59d6ad:Rope/LinkAttachment
-                BasePartId: 31707b1c-5166-40da-9979-0f36c27fbc91
-                InstanceId: c081ed78-17bc-4764-9245-b32cc7331483
+                BasePartAsset: c879a3ca-daf5-4667-9e9f-59b58d36b4f5:Link
+                BasePartId: abfa4a8d-95fd-4a7a-9216-259e844c8c65
+                InstanceId: 1d576d9e-23d2-4709-8632-f97f68b86c47
         -   Entity:
                 Id: ccf9c2cc-cfbe-4047-b238-a95272a83f99
                 Name: Model
                 Components:
                     26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
                         Id: 4d931094-24ba-4e75-85ba-d0db9d182f20
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.8, Y: 0.8, Z: 0.8}
                         Children: {}
@@ -512,40 +429,6 @@ Hierarchy:
                                 Normal: {X: 0.0, Y: 1.0, Z: 0.0}
                                 Offset: 0.0
         -   Entity:
-                Id: de1587a4-7707-4ea4-8f4d-d374106deefd
-                Name: Cylinder
-                Components:
-                    76ea1715f7207f8480a9302116a63091: !TransformComponent
-                        Id: ea371a5d-0a44-4fb3-8375-106c12865016
-                        Position: {X: 0.0, Y: 0.38358018, Z: 3.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.5, Y: 0.3, Z: 0.5}
-                        Children: {}
-                    d66fed3369421e75ab12384d1db71a46: !ModelComponent
-                        Id: 866f65a1-fe48-43bf-b664-684409563217
-                        Model: 7c2028d1-b2b7-49f0-b3e5-d6e21c72e2e4:Cylinder
-                        Materials: {}
-                    961f8f6d20ad40b114a332d520d6db5b: !RigidbodyComponent
-                        Id: 637da927-a6e1-4649-90b7-faa4816521d6
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        IsKinematic: true
-                        Mass: 1.0
-                        LinearDamping: 0.0
-                        AngularDamping: 0.0
-                        OverrideGravity: false
-                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
-                        NodeName: null
-                        ColliderShapes:
-                            96d4438b0cf2a1fd1fd12622de0eca3f: !CylinderColliderShapeDesc
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        -   Entity:
                 Id: f5017976-6007-43c6-a057-128e3d42ee56
                 Name: LinkAttachment
                 Components:
@@ -578,11 +461,23 @@ Hierarchy:
                                 Is2D: false
                                 Radius: 0.1
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                    df34f5e389abeb3b012f771f623b4a24: !ProjectStepUp.Link.CharacterLinkAttachment,ProjectStepUp
-                        Id: 6216c7f3-fb6e-4e14-a749-588899cc0451
-                        Priority: 10
-                        Link*: ref!! b4ef7cfa-0e16-485c-8755-13c2df8b1e5f
             Base:
                 BasePartAsset: f77e57bc-ae34-4839-b2bb-b01428e98440:Character/LightCharacter
                 BasePartId: 56316da7-7ef7-47d7-a687-4165dcbe473b
                 InstanceId: 6e8aec54-f580-4c09-998e-146dff47d55f
+        -   Entity:
+                Id: f6af5ffc-7c0a-4533-af88-7f502c57d910
+                Name: EnergyLinkMonitor
+                Components:
+                    b6aaddab88a525d4db10767c1ad5dc39: !TransformComponent
+                        Id: ff6849f5-9458-4761-bb86-b450713e8b73
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    923a698123389b8e669ac0705fc20f8a: !ProjectStepUp.Character.EnergyLinkMonitor,ProjectStepUp
+                        Id: 187c1984-5429-4d1c-893c-fa56a412f18d
+                        HeavyCharacter: ref!! 176ccad6-4fe6-4740-ab94-09a2af27cc06
+                        LightCharacter: ref!! ec89728d-79e8-4b45-83d5-de3b679044be
+                        Link: ref!! adc7e36a-7894-43ed-9d4f-37b918520873
+                        MaxDistance: 3.0

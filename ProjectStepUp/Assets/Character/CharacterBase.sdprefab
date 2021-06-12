@@ -59,10 +59,6 @@ Hierarchy:
                                 Is2D: false
                                 Radius: 0.1
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                    df34f5e389abeb3b012f771f623b4a24: !ProjectStepUp.Link.CharacterLinkAttachment,ProjectStepUp
-                        Id: 5fbe9a69-0d33-462a-88c3-33c0fc341012
-                        Priority: 10
-                        Link: null
         -   Entity:
                 Id: f86caa72-8fcb-4c16-bbff-ef43d7c33337
                 Name: CharacterBase

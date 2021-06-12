@@ -9,7 +9,6 @@ namespace ProjectStepUp
     {
         public CharacterController LightCharacter { get; set; }
         public CharacterController HeavyCharacter { get; set; }
-        public LinkManager LinkManager { get; set; }
 
         public override void Update()
         {
@@ -42,8 +41,6 @@ namespace ProjectStepUp
 
             if (Input.IsKeyDown(Keys.I)) HeavyCharacter.Jump();
             if (Input.IsKeyDown(Keys.W)) LightCharacter.Jump();
-
-            if (Input.IsKeyPressed(Keys.B)) LinkManager.ToggleConnect();
         }
     }
 }

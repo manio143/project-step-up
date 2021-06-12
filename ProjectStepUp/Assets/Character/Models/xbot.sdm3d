@@ -9,11 +9,11 @@ Materials:
     236f3522338f02f96801b7da70a3185b:
         Name: Beta_Joints_MAT
         MaterialInstance:
-            Material: fcc909f1-9349-4ae7-b19d-a3f4365fab2a:Character/Models/Beta_Joints_MAT
+            Material: fcc909f1-9349-4ae7-b19d-a3f4365fab2a:Character/Models/SecondaryBodyColorLight
     227a6de48ba417c52b7fb76818bab68a:
         Name: asdf1_Beta_HighLimbsGeoSG2
         MaterialInstance:
-            Material: d52496d8-1044-4b9f-89ca-a74283c9b1c5:Character/Models/asdf1_Beta_HighLimbsGeoSG2
+            Material: d52496d8-1044-4b9f-89ca-a74283c9b1c5:Character/Models/PrimaryBodyColorLight
 Modifiers: {}
 ~SourceHashes:
     a3299a5ae1bcab56f745bffba6c9d00f~../../../Resources/Mixamo/xbot.fbx: b45153a399c7e1c583aff327b9a87327

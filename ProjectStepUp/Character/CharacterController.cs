@@ -15,6 +15,7 @@ namespace ProjectStepUp.Character
         private CharacterComponent physicsCharacter;
 
         public CharacterMovementState MovementState { get; set; }
+
         public CharacterLinkState LinkState { get; set; }
 
         public CharacterMovement Movement { get; set; } = new CharacterMovement();
