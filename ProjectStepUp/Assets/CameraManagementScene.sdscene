@@ -1,0 +1,764 @@
+!SceneAsset
+Id: 750c93e1-3947-481c-a71c-eb581c9b79a0
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! b4add872-112f-4c96-9d77-c8ff186b44fb
+        - ref!! 4265ada6-54e7-4f4e-b17d-c3f302744e92
+        - ref!! e54e1fa7-9cf3-4d8a-914b-5a64a6baaddb
+        - ref!! eb34ec62-35ef-403e-bad2-9f6b394f8b0e
+        - ref!! f11f4837-0c1a-4749-b75f-e7ce374378a8
+        - ref!! 043c3320-71a9-47bb-a9ff-d29ee05bd094
+        - ref!! ccff97ae-7ff0-4183-9e9a-161cf3baa794
+        - ref!! 699920f2-c6d9-4197-ac29-cc4b8efe46d1
+        - ref!! 2f53c4d8-ed17-4ff5-9efd-fbf81a6a5360
+        - ref!! 1220c5f1-74e0-4a3f-914e-a2ecc378e277
+        - ref!! 44b137c4-bc14-4f0e-bda9-d8502832b621
+        - ref!! 503a564b-9cbe-4650-8f31-7b3e4e80d176
+        - ref!! 7c7e5d10-5ab2-4ca1-a5fd-e327e80e66f2
+    Parts:
+        -   Entity:
+                Id: 01fdab9b-fe09-4256-b482-e0d79fad38a5
+                Name: Cylinder
+                Components:
+                    b0799820dad3953d9f045df9e861fc37: !TransformComponent
+                        Id: 73d578e4-7d71-43ec-b5d8-c832aa731f0d
+                        Position: {X: 0.0, Y: -0.2, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1d9403e90707ad85828d02fd81813cc9: !ModelComponent
+                        Id: de03d227-419f-4902-83d4-ff376c343cf9
+                        Model: 7a6fa5c0-09f9-47a4-8bf6-d5673b7bc97b:Cylinder
+                        Materials: {}
+            Base:
+                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Switch lever
+                BasePartId: a66bc5a0-95c5-459e-9bdf-9cb9d30d8218
+                InstanceId: 8c1cde09-416b-40a7-a205-07041d54f049
+        -   Entity:
+                Id: 043c3320-71a9-47bb-a9ff-d29ee05bd094
+                Name: LevelManager
+                Components:
+                    6f405b0eb37d949b6a460607350e37a1: !TransformComponent
+                        Id: 906de855-e07d-4975-a85b-904e2098b089
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1a2098736dcab69aa8000a5e4361faf9: !ProjectStepUp.LevelEventManager,ProjectStepUp
+                        Id: 7796b4f1-a30d-4084-92e2-452f67daad33
+                        EntityTriggerNames:
+                            f37d08897e0a8726b82498d6472e8d69: Switch1
+                        DoorName: Door1
+        -   Entity:
+                Id: 10b820b3-f299-474e-927a-99c998263f05
+                Name: Plate
+                Components:
+                    b96481d65f6ad5e723122c95e4e44dc5: !TransformComponent
+                        Id: da8bdccb-679d-45bb-9021-f44d54c80f57
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    03b15822c7f618abb7974338e4bd22a3: !ModelComponent
+                        Id: ee70ba20-8df4-484d-b826-255f98be2b73
+                        Model: 2e8a7ab3-c28b-4b43-9736-58435daa4578:Plate
+                        IsShadowCaster: false
+                        Materials:
+                            d13f6da954fd7bf50ca30063dfbcdb1d~0: f3a48be9-26a6-4c9f-9381-d51b78655a12:Ground Material
+                    4f94cb2f6da429ff6678fbc6d71d0609: !ProjectStepUp.TriggerButton,ProjectStepUp
+                        Id: d37c04a5-5b6d-4983-bb50-39ccbf47a5f7
+                    9fa6374b3e47e63bd804443ee97f0969: !RigidbodyComponent
+                        Id: 8e0e7e5c-c5ea-44f4-875a-19922d5537b1
+                        CollisionGroup: SensorTrigger
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            3ae4721af8dff1966d357e6722a192b1: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.9, Y: 0.25, Z: 0.9}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartId: 1a28eb29-9826-4291-ad57-da6d3bb51dad
+                InstanceId: 475a5e27-9dc1-4395-91a9-e6b1cfc9cecc
+        -   Entity:
+                Id: 1220c5f1-74e0-4a3f-914e-a2ecc378e277
+                Name*: Heavy
+                Components:
+                    392d824795dc0c39ea9be08ad64bc8cc: !TransformComponent
+                        Id: f55f9680-b407-4ca7-883b-2ccf09f54f24
+                        Position*: {X: 0.7166822, Y: 1.1502494, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale*: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            756585c412cda89a1ceac72c6483bb43: ref!! 712116d1-cdfd-47f3-b5ce-4f0baa06197d
+                            50205c3c0fa5904fd2b9061c7f4636c5: ref!! 1061f105-fefa-4958-b895-a847a67fb566
+                    5cfa2798efa6bc3a07f9f2965e01f44c: !CharacterComponent
+                        Id: f30fc8e1-c884-40bd-9d9b-5bb2dbfc41de
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 3.3
+                        Gravity: {X: 0.0, Y: -12.0, Z: 0.0}
+                        ColliderShapes:
+                            bfee449589ad96d903637d1db1846edb: !CapsuleColliderShapeDesc
+                                Length: 0.9
+                                LocalOffset: {X: 0.0, Y: 0.7, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    c7f98680912f7476b1a38a82bd9342ea: !ProjectStepUp.Character.CharacterController,ProjectStepUp
+                        Id: f8059c04-6e9b-43a2-8a31-4068043a56f1
+                        MovementState: StandBy
+                        LinkState: NotLinked
+                        Movement:
+                            MaxWalkVelocity: 3.0
+                        Animation:
+                            AnimationCrossfadeTime: 0:00:00:01.0000000
+                            Animation: ref!! dabbace9-c231-4e7b-ad8e-45da537a7b6e
+                        Energy:
+                            Type: Heavy
+                            Value: 100.0
+            Base:
+                BasePartAsset: f013481f-1312-40aa-b81b-10a299d61267:Character/HeavyCharacter
+                BasePartId: 76e68f1e-5dc0-4a13-98d7-707509f45050
+                InstanceId: a20b27f6-c5cc-4940-8120-9524f6396b2e
+        -   Entity:
+                Id: 19035783-ba60-4039-88b8-bbd3c602c88e
+                Name: Platform1x2
+                Components:
+                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
+                        Id: eb5b8330-f074-4f7f-96a4-f8c181c43825
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
+                        Id: 45e78c51-e007-4d27-962a-5ad7de1f9b7f
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
+                        Id: d7644dc6-f0ac-4149-9824-5b72c1d71457
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
+                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
+                InstanceId: 4eb8719f-19cb-4bcf-b613-cd7876513681
+        -   Folder: null
+            Entity:
+                Id: 2243757b-1b75-4f06-8815-c0def1b0d8fb
+                Name: Model
+                Components:
+                    26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
+                        Id: 88063313-b66d-4cfe-8783-33163ddbecea
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
+                        Id: 19abf299-232b-4dc2-9f93-736e7f2d2a5d
+                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Materials: {}
+                    b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
+                        Id: 6d83921e-95c7-4ebd-a0da-4cb7c07284de
+                        Animations:
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
+                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+            Base:
+                BasePartAsset: f77e57bc-ae34-4839-b2bb-b01428e98440:Character/LightCharacter
+                BasePartId: 4bc86c3e-a7ec-4aec-89a3-58f1cfc263dc
+                InstanceId: bdca69ae-27fe-4bc2-93a0-62ff732cc29d
+        -   Folder: null
+            Entity:
+                Id: 2df760e2-13e5-4ceb-933b-2b2a3732dbe5
+                Name: LinkAttachment
+                Components:
+                    8aaebd323e456689adb4c5714cd1306f: !TransformComponent
+                        Id: 1839a281-317b-40ec-9a85-1e53de2af835
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    689461f77e8734df28a6825f5ad4a055: !RigidbodyComponent
+                        Id: 6328af09-ba31-4f2e-9b56-843d09c97297
+                        CollisionGroup: CustomFilter1
+                        CanCollideWith: 0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            8e6db4ba41025f184432615ab6e0dfff: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 0.1
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+            Base:
+                BasePartAsset: f77e57bc-ae34-4839-b2bb-b01428e98440:Character/LightCharacter
+                BasePartId: 56316da7-7ef7-47d7-a687-4165dcbe473b
+                InstanceId: bdca69ae-27fe-4bc2-93a0-62ff732cc29d
+        -   Entity:
+                Id: 2f53c4d8-ed17-4ff5-9efd-fbf81a6a5360
+                Name: EnergyLinkMonitor
+                Components:
+                    b6aaddab88a525d4db10767c1ad5dc39: !TransformComponent
+                        Id: 64bbfa5f-eb1c-41f0-bd28-57821a7b9bd7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    923a698123389b8e669ac0705fc20f8a: !ProjectStepUp.Character.EnergyLinkMonitor,ProjectStepUp
+                        Id: fe97875a-ab75-426c-90a6-46f7f32b798b
+                        HeavyCharacter: ref!! f8059c04-6e9b-43a2-8a31-4068043a56f1
+                        LightCharacter: ref!! cc497c92-5a15-4007-9686-31649df131f1
+                        Link: ref!! 927b86c7-ddfe-4b20-8c24-7ab2ade6c5e1
+                        MaxDistance: 3.0
+        -   Entity:
+                Id: 30911b2b-8872-4a5b-9f17-d6e5fd1bf0e7
+                Name: Door
+                Components:
+                    f446ea9fa424df2c30e834d4e99825b8: !TransformComponent
+                        Id: 2767746f-91db-465c-93b0-45f216273861
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5ee035b3a321bf5f8d83ce4852ebd9a0: !ModelComponent
+                        Id: 77c733ac-527a-4be6-964a-d2edf05b8e97
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    9cf816ac1605c996fea2d823f3d1b67b: !ProjectStepUp.DoorOpen,ProjectStepUp
+                        Id: 6a85e6d3-3d96-4d92-a434-5722846a3092
+            Base:
+                BasePartAsset: 70fe0b92-b415-4a1a-927e-9858b8b593ec:Door
+                BasePartId: 0ef7fb93-925e-4542-a3a6-5459fe9ccaa5
+                InstanceId: dc098790-13e0-4cd2-b091-956aac5689a2
+        -   Entity:
+                Id: 4265ada6-54e7-4f4e-b17d-c3f302744e92
+                Name: Skybox
+                Components:
+                    6ee9fff0dc0be5a79e9d6bc7f749c440: !TransformComponent
+                        Id: 440580f4-37c3-4176-af9f-e662d2352f52
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8ba852dbd901292157173fda86ef6e56: !BackgroundComponent
+                        Id: 1a4898e4-55f8-49ae-ac26-69606d60c4e9
+                        Texture: 0dcbddc4-9755-46ef-9ba4-32a0bd511cbc:Skybox texture
+                    bf13b8fa350367652c61c31bc73a0cea: !LightComponent
+                        Id: 929f3e08-e863-44f1-b92b-a299b96fa06c
+                        Type: !LightSkybox
+                            Skybox: a1bde38e-05a6-4add-82e3-2c48738a5178:Skybox
+        -   Entity:
+                Id: 44b137c4-bc14-4f0e-bda9-d8502832b621
+                Name*: Light
+                Components:
+                    392d824795dc0c39ea9be08ad64bc8cc: !TransformComponent
+                        Id: 83b6319b-cc32-4b1d-885d-1b58bcb58ee3
+                        Position*: {X: -0.50114906, Y: 1.006409, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            552cbbfb730f05d275ee921bbe5d4c02: ref!! 88063313-b66d-4cfe-8783-33163ddbecea
+                            e97d7d6e494f8858236484789ddee9b5: ref!! 1839a281-317b-40ec-9a85-1e53de2af835
+                            23c5fdbb48ae33cee1c652aca9afff93: ref!! abd6079c-d91e-4f8d-a842-1387903d4123
+                    5cfa2798efa6bc3a07f9f2965e01f44c: !CharacterComponent
+                        Id: 8adf209c-3b4e-4778-bf79-e2eeb75ebfe2
+                        CollisionGroup: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 3.3
+                        Gravity: {X: 0.0, Y: -5.0, Z: 0.0}
+                        ColliderShapes:
+                            bfee449589ad96d903637d1db1846edb: !CapsuleColliderShapeDesc
+                                Length: 0.9
+                                LocalOffset: {X: 0.0, Y: 0.7, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    c7f98680912f7476b1a38a82bd9342ea: !ProjectStepUp.Character.CharacterController,ProjectStepUp
+                        Id: cc497c92-5a15-4007-9686-31649df131f1
+                        MovementState: StandBy
+                        LinkState: NotLinked
+                        Movement:
+                            MaxWalkVelocity: 3.0
+                        Animation:
+                            AnimationCrossfadeTime: 0:00:00:01.0000000
+                            Animation: ref!! 6d83921e-95c7-4ebd-a0da-4cb7c07284de
+                        Energy:
+                            Type: Light
+                            Value: 100.0
+            Base:
+                BasePartAsset: f77e57bc-ae34-4839-b2bb-b01428e98440:Character/LightCharacter
+                BasePartId: 8a81fd19-8e55-470b-b705-16f20f4c92a6
+                InstanceId: bdca69ae-27fe-4bc2-93a0-62ff732cc29d
+        -   Folder: null
+            Entity:
+                Id: 45727f92-bc00-4364-9df4-87f45f6585b4
+                Name: Link
+                Components:
+                    e9988c5a25da9246892027c02f3b087a: !TransformComponent
+                        Id: abd6079c-d91e-4f8d-a842-1387903d4123
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    838e2300af4e9b4c919f78aeae944ac1: !ParticleSystemComponent
+                        Id: 927b86c7-ddfe-4b20-8c24-7ab2ade6c5e1
+                        Control:
+                            ResetSeconds: 5.0
+                            Control: Play
+                        Color: {R: 0.37539062, G: 0.96875, B: 0.7907422, A: 1.0}
+                        Speed: 4.5
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: null
+                            Emitters:
+                                481fd7e0ff4f214a8602fadfebb2263a:
+                                    MaxParticlesOverride: 50
+                                    ParticleLifetime: {X: 0.2, Y: 0.2}
+                                    SortingPolicy: ByOrder
+                                    ShapeBuilder: !ShapeBuilderRibbon
+                                        SmoothingPolicy: None
+                                        Segments: 5
+                                        TextureCoordinatePolicy: AsIs
+                                        TexCoordsFactor: 1.0
+                                        UVRotate:
+                                            FlipX: false
+                                            FlipY: false
+                                            UVClockwise: Degree0
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 0.2
+                                        ComputeColor: !ComputeTextureColor
+                                            FallbackValue:
+                                                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                            Scale: {X: 1.0, Y: 1.0}
+                                            Offset: {X: 0.0, Y: 0.0}
+                                            Swizzle: null
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        ea6243fa91bb2b44aaffef0644dd28fd: !SpawnerPerFrame
+                                            LoopCondition: Looping
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 15.0
+                                            Framerate: 60.0
+                                    Initializers:
+                                        5c3bc9d67117da4c9365bbcb92248d60: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 0.01, Y: 0.02}
+                                        60f104f2e233f74db11694c75710fd52: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: -0.5, Y: -0.5, Z: -0.5}
+                                            VelocityMax: {X: 0.5, Y: 0.5, Z: 0.5}
+                                        06dd6d0c7a3aed4098707a1d0dc0e0d5: !InitialPositionArc
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            Target*: ref!! 1061f105-fefa-4958-b895-a847a67fb566
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            FallbackTarget: {X: 0.0, Y: 0.0, Z: -1.0}
+                                            DisplayParticleScaleUniform: true
+                                            ArcHeight: 0.2
+                                            Sequential: true
+                                            FixedLength: 0
+                                            PositionMin: {X: -0.3, Y: -0.3, Z: -0.3}
+                                            PositionMax: {X: 0.3, Y: 0.3, Z: 0.3}
+                                            SeedOffset: 0
+                                        98629572a706f14d9325d057ca87c38f: !InitialSpawnOrder
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                    Updaters: {}
+            Base:
+                BasePartAsset: c879a3ca-daf5-4667-9e9f-59b58d36b4f5:Link
+                BasePartId: abfa4a8d-95fd-4a7a-9216-259e844c8c65
+                InstanceId: 6784dd97-27b2-455f-80ee-8b4f344a2c3b
+        -   Entity:
+                Id: 503a564b-9cbe-4650-8f31-7b3e4e80d176
+                Name: InputManager
+                Components:
+                    353f17dccd975eccfc946eab2b09f1cd: !TransformComponent
+                        Id: 7a586b18-cd39-47c5-b57e-3fda34f170de
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.InputManager,ProjectStepUp
+                        Id: f515d725-d7b0-44c1-b42b-6a720e446963
+                        LightCharacter: ref!! cc497c92-5a15-4007-9686-31649df131f1
+                        HeavyCharacter: ref!! f8059c04-6e9b-43a2-8a31-4068043a56f1
+        -   Entity:
+                Id: 629b805a-c802-413e-af03-3152e28b0d80
+                Name: Button
+                Components:
+                    58d0d79ac7116eac38171ab495fcad64: !TransformComponent
+                        Id: 222fe72e-cc27-4880-a06d-420b7f41b21f
+                        Position: {X: 0.0, Y: -0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    381c787a2483021c11036e9943e4146f: !ModelComponent
+                        Id: 71866c40-65fe-4f6a-b9af-aedde6d63ade
+                        Model: c85ddb43-5a1b-4c04-a9d2-398e58c0a1c3:InputPlatform
+                        Materials: {}
+                    0d764aaa7288dbcfa2a26162f3eafa47: !StaticColliderComponent
+                        Id: df7998eb-8a9d-46a7-89d8-adbbce8a5a5a
+                        CanCollideWith: DefaultFilter, StaticFilter, KinematicFilter, DebrisFilter, CharacterFilter, CustomFilter1, CustomFilter2, CustomFilter3, CustomFilter4, CustomFilter5, CustomFilter6, CustomFilter7, CustomFilter8, CustomFilter9, CustomFilter10
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            72e58aaec7691baf11eb14b57f16c6b1: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartId: cee6b78f-790c-4c92-a08a-b12f3dc6f351
+                InstanceId: 475a5e27-9dc1-4395-91a9-e6b1cfc9cecc
+        -   Entity:
+                Id: 699920f2-c6d9-4197-ac29-cc4b8efe46d1
+                Name: Camera
+                Components:
+                    13a7acbf77a58b447aa1936e8a93b225: !TransformComponent
+                        Id: ae1d84b9-0045-4040-bf84-dce483fd2788
+                        Position: {X: 0.0, Y: 1.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3236cf40cae6479341ec25897d806299: !CameraComponent
+                        Id: 79b45007-54d6-4d41-bf7d-a983992b86f0
+                        Name: null
+                        Projection: Perspective
+                        Slot: e6bec542-ae3c-4f10-8ab6-7f189bbd9d5d
+                    930c76434152182284c1dcb56af62363: !ProjectStepUp.CameraPositionScript,ProjectStepUp
+                        Id: 998b9828-b443-4885-85e8-b15a07a6f304
+                        Robot1: ref!! 44b137c4-bc14-4f0e-bda9-d8502832b621
+                        Robot2: ref!! 1220c5f1-74e0-4a3f-914e-a2ecc378e277
+        -   Entity:
+                Id: 7c7e5d10-5ab2-4ca1-a5fd-e327e80e66f2
+                Name: Ground
+                Components:
+                    9893d4083467cf537b3757d69b9f1b3b: !TransformComponent
+                        Id: b6420e8d-367e-4b0f-86ec-72176537329d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    72ed5c1d61135e5fab0e8e7710c5388a: !ModelComponent
+                        Id: 227e9ddc-6546-4e63-8339-1760555009aa
+                        Model: b025fe7d-1759-4984-a91c-848bbe71c5b6:Ground
+                        Materials: {}
+                    a11437d3f8483f567d02631038d9fc57: !StaticColliderComponent
+                        Id: 8e362e63-91cd-433e-bc42-3d59d081dabc
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            ffdc562f251dc63ee6e0eb7b90428289: !StaticPlaneColliderShapeDesc
+                                Normal: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Offset: 0.0
+        -   Folder: null
+            Entity:
+                Id: 93d0270a-94a5-4045-a305-7c832e144ccf
+                Name: LinkAttachment
+                Components:
+                    8aaebd323e456689adb4c5714cd1306f: !TransformComponent
+                        Id: 1061f105-fefa-4958-b895-a847a67fb566
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    689461f77e8734df28a6825f5ad4a055: !RigidbodyComponent
+                        Id: 508dca20-3135-408a-a11f-9de5a2cba57b
+                        CollisionGroup: CustomFilter1
+                        CanCollideWith: 0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            8e6db4ba41025f184432615ab6e0dfff: !SphereColliderShapeDesc
+                                Is2D: false
+                                Radius: 0.1
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+            Base:
+                BasePartAsset: f013481f-1312-40aa-b81b-10a299d61267:Character/HeavyCharacter
+                BasePartId: 15f38808-d889-445a-abea-6037d5802bf2
+                InstanceId: a20b27f6-c5cc-4940-8120-9524f6396b2e
+        -   Entity:
+                Id: a5de6390-0f5e-40eb-8bd8-55bd2a0a6ced
+                Name: Entity
+                Components:
+                    37cf369bd7ef52f233c4533e0fd1ad18: !TransformComponent
+                        Id: 92cc40b9-4293-41ff-901d-953a67daee2a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d5cbd8f034cbad49cb73118505b5eba7: ref!! 73d578e4-7d71-43ec-b5d8-c832aa731f0d
+                    0b3e0b4f65ccf9989312a706d9774415: !StaticColliderComponent
+                        Id: 5a21bee0-b02a-48c4-812e-2392f70cad52
+                        CollisionGroup: SensorTrigger
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            7e6a1d7b62065d24a16929d29aa4617b: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.9, Y: 1.5, Z: 0.9}
+                                LocalOffset: {X: 0.0, Y: 0.8, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    cad0de3b7bfb03a132c6ada4cfd1bbb6: !ProjectStepUp.TriggerSwitch,ProjectStepUp
+                        Id: 4e9d3c45-5b82-4a8b-a4e1-d8d8d6be8513
+            Base:
+                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Switch lever
+                BasePartId: 9736f628-ffb3-4022-88b5-6129427d2786
+                InstanceId: 8c1cde09-416b-40a7-a205-07041d54f049
+        -   Entity:
+                Id: b4add872-112f-4c96-9d77-c8ff186b44fb
+                Name: Directional light
+                Components:
+                    8a15cf924895f5c984f927ab04afd3ad: !TransformComponent
+                        Id: 9abf97b1-b76b-40a7-9dc4-230dbb8e774a
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.25881904, Y: 0.0, Z: 0.0, W: 0.9659258}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    29b2ccb4d769dd6940d7470f5c12daa1: !LightComponent
+                        Id: 15d6951f-3872-4690-bf5a-10554ce718f6
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: ccff97ae-7ff0-4183-9e9a-161cf3baa794
+                Name: Door1
+                Components:
+                    484e71e588fbb1bc40d1aaaa1c6ecfac: !TransformComponent
+                        Id: a0f42831-d259-4bf5-9e97-93dd1bba7152
+                        Position: {X: 3.917, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d4fc9be59890cef7e604f4573e71b5f8: ref!! 2767746f-91db-465c-93b0-45f216273861
+        -   Entity:
+                Id: e54e1fa7-9cf3-4d8a-914b-5a64a6baaddb
+                Name: PlatformPrefab2x1
+                Components:
+                    cd6db96c39cf587c2da78b5404d9e857: !TransformComponent
+                        Id: 5f4ff7df-fe48-4e84-8434-6ce76a5a0c46
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5e4d226afb0b8794d4302820f8e74357: ref!! eb5b8330-f074-4f7f-96a4-f8c181c43825
+        -   Folder: null
+            Entity:
+                Id: ea73e454-bde7-4e3a-b1ad-728d6d083002
+                Name: Model
+                Components:
+                    26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
+                        Id: 712116d1-cdfd-47f3-b5ce-4f0baa06197d
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
+                        Id: 8db8048a-a14e-4da1-8f20-91bacf9c6aab
+                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Materials:
+                            bc64ab8bf77020f29b4d6ddc19c7b054~0: 11f4d8a3-dbd8-4695-bab3-05fca9606707:Character/Models/SecondaryBodyColorLightHeavy
+                            27af64117dee46be2c5369d13a68b848~1: 51f99519-8e16-4603-8d44-2ccea1973118:Character/Models/PrimaryBodyColorHeavy
+                    b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
+                        Id: dabbace9-c231-4e7b-ad8e-45da537a7b6e
+                        Animations:
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
+                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+            Base:
+                BasePartAsset: f013481f-1312-40aa-b81b-10a299d61267:Character/HeavyCharacter
+                BasePartId: 852c10b2-92f1-40e1-b8df-8e32a6ba3823
+                InstanceId: a20b27f6-c5cc-4940-8120-9524f6396b2e
+        -   Entity:
+                Id: eb34ec62-35ef-403e-bad2-9f6b394f8b0e
+                Name: PressurePlate
+                Components:
+                    8c55438516d074658774b47344b18dc3: !TransformComponent
+                        Id: bf4e3bd3-a4ca-493d-ace1-56eaf7c70f83
+                        Position: {X: 1.543851, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0e9848b004483647b9b4bd10999ea5e8: ref!! 222fe72e-cc27-4880-a06d-420b7f41b21f
+                            437fd7d042daf8ca41a7c23f044d3fb8: ref!! da8bdccb-679d-45bb-9021-f44d54c80f57
+        -   Entity:
+                Id: f11f4837-0c1a-4749-b75f-e7ce374378a8
+                Name: Switch1
+                Components:
+                    31401948e7b6f4af4b93c06034723959: !TransformComponent
+                        Id: a0342fa8-f77c-48e4-9182-a92866df5f6b
+                        Position: {X: 2.615184, Y: 0.44497758, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c9faaac35d4e8cb2235a6c855eec7b4b: ref!! 1c9ca4a1-3733-46bc-a573-b309f9ef146e
+                            d7a6d09f2d6e42dcc742a9c1acd02e0c: ref!! 92cc40b9-4293-41ff-901d-953a67daee2a
+        -   Entity:
+                Id: f4490f1c-6e3c-44fe-b7f0-5969152a00f7
+                Name: InputPlatform
+                Components:
+                    e46d3591196889ad23e736f25800a3a4: !TransformComponent
+                        Id: 1c9ca4a1-3733-46bc-a573-b309f9ef146e
+                        Position: {X: 0.0, Y: -0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    fe879e56d4114f7e0a4c170201dda5ed: !ModelComponent
+                        Id: d7ec7df4-8e84-4e61-ae17-ed7f148d178a
+                        Model: c85ddb43-5a1b-4c04-a9d2-398e58c0a1c3:InputPlatform
+                        Materials: {}
+                    25ced8562c9f115db1b3554d3286c6a2: !StaticColliderComponent
+                        Id: 03f47561-d798-4b3b-812a-83b0646beef9
+                        CanCollideWith: DefaultFilter, StaticFilter, KinematicFilter, DebrisFilter, CharacterFilter, CustomFilter1, CustomFilter2, CustomFilter3, CustomFilter4, CustomFilter5, CustomFilter6, CustomFilter7, CustomFilter8, CustomFilter9, CustomFilter10
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            9af4ac980311f960869be86d452b85ef: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Switch lever
+                BasePartId: 57df9304-3d6c-467c-99e6-759bd0dbadb9
+                InstanceId: 8c1cde09-416b-40a7-a205-07041d54f049
