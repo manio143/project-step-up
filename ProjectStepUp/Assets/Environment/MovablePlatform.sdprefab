@@ -39,7 +39,7 @@ Hierarchy:
                         ColliderShapes:
                             43557e287ab5579c7b7a0975b8e45f0f: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                Size: {X: 2.0, Y: 0.5, Z: 4.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     e868d41a5f93e4aab93296f5dd2a966b: !ProjectStepUp.MovablePlatformAnimation,ProjectStepUp

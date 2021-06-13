@@ -7,6 +7,7 @@ using Stride.Core;
 using Stride.Engine;
 using Stride.Engine.Events;
 using Stride.Physics;
+using InputMgr = ProjectStepUp.Input.InputManager;
 
 namespace ProjectStepUp
 {
@@ -14,6 +15,7 @@ namespace ProjectStepUp
     {
         public static EventKey<int> LoadLevelRequest = new EventKey<int>("LevelScene", nameof(LoadLevelRequest));
         public static EventKey ClearEvent = new EventKey("LevelScene", nameof(ClearEvent));
+        public static EventKey ResetLevelEvent = new EventKey("LevelScene", nameof(ResetLevelEvent));
 
         private Level? currentLevel;
         private Entity currentLevelParent;
@@ -23,6 +25,7 @@ namespace ProjectStepUp
         private Entity lightCharacter;
 
         private LevelUIUpdater levelUIUpdater;
+        private InputMgr inputManager;
 
         public Prefab GlobalEntities { get; set; }
 
@@ -35,18 +38,21 @@ namespace ProjectStepUp
             heavyCharacter = globalEntities.First(e => e.Get<CharacterController>()?.Energy.Type == EnergyType.Heavy);
             lightCharacter = globalEntities.First(e => e.Get<CharacterController>()?.Energy.Type == EnergyType.Light);
             levelUIUpdater = globalEntities.First(e => e.Get<LevelUIUpdater>() is not null).Get<LevelUIUpdater>();
+            inputManager = globalEntities.First(e => e.Get<InputMgr>() is not null).Get<InputMgr>();
 
             Entity.Scene.Entities.AddRange(globalEntities);
 
             Script.AddTask(LoadNewLevel);
             Script.AddTask(Clear);
+            Script.AddTask(OnFailure);
+            Script.AddTask(ReloadLevel);
         }
 
         public async Task LoadNewLevel()
         {
+            var loadLevelReceiver = new EventReceiver<int>(LoadLevelRequest);
             while (Game.IsRunning)
             {
-                var loadLevelReceiver = new EventReceiver<int>(LoadLevelRequest);
                 var levelIndex = await loadLevelReceiver.ReceiveAsync();
 
                 var newLevel = Levels[levelIndex];
@@ -71,15 +77,46 @@ namespace ProjectStepUp
 
                 levelUIUpdater.SetLevelName(newLevel.Name);
 
-                var heavyStartingPoint = currentLevelParent.GetChildren()
-                    .First(e => e.Get<CharacterPlaceholder>()?.Type == EnergyType.Heavy)
-                    .Transform.Position; // because level parent is at 0,0,0 this position is same as in world space
-                var lightStartingPoint = currentLevelParent.GetChildren()
-                    .First(e => e.Get<CharacterPlaceholder>()?.Type == EnergyType.Light)
-                    .Transform.Position;
+                ResetCharacters();
+            }
+        }
 
-                heavyCharacter.Get<CharacterComponent>().Teleport(heavyStartingPoint);
-                lightCharacter.Get<CharacterComponent>().Teleport(lightStartingPoint);
+        private void ResetCharacters()
+        {
+            var heavyStartingPoint = currentLevelParent.GetChildren()
+                                .First(e => e.Get<CharacterPlaceholder>()?.Type == EnergyType.Heavy)
+                                .Transform.Position; // because level parent is at 0,0,0 this position is same as in world space
+            var lightStartingPoint = currentLevelParent.GetChildren()
+                .First(e => e.Get<CharacterPlaceholder>()?.Type == EnergyType.Light)
+                .Transform.Position;
+
+            heavyCharacter.Get<CharacterController>().Energy.Value = CharacterEnergy.MAX_ENERGY;
+            lightCharacter.Get<CharacterController>().Energy.Value = CharacterEnergy.MAX_ENERGY;
+
+            heavyCharacter.Get<CharacterComponent>().Teleport(heavyStartingPoint);
+            lightCharacter.Get<CharacterComponent>().Teleport(lightStartingPoint);
+            
+            inputManager.Enabled = true;
+        }
+
+        public async Task ReloadLevel()
+        {
+            var reloadReceiver = new EventReceiver(ResetLevelEvent);
+            while (Game.IsRunning)
+            {
+                await reloadReceiver.ReceiveAsync();
+
+                if (currentLevel == null) continue;
+
+                // remove level entities
+                foreach (var child in currentLevelParent.GetChildren())
+                    child.Scene = null;
+
+                // and add them back with fresh state
+                foreach (var entity in currentLevel.Value.Entities.Instantiate())
+                    currentLevelParent.AddChild(entity);
+
+                ResetCharacters();
             }
         }
 
@@ -88,7 +125,7 @@ namespace ProjectStepUp
             var clearReceiver = new EventReceiver(ClearEvent);
             await clearReceiver.ReceiveAsync();
 
-            if(currentLevel is not null)
+            if (currentLevel is not null)
             {
                 Entity.Scene.Entities.Remove(currentLevelParent);
             }
@@ -96,6 +133,19 @@ namespace ProjectStepUp
             foreach (var entity in globalEntities)
             {
                 Entity.Scene.Entities.Remove(entity);
+            }
+        }
+
+        public async Task OnFailure()
+        {
+            var failReceiver = new EventReceiver<EnergyType>(CharacterEnergy.NoEnergy);
+
+            while (Game.IsRunning)
+            {
+                _ = await failReceiver.ReceiveAsync();
+
+                inputManager.Enabled = false;
+                levelUIUpdater.ShowFailureModal();
             }
         }
     }

@@ -35,7 +35,7 @@ Hierarchy:
                         Model: 7a6fa5c0-09f9-47a4-8bf6-d5673b7bc97b:Cylinder
                         Materials: {}
             Base:
-                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Switch lever
+                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Environment/Switch lever
                 BasePartId: a66bc5a0-95c5-459e-9bdf-9cb9d30d8218
                 InstanceId: 8c1cde09-416b-40a7-a205-07041d54f049
         -   Entity:
@@ -95,7 +95,7 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:Environment/PressurePlate
                 BasePartId: 1a28eb29-9826-4291-ad57-da6d3bb51dad
                 InstanceId: 475a5e27-9dc1-4395-91a9-e6b1cfc9cecc
         -   Entity:
@@ -263,13 +263,13 @@ Hierarchy:
                 Components:
                     f446ea9fa424df2c30e834d4e99825b8: !TransformComponent
                         Id: 2767746f-91db-465c-93b0-45f216273861
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5ee035b3a321bf5f8d83ce4852ebd9a0: !ModelComponent
                         Id: 77c733ac-527a-4be6-964a-d2edf05b8e97
-                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Model: 7e355bfb-6516-4297-92ac-02bff921a82d:Environment/Models/DoorModel
                         Materials: {}
                     9cf816ac1605c996fea2d823f3d1b67b: !ProjectStepUp.DoorOpen,ProjectStepUp
                         Id: 6a85e6d3-3d96-4d92-a434-5722846a3092
@@ -292,11 +292,11 @@ Hierarchy:
                         ColliderShapes:
                             78185544ca9cc62f85c8925bec7392a0: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                Size: {X: 0.3, Y: 0.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: 70fe0b92-b415-4a1a-927e-9858b8b593ec:Door
+                BasePartAsset: 70fe0b92-b415-4a1a-927e-9858b8b593ec:Environment/Door
                 BasePartId: 0ef7fb93-925e-4542-a3a6-5459fe9ccaa5
                 InstanceId: dc098790-13e0-4cd2-b091-956aac5689a2
         -   Entity:
@@ -494,6 +494,7 @@ Hierarchy:
                         Children: {}
                     aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.Input.InputManager,ProjectStepUp
                         Id: f515d725-d7b0-44c1-b42b-6a720e446963
+                        Enabled: true
                         LightCharacter: ref!! cc497c92-5a15-4007-9686-31649df131f1
                         HeavyCharacter: ref!! f8059c04-6e9b-43a2-8a31-4068043a56f1
                         InputConfiguration:
@@ -537,7 +538,7 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:Environment/PressurePlate
                 BasePartId: cee6b78f-790c-4c92-a08a-b12f3dc6f351
                 InstanceId: 475a5e27-9dc1-4395-91a9-e6b1cfc9cecc
         -   Entity:
@@ -657,7 +658,7 @@ Hierarchy:
                     cad0de3b7bfb03a132c6ada4cfd1bbb6: !ProjectStepUp.TriggerSwitch,ProjectStepUp
                         Id: 4e9d3c45-5b82-4a8b-a4e1-d8d8d6be8513
             Base:
-                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Switch lever
+                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Environment/Switch lever
                 BasePartId: 9736f628-ffb3-4022-88b5-6129427d2786
                 InstanceId: 8c1cde09-416b-40a7-a205-07041d54f049
         -   Entity:
@@ -790,6 +791,6 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Switch lever
+                BasePartAsset: 15ac23ce-cf42-4ed6-b474-9c36b3a70743:Environment/Switch lever
                 BasePartId: 57df9304-3d6c-467c-99e6-759bd0dbadb9
                 InstanceId: 8c1cde09-416b-40a7-a205-07041d54f049

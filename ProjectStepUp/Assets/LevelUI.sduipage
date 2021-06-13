@@ -8,6 +8,26 @@ Hierarchy:
     RootParts:
         - !Grid ref!! 8a57a256-82f6-4966-92ef-4306a1038962
     Parts:
+        -   UIElement: !Button
+                Id: 040cc7a7-773f-408b-8133-dd01d70a6c22
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 120.0
+                Margin: {Left: 5.0, Right: 5.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: BackToMenuButton
+                Content: !TextBlock ref!! 1debea65-f656-47fa-918d-7a71ac5f952b
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
         -   UIElement: !TextBlock
                 Id: 07f02994-7d6a-4229-9cbc-7ce35acaf4e1
                 DependencyProperties: {}
@@ -22,6 +42,52 @@ Hierarchy:
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !StackPanel
+                Id: 0ba9d455-1522-420b-aee0-b9df2bd55e22
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Height: 150.0
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    97ca6b9128965c3a149d8c64f654f558: !TextBlock ref!! f8d6ecb1-932f-479a-a3c3-c1c0df26873d
+                    df0bf7898ed2e25b2d42c1aa2ed58ba1: !StackPanel ref!! 68595996-e576-47bf-a314-d54595382b2e
+        -   UIElement: !TextBlock
+                Id: 1debea65-f656-47fa-918d-7a71ac5f952b
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Menu
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Button
+                Id: 1f412e0d-93c6-4976-b0be-0e5dee384cfb
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 120.0
+                Margin: {Left: 5.0, Right: 5.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: RetryButton
+                Content: !TextBlock ref!! aacee1a7-7d6d-4308-b2d0-fa67c6ebbe6d
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
         -   UIElement: !TextBlock
                 Id: 42297f63-8c83-4cd8-8824-40b7acf51bfe
                 DependencyProperties: {}
@@ -53,6 +119,19 @@ Hierarchy:
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 40.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !StackPanel
+                Id: 68595996-e576-47bf-a314-d54595382b2e
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                Margin: {Top: 40.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    f3b3a772edc0a46030e71f68980f5369: !Button ref!! 1f412e0d-93c6-4976-b0be-0e5dee384cfb
+                    c2f8dbd7433b70b7d01f89162e97fe3a: !Button ref!! 040cc7a7-773f-408b-8133-dd01d70a6c22
+                Orientation: Horizontal
         -   UIElement: !Slider
                 Id: 6e250271-7319-4193-8593-4730eac2283c
                 DependencyProperties: {}
@@ -130,12 +209,28 @@ Hierarchy:
                     45b0a5c421b3f2f4bb6e02f54f3e5dd0: !TextBlock ref!! c080c0ad-ba28-412d-bf53-916d1f2be42d
                     13fd72b8f70283eb65af4c3d3758d071: !TextBlock ref!! 07f02994-7d6a-4229-9cbc-7ce35acaf4e1
                     353cd6cec17781fe7fbd83b09d1d131b: !TextBlock ref!! 64319442-d5c4-40d6-b98e-901c4db164db
+                    1b825ab33b6b2576a93175233e0178c1: !ModalElement ref!! e0211172-8626-4b42-b68c-93e17c396357
                 RowDefinitions: {}
                 ColumnDefinitions:
                     2c474a7a44d29e8627b67415ab611994: {}
                     ab89b27bb63876635bd24fc048c4b159: {}
                     4568c3fc68534dafef9dfe5cf75f61f6: {}
                 LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: aacee1a7-7d6d-4308-b2d0-fa67c6ebbe6d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: 
+                Text: Retry
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
                 Id: c080c0ad-ba28-412d-bf53-916d1f2be42d
                 DependencyProperties: {}
@@ -147,6 +242,33 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: LightTextEnergy
                 Text: 100
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ModalElement
+                Id: e0211172-8626-4b42-b68c-93e17c396357
+                DependencyProperties:
+                    ab611191a4197df4197b755fc423c680~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 99, G: 175, B: 247, A: 150}
+                Visibility: Hidden
+                DrawLayerNumber: 2
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: FailureModal
+                Padding: {}
+                Content: !StackPanel ref!! 0ba9d455-1522-420b-aee0-b9df2bd55e22
+                OverlayColor: {R: 0, G: 0, B: 0, A: 90}
+        -   UIElement: !TextBlock
+                Id: f8d6ecb1-932f-479a-a3c3-c1c0df26873d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Left: 10.0, Top: 30.0, Right: 10.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: You ran out of energy!
                 Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}

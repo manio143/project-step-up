@@ -1,0 +1,12 @@
+!Skeleton
+Id: 9371c845-e3a9-45cf-9a6f-36c066c69bc5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Environment/Platform.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 0.5
+Nodes:
+    8ee8054f9f39f8e3e11f5b19ed045bc0: {Name: RootNode, Depth: 0}
+    82b26186a2249a24f2a579b074d5b494: {Name: platform, Depth: 1}
+~SourceHashes:
+    fee6b934a43e51feeaf3199c26605209~../../../Resources/Environment/Platform.fbx: d5fb10af088e1c8bd324c412c229d606
