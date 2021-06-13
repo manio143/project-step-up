@@ -1,0 +1,6 @@
+!Texture
+Id: fbfbe101-ce0e-43eb-8db0-aafa929ea95b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/MetalWalkway013_2K-PNG/MetalWalkway013_2K_Displacement.png
+Type: !GrayscaleTextureType {}

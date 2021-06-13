@@ -68,7 +68,7 @@ Hierarchy:
                         Model: 2e8a7ab3-c28b-4b43-9736-58435daa4578:Plate
                         IsShadowCaster: false
                         Materials:
-                            d13f6da954fd7bf50ca30063dfbcdb1d~0: f3a48be9-26a6-4c9f-9381-d51b78655a12:Ground Material
+                            d13f6da954fd7bf50ca30063dfbcdb1d~0: f3a48be9-26a6-4c9f-9381-d51b78655a12:Materials/Ground Material
                     4f94cb2f6da429ff6678fbc6d71d0609: !ProjectStepUp.TriggerButton,ProjectStepUp
                         Id: d37c04a5-5b6d-4983-bb50-39ccbf47a5f7
                     9fa6374b3e47e63bd804443ee97f0969: !RigidbodyComponent
@@ -517,7 +517,8 @@ Hierarchy:
                     381c787a2483021c11036e9943e4146f: !ModelComponent
                         Id: 71866c40-65fe-4f6a-b9af-aedde6d63ade
                         Model: c85ddb43-5a1b-4c04-a9d2-398e58c0a1c3:InputPlatform
-                        Materials: {}
+                        Materials:
+                            a7e56a79fb723076f2ba63d2ca8341d0~0: f3a48be9-26a6-4c9f-9381-d51b78655a12:Materials/Ground Material
                     0d764aaa7288dbcfa2a26162f3eafa47: !StaticColliderComponent
                         Id: df7998eb-8a9d-46a7-89d8-adbbce8a5a5a
                         CanCollideWith: DefaultFilter, StaticFilter, KinematicFilter, DebrisFilter, CharacterFilter, CustomFilter1, CustomFilter2, CustomFilter3, CustomFilter4, CustomFilter5, CustomFilter6, CustomFilter7, CustomFilter8, CustomFilter9, CustomFilter10

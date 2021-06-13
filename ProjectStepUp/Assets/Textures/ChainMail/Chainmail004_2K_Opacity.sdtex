@@ -1,0 +1,7 @@
+!Texture
+Id: 6680fb39-25a7-4ee6-b61e-324e8139b5b1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Chainmail004_2K-PNG/Chainmail004_2K_Opacity.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

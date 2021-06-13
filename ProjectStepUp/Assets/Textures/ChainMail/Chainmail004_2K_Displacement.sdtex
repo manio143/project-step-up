@@ -1,0 +1,6 @@
+!Texture
+Id: 5e1cdf12-a0fd-4c6d-8485-79f8b68d0f33
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Chainmail004_2K-PNG/Chainmail004_2K_Displacement.png
+Type: !GrayscaleTextureType {}

@@ -9,5 +9,4 @@ Type: !CylinderProceduralModel
     LocalOffset: {X: 0.0, Y: 0.5, Z: 0.0}
     NumberOfTextureCoordinates: 10
     MaterialInstance:
-        Material: a091a8b4-aca4-4c60-984b-76158c2004f4:Material
-
+        Material: a091a8b4-aca4-4c60-984b-76158c2004f4:Materials/Material

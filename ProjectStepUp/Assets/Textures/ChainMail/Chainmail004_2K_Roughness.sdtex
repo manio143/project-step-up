@@ -1,0 +1,6 @@
+!Texture
+Id: f5c04aa4-051b-4502-ae9c-fd5fe7a52da7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Chainmail004_2K-PNG/Chainmail004_2K_Roughness.png
+Type: !GrayscaleTextureType {}

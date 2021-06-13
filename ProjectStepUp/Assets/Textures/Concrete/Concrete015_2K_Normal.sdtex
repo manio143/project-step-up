@@ -1,0 +1,6 @@
+!Texture
+Id: 29807eea-2f8b-4b34-802a-efa43598b14e
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Concrete015_2K-PNG/Concrete015_2K_Normal.png
+Type: !NormalMapTextureType {}

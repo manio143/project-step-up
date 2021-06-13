@@ -1,0 +1,6 @@
+!Texture
+Id: 7c88b2d1-f57c-4675-a489-98b5929ae883
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/SheetMetal001_2K-PNG/SheetMetal001_2K_Normal.png
+Type: !NormalMapTextureType {}

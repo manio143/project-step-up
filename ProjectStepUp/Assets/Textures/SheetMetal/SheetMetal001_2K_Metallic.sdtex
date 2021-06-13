@@ -1,0 +1,6 @@
+!Texture
+Id: 36da1360-85fd-4306-b68b-bbdcf666c3d9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/SheetMetal001_2K-PNG/SheetMetal001_2K_Metallic.png
+Type: !GrayscaleTextureType {}

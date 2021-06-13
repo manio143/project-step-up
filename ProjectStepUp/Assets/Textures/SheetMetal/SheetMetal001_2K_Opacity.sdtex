@@ -1,0 +1,6 @@
+!Texture
+Id: 80d862ab-4997-4b57-8922-5b21424a6977
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/SheetMetal001_2K-PNG/SheetMetal001_2K_Opacity.png
+Type: !GrayscaleTextureType {}
