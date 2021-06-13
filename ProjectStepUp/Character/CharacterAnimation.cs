@@ -28,15 +28,18 @@ namespace ProjectStepUp.Character
 
             if (state == CharacterMovementState.StandBy)
             {
-                Animation.Play("Idle");
+                if(Animation.PlayingAnimations[0].Name != "Idle")
+                    Animation.Play("Idle");
             }
             else if (state == CharacterMovementState.Walking)
             {
-                Animation.Play("Run");
+                if(Animation.PlayingAnimations[0].Name != "Run")
+                    Animation.Play("Run");
             }
             else if (state == CharacterMovementState.Jumping)
             {
-                Animation.Play("Jump");
+                if(Animation.PlayingAnimations[0].Name != "Jump")
+                    Animation.Play("Jump");
             }
         }
         /*
