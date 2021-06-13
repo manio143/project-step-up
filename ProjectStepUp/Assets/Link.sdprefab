@@ -42,12 +42,8 @@ Hierarchy:
                                             UVClockwise: Degree0
                                     Material: !ParticleMaterialComputeColor
                                         AlphaAdditive: 0.2
-                                        ComputeColor: !ComputeTextureColor
-                                            FallbackValue:
-                                                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                                            Scale: {X: 1.0, Y: 1.0}
-                                            Offset: {X: 0.0, Y: 0.0}
-                                            Swizzle: null
+                                        ComputeColor: !ComputeFloat4
+                                            Value: {X: 100.0, Y: 100.0, Z: 100.0, W: 0.0}
                                         UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
@@ -66,12 +62,12 @@ Hierarchy:
                                             InheritScale: true
                                             Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                                             ScaleUniform: 1.0
-                                            SeedOffset: 0
+                                            SeedOffset: 1
                                             DisplayParticlePosition: false
                                             DisplayParticleRotation: false
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
-                                            RandomSize: {X: 0.01, Y: 0.02}
+                                            RandomSize: {X: 0.01, Y: 0.05}
                                         60f104f2e233f74db11694c75710fd52: !InitialVelocitySeed
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}

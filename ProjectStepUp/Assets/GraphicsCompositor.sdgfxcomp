@@ -191,7 +191,10 @@ SharedRenderers:
             DepthResolution: Half
         DepthOfField:
             Enabled*: true
-            DOFAreas*: {X: 0.5, Y: 1.0, Z: 20.0, W: 200.0}
+            MaxBokehSize*: 0.04
+            DOFAreas*: {X: 0.5, Y: 1.0, Z: 150.0, W: 1700.0}
+            QualityPreset*: 0.55
+            Technique*: CircularGaussian
             AutoFocus*: false
         BrightFilter:
             Color: {R: 1.0, G: 1.0, B: 1.0}
