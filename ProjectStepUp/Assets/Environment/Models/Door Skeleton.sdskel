@@ -1,0 +1,11 @@
+!Skeleton
+Id: 76c737b2-8209-4364-a8a4-176b731201a2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Environment/Door.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    a1b6dae9f81c3c558a5f935da9597f9d: {Name: RootNode, Depth: 0}
+    b1b967914fdda2987e24fda2bcb2e20e: {Name: Door, Depth: 1}
+~SourceHashes:
+    2ef07e4c15f2c86a3db878c4b2f7dbf1~../../../Resources/Environment/Door.fbx: 65de1bd6dc410140ee22a01ab1b99c20

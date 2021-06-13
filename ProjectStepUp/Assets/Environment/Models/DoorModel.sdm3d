@@ -1,0 +1,15 @@
+!Model
+Id: 7e355bfb-6516-4297-92ac-02bff921a82d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Environment/Door.fbx
+Skeleton: 76c737b2-8209-4364-a8a4-176b731201a2:Environment/Models/Door Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    6b4d4a7c4bacfd97957e4eaf2cd7ad3e:
+        Name: Door
+        MaterialInstance:
+            Material: 55396a4d-f112-47ab-87cd-e1c819e4a2bb:Environment/Models/DoorMaterial
+Modifiers: {}
+~SourceHashes:
+    78126e8ccbac55d0ed1c663df85d1e1f~../../../Resources/Environment/Door.fbx: 65de1bd6dc410140ee22a01ab1b99c20

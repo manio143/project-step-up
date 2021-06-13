@@ -1,0 +1,19 @@
+!Model
+Id: 99ec5702-214a-4d31-ae72-70cee461f808
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Environment/Platform.fbx
+Skeleton: 9371c845-e3a9-45cf-9a6f-36c066c69bc5:Environment/Models/Platform Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    8be6148cec2d6bb4bfbb4461fc4895fc:
+        Name: Platform
+        MaterialInstance:
+            Material: bd4cf049-3e20-4976-b3f6-c48c9a8e4450:Environment/Models/PlatformMaterial
+    792a3f048238a4b0e360da5e5eebff08:
+        Name: Material
+        MaterialInstance:
+            Material: afd31200-1cfc-4605-8b8b-8ca00864a38e:Environment/Models/PlatformMaterialSurface
+Modifiers: {}
+~SourceHashes:
+    12f4cceaa2afa47b41ea1a2040f88127~../../../Resources/Environment/Platform.fbx: d5fb10af088e1c8bd324c412c229d606

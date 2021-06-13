@@ -8,19 +8,57 @@ Hierarchy:
         - ref!! 870c057b-86a6-4131-84b3-0c1b7e222cc1
         - ref!! dc0111b5-215a-478a-9330-7fbad3139315
         - ref!! 7322fad9-b03c-4c61-9219-5a88bae312cf
-        - ref!! 2e8e8437-e471-446d-90d3-b999ebcbdafc
         - ref!! 05fae5ed-6cdb-463a-b929-0430b351a171
         - ref!! d5610bee-39a8-4d0e-9e87-9dc5ed64bb31
         - ref!! f3fc1a3c-f39e-4a07-944d-dec1f77df8ef
         - ref!! 643069c3-5267-4131-9ad2-6e529095fc4a
+        - ref!! 693a38c2-f735-4191-ad59-142520c66601
+        - ref!! 7d3fa27d-cb1f-4f0d-a96f-57c974bede5f
+        - ref!! 5750c883-29f2-4dd7-bde6-cc33a049f0b3
+        - ref!! 03ac7001-1e26-4c9b-940b-164ab2dda5fc
     Parts:
+        -   Folder: null
+            Entity:
+                Id: 03ac7001-1e26-4c9b-940b-164ab2dda5fc
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 9afc064f-9061-4929-aeb5-6fe174fdf711
+                        Position*: {X: 6.4862123, Y: 4.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 02e9f3e7-5a39-4ab3-88dd-b89785720211
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 05e2f88a-a2fa-48e9-964e-533f6224daff
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: b481db9d-51d3-483b-9ebd-9579b5e85ef5
         -   Entity:
                 Id: 05fae5ed-6cdb-463a-b929-0430b351a171
                 Name: CommonDoor
                 Components:
                     484e71e588fbb1bc40d1aaaa1c6ecfac: !TransformComponent
                         Id: b841ae3d-94f6-4784-94b7-039e09faf3ed
-                        Position: {X: 4.8821344, Y: 0.5, Z: 0.0}
+                        Position: {X: 5.0, Y: 1.5, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -58,7 +96,7 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:Environment/PressurePlate
                 BasePartId: cee6b78f-790c-4c92-a08a-b12f3dc6f351
                 InstanceId: 9cfefdb1-00ee-425e-84e6-4e4358cc8bc2
         -   Entity:
@@ -138,20 +176,9 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:Environment/PressurePlate
                 BasePartId: 1a28eb29-9826-4291-ad57-da6d3bb51dad
                 InstanceId: 7486120b-be2f-49a6-9bb6-22ffaa5a29b4
-        -   Entity:
-                Id: 2e8e8437-e471-446d-90d3-b999ebcbdafc
-                Name: StaticDoor
-                Components:
-                    484e71e588fbb1bc40d1aaaa1c6ecfac: !TransformComponent
-                        Id: 372bb593-0955-4fa7-b316-a0fc50095c04
-                        Position: {X: 4.8821344, Y: 2.5, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d4fc9be59890cef7e604f4573e71b5f8: ref!! b3a3d6d7-d48b-491b-8b13-c1a3010e26c4
         -   Folder: null
             Entity:
                 Id: 308b1093-5194-47dc-8d2d-f2f0b98f4d2a
@@ -195,7 +222,7 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:Environment/PressurePlate
                 BasePartId: 1a28eb29-9826-4291-ad57-da6d3bb51dad
                 InstanceId: 9cfefdb1-00ee-425e-84e6-4e4358cc8bc2
         -   Folder: null
@@ -268,6 +295,41 @@ Hierarchy:
                 BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
                 BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
                 InstanceId: 6ff2727a-2967-4424-90ac-bd62df78e25c
+        -   Folder: null
+            Entity:
+                Id: 5750c883-29f2-4dd7-bde6-cc33a049f0b3
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 3062b4cb-76ca-4e5b-ab65-61bcebe95951
+                        Position*: {X: -7.5, Y: 3.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 3050e3d7-f303-4607-85e8-3b34b0fa3699
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: d36d8a69-c2fd-4c84-9eba-705d54b440a4
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: eb31308a-952b-4f22-849e-fdf4d9454c54
         -   Entity:
                 Id: 5a8323b4-a0ce-4d78-85de-6db0cdf7bf5c
                 Name: Platform1x2
@@ -318,6 +380,40 @@ Hierarchy:
                             a9798ef6886aee490413f3008b097bc5: PressurePlateL
                             041d9c88919e957d21c0f39d8c5d2dd3: PressurePlateH
                         DoorName: CommonDoor
+        -   Entity:
+                Id: 693a38c2-f735-4191-ad59-142520c66601
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 69172f6d-4b81-48d7-9f5f-1066c5e5286f
+                        Position*: {X: 5.0, Y: 2.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: c6072712-799b-4a54-a357-082f225baddd
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 53d13a45-9e35-4308-a78a-de5b31dbd589
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: 832d4601-3e2b-4850-a093-4458888a0832
         -   Folder: null
             Entity:
                 Id: 6da414df-671b-4cf2-94bd-92791b6b15c0
@@ -426,11 +522,11 @@ Hierarchy:
                         Id: 2df0694e-cbae-426b-9ffe-ec598dd61154
                         Position*: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 0.25, Z: 1.0}
+                        Scale: {X: 2.5, Y: 0.25, Z: 0.5}
                         Children: {}
                     636a3a5409966f8171377b33858e2aa6: !ModelComponent
                         Id: fe629679-d958-4f8f-8e9c-264729860aa3
-                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Model: 99ec5702-214a-4d31-ae72-70cee461f808:Environment/Models/PlatformModel
                         Materials: {}
                     37d05ad829c64c40b13cbb39b442b7f1: !RigidbodyComponent
                         Id: 5cb2e7ea-c1d7-4be1-b119-40962633af67
@@ -451,7 +547,7 @@ Hierarchy:
                         ColliderShapes:
                             43557e287ab5579c7b7a0975b8e45f0f: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                Size: {X: 1.0, Y: 0.3, Z: 2.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     e868d41a5f93e4aab93296f5dd2a966b: !ProjectStepUp.MovablePlatformAnimation,ProjectStepUp
@@ -464,7 +560,7 @@ Hierarchy:
                         Id: 92d6a68f-5c50-4e54-944b-909c9fd07975
                         Priority: 10
             Base:
-                BasePartAsset: 6ef9fe8c-0e39-4441-b7bf-68295746d89a:MovablePlatform
+                BasePartAsset: 6ef9fe8c-0e39-4441-b7bf-68295746d89a:Environment/MovablePlatform
                 BasePartId: 9d75300b-fdb7-4945-b305-7a4a25714ebd
                 InstanceId: bae29f30-077e-4df3-93ec-c5c42124b049
         -   Folder: null
@@ -500,9 +596,44 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:PressurePlate
+                BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:Environment/PressurePlate
                 BasePartId: cee6b78f-790c-4c92-a08a-b12f3dc6f351
                 InstanceId: 7486120b-be2f-49a6-9bb6-22ffaa5a29b4
+        -   Folder: null
+            Entity:
+                Id: 7d3fa27d-cb1f-4f0d-a96f-57c974bede5f
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 2dbc02ee-b7dd-4dac-9033-63d3a9f0feac
+                        Position*: {X: -7.5, Y: 1.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: e8638dc9-7574-445b-b694-1062d32fa80d
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: c4552517-e551-4de9-b42c-f7a2f19429ed
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: f9ff1378-0f65-4c9a-99d2-317430d14348
         -   Entity:
                 Id: 870c057b-86a6-4131-84b3-0c1b7e222cc1
                 Name: PressurePlateL
@@ -596,7 +727,7 @@ Hierarchy:
                         Children: {}
                     5ee035b3a321bf5f8d83ce4852ebd9a0: !ModelComponent
                         Id: 2969a6a8-7ea4-4add-b810-037bba4fea3a
-                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Model: 7e355bfb-6516-4297-92ac-02bff921a82d:Environment/Models/DoorModel
                         Materials: {}
                     9cf816ac1605c996fea2d823f3d1b67b: !ProjectStepUp.DoorOpen,ProjectStepUp
                         Id: 065659a0-8bb8-4d10-b8b1-e10a137db417
@@ -619,11 +750,11 @@ Hierarchy:
                         ColliderShapes:
                             78185544ca9cc62f85c8925bec7392a0: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                Size: {X: 0.3, Y: 0.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: 70fe0b92-b415-4a1a-927e-9858b8b593ec:Door
+                BasePartAsset: 70fe0b92-b415-4a1a-927e-9858b8b593ec:Environment/Door
                 BasePartId: 0ef7fb93-925e-4542-a3a6-5459fe9ccaa5
                 InstanceId: 49e439ce-bdf8-43a4-b644-d7e4c8e4967d
         -   Folder: null
@@ -685,48 +816,6 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             32cd7e79f62185df7fcb74fbf5717adf: ref!! 2df0694e-cbae-426b-9ffe-ec598dd61154
-        -   Entity:
-                Id: e9fe004a-7970-47ef-8dad-1d54483188c3
-                Name: Door
-                Components:
-                    f446ea9fa424df2c30e834d4e99825b8: !TransformComponent
-                        Id: b3a3d6d7-d48b-491b-8b13-c1a3010e26c4
-                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    5ee035b3a321bf5f8d83ce4852ebd9a0: !ModelComponent
-                        Id: 4a9a496b-2925-49ed-8f73-8ea31961a2e9
-                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
-                        Materials: {}
-                    9cf816ac1605c996fea2d823f3d1b67b: !ProjectStepUp.DoorOpen,ProjectStepUp
-                        Id: bc6c8052-136b-4deb-9215-0119035e5379
-                    5c8861236cb0798e927c84cc74a03634: !RigidbodyComponent
-                        Id: a8e8de62-4b9f-4eca-b473-cc8efd660efc
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        IsKinematic: true
-                        Mass: 2.0
-                        LinearDamping: 0.0
-                        AngularDamping: 0.0
-                        OverrideGravity: false
-                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
-                        NodeName: null
-                        ColliderShapes:
-                            78185544ca9cc62f85c8925bec7392a0: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-            Base:
-                BasePartAsset: 70fe0b92-b415-4a1a-927e-9858b8b593ec:Door
-                BasePartId: 0ef7fb93-925e-4542-a3a6-5459fe9ccaa5
-                InstanceId: e8b991b7-ac22-4c27-9de7-e65e437a1aad
         -   Entity:
                 Id: f3fc1a3c-f39e-4a07-944d-dec1f77df8ef
                 Name: HeavyCharacterPlaceholder
