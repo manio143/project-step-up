@@ -32,6 +32,9 @@ Hierarchy:
                             931da8d03054723ac1cb2c727152ba18:
                                 Name: Platforms
                                 Entities: fecab50a-783b-43b9-877e-922db080fe02:Levels/DemoLevel3
+                            2fbf87ba44a55a59e5f829ef94ee2666:
+                                Name: Pentenciary
+                                Entities: babb95a9-268a-4f43-9975-c8ae958451de:Levels/DemoLevel4
                         LevelMusic: e1fa219d-f4ba-4948-aa89-c4605a54b6ca:Sounds/levels_loop
         -   Entity:
                 Id: a6497db5-7310-4f74-ae3b-9222bacc0e11
