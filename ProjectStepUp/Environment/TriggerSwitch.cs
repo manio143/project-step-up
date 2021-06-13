@@ -8,6 +8,7 @@ using Stride.Input;
 using Stride.Engine;
 using Stride.Physics;
 using Stride.Engine.Events;
+using ProjectStepUp.UI;
 
 namespace ProjectStepUp
 {
@@ -32,6 +33,8 @@ namespace ProjectStepUp
         {
             if (sc.Collisions.Any(x => x.ColliderA is CharacterComponent || x.ColliderB is CharacterComponent))
             {
+                LevelUIUpdater.ShowSwitchPrompt = state == SwitchState.OFF;
+
                 if (toggleEvent.TryReceive())
                 {
                     state = state == SwitchState.ON ? SwitchState.OFF : SwitchState.ON;
@@ -39,6 +42,10 @@ namespace ProjectStepUp
                     TriggerButton.SwitchStateChange.Broadcast((Entity.GetParent()?.Name, state));
                     lever.Transform.Rotation *= Quaternion.RotationZ((int)state * MathUtil.PiOverFour);
                 }
+            }
+            else
+            {
+                LevelUIUpdater.ShowSwitchPrompt = false;
             }
         }
     }

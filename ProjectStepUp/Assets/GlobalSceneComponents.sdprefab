@@ -340,6 +340,7 @@ Hierarchy:
                         Priority: 50
                         LightCharacter: ref!! 7aa7de66-4372-4648-befb-234b23318f3a
                         HeavyCharacter: ref!! 50aed200-ab30-43dd-9e64-d0e1eab6f474
+                        InputManager: ref!! 8b9470d2-9fe2-4158-9f8b-180061a409de
         -   Folder: null
             Entity:
                 Id: a2a12142-1c8c-4785-9334-463e8b5e7536

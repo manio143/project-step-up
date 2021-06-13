@@ -210,6 +210,7 @@ Hierarchy:
                     13fd72b8f70283eb65af4c3d3758d071: !TextBlock ref!! 07f02994-7d6a-4229-9cbc-7ce35acaf4e1
                     353cd6cec17781fe7fbd83b09d1d131b: !TextBlock ref!! 64319442-d5c4-40d6-b98e-901c4db164db
                     1b825ab33b6b2576a93175233e0178c1: !ModalElement ref!! e0211172-8626-4b42-b68c-93e17c396357
+                    b1bce31270185fd03ba6dbea9bee31e6: !TextBlock ref!! ec8bb35e-8ffa-478f-b1d1-5e90f5604dd5
                 RowDefinitions: {}
                 ColumnDefinitions:
                     2c474a7a44d29e8627b67415ab611994: {}
@@ -260,6 +261,23 @@ Hierarchy:
                 Padding: {}
                 Content: !StackPanel ref!! 0ba9d455-1522-420b-aee0-b9df2bd55e22
                 OverlayColor: {R: 0, G: 0, B: 0, A: 90}
+        -   UIElement: !TextBlock
+                Id: ec8bb35e-8ffa-478f-b1d1-5e90f5604dd5
+                DependencyProperties:
+                    159971b11a8081c0f242ab9d596d0376~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Visibility: Hidden
+                VerticalAlignment: Bottom
+                Margin: {Bottom: 180.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: PressSwitchPrompt
+                Text: Press 'X' to toggle switch
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
         -   UIElement: !TextBlock
                 Id: f8d6ecb1-932f-479a-a3c3-c1c0df26873d
                 DependencyProperties: {}
