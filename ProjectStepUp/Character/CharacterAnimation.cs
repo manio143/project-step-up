@@ -28,15 +28,15 @@ namespace ProjectStepUp.Character
 
             if (state == CharacterMovementState.StandBy)
             {
-                Animation.Crossfade("Idle", AnimationCrossfadeTime / 2);
+                Animation.Play("Idle");
             }
             else if (state == CharacterMovementState.Walking)
             {
-                Animation.Crossfade("Run", AnimationCrossfadeTime / 2);
+                Animation.Play("Run");
             }
             else if (state == CharacterMovementState.Jumping)
             {
-                Animation.Crossfade("Jump", AnimationCrossfadeTime / 2);
+                Animation.Play("Jump");
             }
         }
         /*
