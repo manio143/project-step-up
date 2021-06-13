@@ -1,7 +1,9 @@
 ﻿using System;
 using ProjectStepUp.Character;
 using Stride.Engine;
+using Stride.UI;
 using Stride.UI.Controls;
+using Stride.UI.Events;
 
 namespace ProjectStepUp.UI
 {
@@ -12,6 +14,7 @@ namespace ProjectStepUp.UI
         private TextBlock lightEnergyText;
         private TextBlock heavyEnergyText;
         private TextBlock levelNameLabel;
+        private ModalElement failureModal;
 
         public CharacterController LightCharacter { get; set; }
         public CharacterController HeavyCharacter { get; set; }
@@ -27,6 +30,10 @@ namespace ProjectStepUp.UI
             lightEnergyText = page.RootElement.FindName("LightTextEnergy") as TextBlock;
             heavyEnergyText = page.RootElement.FindName("HeavyTextEnergy") as TextBlock;
             levelNameLabel = page.RootElement.FindName("LevelName") as TextBlock;
+            failureModal = page.RootElement.FindName("FailureModal") as ModalElement;
+
+            (page.RootElement.FindName("RetryButton") as Button).Click += RetryLevelButton_Click;
+            (page.RootElement.FindName("BackToMenuButton") as Button).Click += BackToMenuButton_Click;
         }
         public override void Update()
         {
@@ -37,5 +44,20 @@ namespace ProjectStepUp.UI
         }
 
         public void SetLevelName(string name) => levelNameLabel.Text = name;
+
+        public void ShowFailureModal() => failureModal.Visibility = Visibility.Visible;
+
+        private void RetryLevelButton_Click(object sender, RoutedEventArgs args)
+        {
+            failureModal.Visibility = Visibility.Hidden;
+            LevelSceneManager.ResetLevelEvent.Broadcast();
+        }
+
+        private void BackToMenuButton_Click(object sender, RoutedEventArgs args)
+        {
+            failureModal.Visibility = Visibility.Hidden;
+            LevelSceneManager.ClearEvent.Broadcast();
+            // TODO: show main menu by event
+        }
     }
 }
