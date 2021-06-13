@@ -21,13 +21,18 @@ namespace ProjectStepUp
         {
             Positions.Add(Positions[0]);
             animC = Entity.GetOrCreate<AnimationComponent>();
-            var clip = new AnimationClip{Duration = TimeSpan.FromSeconds(Duration)};
+            var clip = new AnimationClip
+            {
+                Duration = TimeSpan.FromSeconds(Duration),
+                RepeatMode = AnimationRepeatMode.LoopInfinite,
+            };
 
-            clip.RepeatMode = AnimationRepeatMode.LoopInfinite;
             clip.AddCurve(
                 "[TransformComponent.Key].Position",
                 CreatePositionCurve(Positions,Duration)
             );
+            clip.Optimize();
+
             animC.Animations.Add("MovePlatform",  clip);
             StartAnimation();
         }

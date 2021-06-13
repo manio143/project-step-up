@@ -1648,9 +1648,15 @@ Hierarchy:
                     e868d41a5f93e4aab93296f5dd2a966b: !ProjectStepUp.MovablePlatformAnimation,ProjectStepUp
                         Id: cced5223-ae72-47cf-9996-efa6ba80c37c
                         Positions:
-                            b045ca09be50ff105c2ca74a8837ad14*: {X: 0.0, Y: 0.0, Z: 0.0}
+                            b045ca09be50ff105c2ca74a8837ad14*: {X: 0.0, Y: -0.125, Z: 0.0}
                             5865a28ec2a19979f7762293cc0e2c89*: {X: 0.0, Y: 4.3, Z: 0.0}
                         Duration*: 5.0
+                    0790ea54083e8e7943930fdde420de53: !ProjectStepUp.MovablePlatformDetectCharacter,ProjectStepUp
+                        Id: 3500c714-3953-44bf-9cba-28b646beb93e
+                        Priority: 10
+                    35a61752f66ccce9d9b911c3d1f29a02*: !ProjectStepUp.DebugPositionPrint,ProjectStepUp
+                        Id: 328fa13c-abf7-4a98-8c4e-279015465169
+                        PrintLinePosition: 40
             Base:
                 BasePartAsset: 6ef9fe8c-0e39-4441-b7bf-68295746d89a:MovablePlatform
                 BasePartId: 9d75300b-fdb7-4945-b305-7a4a25714ebd

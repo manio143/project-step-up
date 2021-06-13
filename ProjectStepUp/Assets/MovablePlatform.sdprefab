@@ -46,3 +46,6 @@ Hierarchy:
                         Id: eee65137-ec9f-45c2-b4c9-d34fc5772c35
                         Positions: {}
                         Duration: 0.0
+                    0790ea54083e8e7943930fdde420de53: !ProjectStepUp.MovablePlatformDetectCharacter,ProjectStepUp
+                        Id: b271c6b4-006e-47bc-ab22-80da86705e46
+                        Priority: 10
