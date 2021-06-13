@@ -1,0 +1,8 @@
+!Sound
+Id: 427ea5d6-3531-42a3-bad6-baa606bf1441
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Music/title_screen_loop.wav
+CompressionRatio: 16
+StreamFromDisk: true
+Spatialized: false

@@ -1,0 +1,141 @@
+!UIPageAsset
+Id: c2136b1c-b293-4200-bf40-b3bae1baa6f1
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! cbdec816-49da-4bb3-ab7a-914683fb8447
+    Parts:
+        -   UIElement: !ImageElement
+                Id: 0111da85-0f6a-430d-969e-51ee96824e75
+                DependencyProperties:
+                    44ff56921124795e090082e3ef76fa20~GridBase.ColumnSpanPropertyKey: 3
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 31
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Background
+                Source: !SpriteFromTexture
+                    Texture: 37e7239d-fc6d-492f-86e9-92fd6fe52b0f:UI/menu_background
+                    Center: {X: 0.0, Y: 0.0}
+                    IsTransparent: false
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !Button
+                Id: 06846f9b-5900-41ad-9d28-212c260e8b25
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Margin: {Top: 10.0, Bottom: 10.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: OptionsButton
+                Content: !TextBlock ref!! 39af36d5-66c4-490f-8966-c87181b81ffd
+                PressedImage: !SpriteFromTexture
+                    Texture: 57c84aeb-7e5e-464a-b6d6-3f91997f08bd:UI/energy_slider_bg_heavy_darker
+                    Center: {X: 0.0, Y: 0.0}
+                NotPressedImage: !SpriteFromTexture
+                    Texture: 57c84aeb-7e5e-464a-b6d6-3f91997f08bd:UI/energy_slider_bg_heavy_darker
+                    Center: {X: 0.0, Y: 0.0}
+                MouseOverImage: !SpriteFromTexture
+                    Texture: d9d3f181-2a7c-42ed-8f3d-667b0765c3c7:UI/energy_slider_bg_heavy
+                    Center: {X: 0.0, Y: 0.0}
+        -   UIElement: !StackPanel
+                Id: 070f2b45-bcd0-45c9-a56a-99a5e4aabd67
+                DependencyProperties:
+                    7dfcc540fe75f6f18522e75177e78d29~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: MainMenuPanel
+                Children:
+                    4d532e250b87ac0e00c8c89870ff76be: !TextBlock ref!! 4ca14e61-9e38-49c5-bce9-e2b35958e20d
+                    b5ef4f16256cc64fcb8f4fdcfeee422c: !Button ref!! 308f2042-f053-444e-87e4-e1bce789acfe
+                    44bde6a410c33b1b989d83f2cbdead0c: !Button ref!! 06846f9b-5900-41ad-9d28-212c260e8b25
+        -   UIElement: !Button
+                Id: 308f2042-f053-444e-87e4-e1bce789acfe
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Margin: {Top: 10.0, Bottom: 10.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: StartButton
+                Content: !TextBlock ref!! c077ea4e-6ecb-4201-934b-a460a28a5f2e
+                PressedImage: !SpriteFromTexture
+                    Texture: 57c84aeb-7e5e-464a-b6d6-3f91997f08bd:UI/energy_slider_bg_heavy_darker
+                    Center: {X: 0.0, Y: 0.0}
+                NotPressedImage: !SpriteFromTexture
+                    Texture: 57c84aeb-7e5e-464a-b6d6-3f91997f08bd:UI/energy_slider_bg_heavy_darker
+                    Center: {X: 0.0, Y: 0.0}
+                MouseOverImage: !SpriteFromTexture
+                    Texture: d9d3f181-2a7c-42ed-8f3d-667b0765c3c7:UI/energy_slider_bg_heavy
+                    Center: {X: 0.0, Y: 0.0}
+        -   UIElement: !TextBlock
+                Id: 39af36d5-66c4-490f-8966-c87181b81ffd
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: 
+                Text: Options
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:UI/SegoeFont
+                TextSize: 30.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 4ca14e61-9e38-49c5-bce9-e2b35958e20d
+                DependencyProperties:
+                    3b0a21e996c7fca33308a333f6cd9583~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Top: 40.0, Bottom: 100.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Title
+                Text: Project Step Up
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:UI/SegoeFont
+                TextSize: 50.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: c077ea4e-6ecb-4201-934b-a460a28a5f2e
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Start
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:UI/SegoeFont
+                TextSize: 30.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Grid
+                Id: cbdec816-49da-4bb3-ab7a-914683fb8447
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    982efeb145e495e8c5f265d9c02b3e68: !ImageElement ref!! 0111da85-0f6a-430d-969e-51ee96824e75
+                    2b310b1ac9c689fa14d855d64e9b29f2: !StackPanel ref!! 070f2b45-bcd0-45c9-a56a-99a5e4aabd67
+                RowDefinitions: {}
+                ColumnDefinitions:
+                    c171a13f8049a8ec62c82f23b268c83b: {}
+                    49278bef021045194e195ac9d151bd7f: {}
+                    e86b1108fad7a63f21f223e9cb251cfd: {}
+                LayerDefinitions: {}

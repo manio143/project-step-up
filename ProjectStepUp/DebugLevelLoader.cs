@@ -7,6 +7,7 @@ namespace ProjectStepUp
     {
         public override void Update()
         {
+#if DEBUG
             if (Input.IsKeyPressed(Keys.D0)) LevelSceneManager.LoadLevelRequest.Broadcast(0);
             if (Input.IsKeyPressed(Keys.D1)) LevelSceneManager.LoadLevelRequest.Broadcast(1);
             if (Input.IsKeyPressed(Keys.D2)) LevelSceneManager.LoadLevelRequest.Broadcast(2);
@@ -18,6 +19,7 @@ namespace ProjectStepUp
             if (Input.IsKeyPressed(Keys.D8)) LevelSceneManager.LoadLevelRequest.Broadcast(8);
             if (Input.IsKeyPressed(Keys.D9)) LevelSceneManager.LoadLevelRequest.Broadcast(9);
             if (Input.IsKeyPressed(Keys.Delete)) LevelSceneManager.ClearEvent.Broadcast();
+#endif
         }
     }
 }

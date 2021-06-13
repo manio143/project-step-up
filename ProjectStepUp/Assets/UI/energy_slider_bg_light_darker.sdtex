@@ -1,0 +1,7 @@
+!Texture
+Id: 30985ff0-5d3e-412a-9d80-2552b9711f17
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/UI/energy_slider_bg_darker.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

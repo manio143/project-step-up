@@ -225,7 +225,7 @@ Game*: !Stride.Rendering.Compositing.SceneRendererCollection,Stride.Rendering
             Id: 7b0d02b8-55f1-43f9-ba2d-b4da76fb47c8
             Camera: ref!! e6bec542-ae3c-4f10-8ab6-7f189bbd9d5d
             Child: !Stride.Rendering.Compositing.ForwardRenderer,Stride.Engine ref!! c28a8f8f-ac3a-4b27-83f1-1e40013e6b4f
-            RenderMask: All
+            RenderMask: Group0, Group1, Group2, Group3, Group4, Group5, Group6, Group7, Group8, Group9, Group10, Group11, Group12, Group13, Group14, Group15, Group16, Group17, Group18, Group19, Group20, Group21, Group22, Group23, Group24, Group25, Group26, Group27, Group28, Group29, Group30
         c9761e171a59e8d677339a1735e9f909: !Stride.Rendering.Compositing.SceneCameraRenderer,Stride.Engine
             Id: afcf4293-e1bd-44aa-a960-b1f42b701455
             Camera: ref!! e6bec542-ae3c-4f10-8ab6-7f189bbd9d5d

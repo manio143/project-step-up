@@ -1,0 +1,7 @@
+!Texture
+Id: 37e7239d-fc6d-492f-86e9-92fd6fe52b0f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/UI/menu_background.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

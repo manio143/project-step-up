@@ -16,9 +16,14 @@ namespace ProjectStepUp.Input
 
         public override void Update()
         {
-            if (!Enabled) return;
+            if (!Enabled)
+            {
+                HeavyCharacter.Move(CharacterMovementDirection.None);
+                LightCharacter.Move(CharacterMovementDirection.None);
+                return;
+            }
 
-            if(Input.IsKeyDown(InputConfiguration[InputAction.HeavyCharacterRight]))
+            if (Input.IsKeyDown(InputConfiguration[InputAction.HeavyCharacterRight]))
                 HeavyCharacter.Move(CharacterMovementDirection.Right);
             else if (Input.IsKeyDown(InputConfiguration[InputAction.HeavyCharacterLeft]))
                 HeavyCharacter.Move(CharacterMovementDirection.Left);

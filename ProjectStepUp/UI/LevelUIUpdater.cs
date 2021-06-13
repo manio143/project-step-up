@@ -57,7 +57,7 @@ namespace ProjectStepUp.UI
         {
             failureModal.Visibility = Visibility.Hidden;
             LevelSceneManager.ClearEvent.Broadcast();
-            // TODO: show main menu by event
+            MainMenuScript.ShowMainMenu.Broadcast();
         }
     }
 }

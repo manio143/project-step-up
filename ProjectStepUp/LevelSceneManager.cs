@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ProjectStepUp.Character;
 using ProjectStepUp.UI;
+using Stride.Audio;
 using Stride.Core;
 using Stride.Engine;
 using Stride.Engine.Events;
@@ -27,9 +29,13 @@ namespace ProjectStepUp
         private LevelUIUpdater levelUIUpdater;
         private InputMgr inputManager;
 
+        private SoundInstance music;
+
         public Prefab GlobalEntities { get; set; }
 
         public List<Level> Levels { get; set; } = new();
+
+        public Sound LevelMusic { get; set; }
 
         public override void Start()
         {
@@ -46,6 +52,10 @@ namespace ProjectStepUp
             Script.AddTask(Clear);
             Script.AddTask(OnFailure);
             Script.AddTask(ReloadLevel);
+
+            music = LevelMusic.CreateInstance();
+            music.IsLooping = true;
+            music.Play();
         }
 
         public async Task LoadNewLevel()
@@ -134,6 +144,13 @@ namespace ProjectStepUp
             {
                 Entity.Scene.Entities.Remove(entity);
             }
+
+            Script.AddTask(async () =>
+            {
+                await this.FadeOutSound(music, TimeSpan.FromSeconds(2));
+                music.Stop();
+                music.Dispose();
+            });
         }
 
         public async Task OnFailure()
