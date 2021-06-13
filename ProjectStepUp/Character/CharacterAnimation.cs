@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Stride.Animations;
 using Stride.Core;
 using Stride.Core.Mathematics;
@@ -28,17 +29,17 @@ namespace ProjectStepUp.Character
 
             if (state == CharacterMovementState.StandBy)
             {
-                if(Animation.PlayingAnimations[0].Name != "Idle")
+                if(!Animation.PlayingAnimations.Any(x => x.Name == "Idle"))
                     Animation.Play("Idle");
             }
             else if (state == CharacterMovementState.Walking)
             {
-                if(Animation.PlayingAnimations[0].Name != "Run")
+                if(!Animation.PlayingAnimations.Any(x => x.Name == "Run"))
                     Animation.Play("Run");
             }
             else if (state == CharacterMovementState.Jumping)
             {
-                if(Animation.PlayingAnimations[0].Name != "Jump")
+                if(!Animation.PlayingAnimations.Any(x => x.Name == "Jump"))
                     Animation.Play("Jump");
             }
         }
