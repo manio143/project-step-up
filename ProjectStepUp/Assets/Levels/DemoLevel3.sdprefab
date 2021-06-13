@@ -463,9 +463,6 @@ Hierarchy:
                     0790ea54083e8e7943930fdde420de53: !ProjectStepUp.MovablePlatformDetectCharacter,ProjectStepUp
                         Id: 92d6a68f-5c50-4e54-944b-909c9fd07975
                         Priority: 10
-                    35a61752f66ccce9d9b911c3d1f29a02*: !ProjectStepUp.DebugPositionPrint,ProjectStepUp
-                        Id: e887aa07-3b7c-4cac-ba8b-d94dcd50c099
-                        PrintLinePosition: 40
             Base:
                 BasePartAsset: 6ef9fe8c-0e39-4441-b7bf-68295746d89a:MovablePlatform
                 BasePartId: 9d75300b-fdb7-4945-b305-7a4a25714ebd

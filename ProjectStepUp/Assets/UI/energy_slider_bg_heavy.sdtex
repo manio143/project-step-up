@@ -1,0 +1,7 @@
+!Texture
+Id: d9d3f181-2a7c-42ed-8f3d-667b0765c3c7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/UI/energy_slider_bg_heavy.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

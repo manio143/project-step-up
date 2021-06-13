@@ -11,6 +11,7 @@ Hierarchy:
         - ref!! 14053004-548e-41d7-b29a-9f1dd9b93356
         - ref!! 57ef568b-7907-4c5c-a46f-05d135d4ff75
         - ref!! 4531392c-b368-421a-ba48-632ac4490aa0
+        - ref!! a1a8d414-bb10-4204-be7a-77163d1433bb
     Parts:
         -   Folder: null
             Entity:
@@ -322,6 +323,26 @@ Hierarchy:
                         Id: 47e374d0-320a-4b72-948d-d02644215721
                         Robot1: ref!! 14053004-548e-41d7-b29a-9f1dd9b93356
                         Robot2: ref!! 57ef568b-7907-4c5c-a46f-05d135d4ff75
+        -   Entity:
+                Id: a1a8d414-bb10-4204-be7a-77163d1433bb
+                Name: UI
+                Components:
+                    0757773099098d07617734cc4158d8f1: !TransformComponent
+                        Id: 5457c0ab-ff72-48fe-813d-b758a1252401
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b17a6b4772409853c50d057411adf12d: !UIComponent
+                        Id: a7a8864e-dac2-4112-9f03-7381a265d2af
+                        Page: 473e6b65-ca32-4376-bd43-a498a28e2a5f:LevelUI
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    d9bfe0983970d18c08050434f451d136: !ProjectStepUp.UI.LevelUIUpdater,ProjectStepUp
+                        Id: ac0dd19f-da62-4194-af62-7f4363036199
+                        Priority: 50
+                        LightCharacter: ref!! 7aa7de66-4372-4648-befb-234b23318f3a
+                        HeavyCharacter: ref!! 50aed200-ab30-43dd-9e64-d0e1eab6f474
         -   Folder: null
             Entity:
                 Id: a2a12142-1c8c-4785-9334-463e8b5e7536

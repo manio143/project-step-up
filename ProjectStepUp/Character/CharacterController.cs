@@ -37,8 +37,6 @@ namespace ProjectStepUp.Character
             UpdateEnergy();
             UpdateMovementState();
             UpdateAnimation();
-
-            DebugText.Print($"Energy: {Energy.Value:0}", new Int2(10, 10));
         }
 
         public void Jump() => Movement.Jump();
