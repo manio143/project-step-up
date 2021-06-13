@@ -2,7 +2,7 @@
 Id: 980657a1-970b-49eb-a20f-645803f55fb0
 SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
-DefaultScene: dab1d53b-0b7e-4d9b-87e4-13c98b356bd1:DebugLevelScene
+DefaultScene: 0f3cce7e-ec37-4bd0-a42f-7056365a8bcf:LevelLoaderScene
 GraphicsCompositor: debf70d0-effb-4141-b51d-3847783a76ce:GraphicsCompositor
 Defaults:
     - !Stride.Audio.AudioEngineSettings,Stride.Audio

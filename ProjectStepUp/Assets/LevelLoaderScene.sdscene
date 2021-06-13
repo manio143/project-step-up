@@ -1,0 +1,46 @@
+!SceneAsset
+Id: 0f3cce7e-ec37-4bd0-a42f-7056365a8bcf
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 53d24c65-e9e0-4bf9-83dd-536662fc0fc1
+        - ref!! a6497db5-7310-4f74-ae3b-9222bacc0e11
+    Parts:
+        -   Entity:
+                Id: 53d24c65-e9e0-4bf9-83dd-536662fc0fc1
+                Name: LevelSceneManager
+                Components:
+                    a404875eecd7bb3dd6519c959c204428: !TransformComponent
+                        Id: 2726c59e-1dfc-49ec-b364-02f79cc20ec7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    0e53c06095dad971ed908187904945ea: !ProjectStepUp.LevelSceneManager,ProjectStepUp
+                        Id: 4aeb23c3-6fdf-43df-8319-5c207e6b5201
+                        GlobalEntities: 9a41a8ef-9534-4b92-be0e-011b5313f984:GlobalSceneComponents
+                        Levels:
+                            4aaa63b1433f68b4a76db98e20b7252c:
+                                Name: Jump!
+                                Entities: b024ac66-1312-477a-98d5-baf175189724:Levels/DemoLevel1
+                            8d49b2d1d6530dbc32e34b9d15eed96b:
+                                Name: Apart
+                                Entities: 92d431e6-5841-472d-944f-b1daca0fb2e5:Levels/DemoLevel2
+                            931da8d03054723ac1cb2c727152ba18:
+                                Name: Platforms
+                                Entities: fecab50a-783b-43b9-877e-922db080fe02:Levels/DemoLevel3
+        -   Entity:
+                Id: a6497db5-7310-4f74-ae3b-9222bacc0e11
+                Name: DebugLevelLoader
+                Components:
+                    a768f8849b9adcedfe4cb108d321e923: !TransformComponent
+                        Id: 1e4a51ea-daaf-4fac-9757-61ab8e2c2c82
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    382e5391eb6656228c40f7de1ed01edf: !ProjectStepUp.DebugLevelLoader,ProjectStepUp
+                        Id: e0ecb293-e317-4630-b729-933bccc7f342

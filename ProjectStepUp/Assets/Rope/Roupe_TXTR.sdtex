@@ -1,8 +1,0 @@
-!Texture
-Id: 661325d2-1562-47f0-af07-a9b10e55d84d
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../Resources/Rope/txtr.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-    PremultiplyAlpha: false

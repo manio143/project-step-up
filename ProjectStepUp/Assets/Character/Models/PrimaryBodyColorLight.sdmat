@@ -8,11 +8,13 @@ Attributes:
             Value: {R: 0.37382814, G: 0.90625, B: 0.90625, A: 1.0}
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Specular: !MaterialSpecularMapFeature
+        Enabled: false
         SpecularMap: !ComputeColor
             Value: {R: 0.48717478, G: 0.48717478, B: 0.48717478, A: 1.0}
         Intensity: !ComputeFloat
             Value: 1.0
     SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Enabled: false
         Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
         Visibility: !MaterialSpecularMicrofacetVisibilityImplicit {}
         NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionBlinnPhong {}
