@@ -1,0 +1,23 @@
+!Model
+Id: 36cba3d3-cccb-43e9-a9ba-96b6dec9cf35
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/RobotCharacter/Robot.fbx
+Skeleton: c0f7946b-4c8a-479f-99d6-3599d8f56df1:Character/Models/Robot Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    ff7932e849c5dd77bdabc4d67fb2de14:
+        Name: Junctions
+        MaterialInstance:
+            Material: 663872e5-3054-41b3-b323-a9499e535eab:Character/Models/Junctions
+    59ac132136e0b669eeb70a50678ca468:
+        Name: Metal
+        MaterialInstance:
+            Material: 4a0ffd19-615d-4eaf-b68e-ed2cf6b73f82:Character/Models/Metal
+    48e30c191d469943127b253c3ea7865e:
+        Name: GlassEye
+        MaterialInstance:
+            Material: 8387fbce-4cbe-4819-8d8d-de512e6d9bfb:Character/Models/GlassEye
+Modifiers: {}
+~SourceHashes:
+    04fca701133b41fefc1d54ab6746f459~../../../Resources/RobotCharacter/Robot.fbx: 13e494f007d96a8615fae514b7592e37

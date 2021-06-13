@@ -1,0 +1,19 @@
+!Animation
+Id: c8d8cfde-ec2b-4fe3-8772-95c88d0b716a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/RobotCharacter/Robot_Run.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:00:02.5000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: c0f7946b-4c8a-479f-99d6-3599d8f56df1:Character/Models/Robot Skeleton
+RootMotion: false
+PreviewModel: 36cba3d3-cccb-43e9-a9ba-96b6dec9cf35:Character/Models/Robot
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:02.4999900
+~SourceHashes:
+    ae6ba8a2788a4025cf4f8cfdb4fce021~../../../Resources/RobotCharacter/Robot_Run.fbx: 33d797e11153323a7fe7aaf3b0c9e605

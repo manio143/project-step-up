@@ -1,0 +1,31 @@
+!Skeleton
+Id: c0f7946b-4c8a-479f-99d6-3599d8f56df1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/RobotCharacter/Robot.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    19b9498a0b42e39ab70abb3cb8bb6b39: {Name: RootNode, Depth: 0}
+    40bc346f2d990965543212af5f83644f: {Name: Robot, Depth: 1}
+    fdab5309429ae4e6565bc1cc19c5e33c: {Name: Armature, Depth: 1}
+    0a428a2c00305b8d8a6d923d69f8d171: {Name: Torso, Depth: 2}
+    693cfea3a1a48e4771b01f44eb409057: {Name: Neck, Depth: 3}
+    8eb164891cae7531b587b32592afe3a9: {Name: Head, Depth: 4}
+    eda4ed8f3e10cb2321412e89f58673e9: {Name: Head_end, Depth: 5}
+    e90695c1dfce6c6d0b041a1d44829f34: {Name: Arm.R, Depth: 3}
+    7e86dfa489929724e790c354f02e7ecc: {Name: ForeArm.R, Depth: 4}
+    e1d7c0158452a947c72b5f3828e4f902: {Name: ForeArm.R_end, Depth: 5}
+    385725e42a59f715d47dfe53e16eaad2: {Name: Arm.L, Depth: 3}
+    d797784c6115401efea202e2dd626b68: {Name: ForeArm.L, Depth: 4}
+    6ff2fb6516c0c35bdda7ef9e1448c887: {Name: ForeArm.L_end, Depth: 5}
+    2ae12e99b9bf79e2e747c63ee23b1d26: {Name: Pelvis, Depth: 3}
+    772fb8e26676d5214be3ed7c67ca8408: {Name: Leg.R, Depth: 4}
+    77ff573eefa90a9be23e25cc75a059c3: {Name: Tibia.R, Depth: 5}
+    3f5c7d9aa199068fec7bbba327ea5b90: {Name: Foot.R, Depth: 6}
+    40b58905a3545d657414a5a7677b370d: {Name: Foot.R_end, Depth: 7}
+    da50d934186d96614d142300005de00d: {Name: Leg.L, Depth: 4}
+    1fb391abdc5b8e4452701cb64087056d: {Name: Tibia.L, Depth: 5}
+    03c5e87ca32e2e26836024f3a454ad6f: {Name: Foot.L, Depth: 6}
+    ec1f6eea73c2b92300d548ed3e4bd97e: {Name: Foot.L_end, Depth: 7}
+~SourceHashes:
+    8fb9821217fb74c711f968c52dabd46a~../../../Resources/RobotCharacter/Robot.fbx: 13e494f007d96a8615fae514b7592e37
