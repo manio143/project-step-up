@@ -38,6 +38,9 @@ Hierarchy:
                             2fbf87ba44a55a59e5f829ef94ee2666:
                                 Name: Pentenciary
                                 Entities: babb95a9-268a-4f43-9975-c8ae958451de:Levels/DemoLevel4
+                            44f3084bc0313f0c51b5f41452b3c1b0:
+                                Name: No Escape!
+                                Entities: bb90be0d-6179-4c08-b0e0-817e54187df4:Levels/DemoLevel5
                         LevelMusic: e1fa219d-f4ba-4948-aa89-c4605a54b6ca:Sounds/levels_loop
         -   Entity:
                 Id: a6497db5-7310-4f74-ae3b-9222bacc0e11

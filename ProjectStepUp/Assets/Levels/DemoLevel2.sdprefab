@@ -247,7 +247,7 @@ Hierarchy:
                                     Updaters: {}
                     6f03223a8da56c22189f6c7fff037f98: !TransformComponent
                         Id: 32b450b6-fded-4d42-9d02-a54c3032b05f
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 0.0, Y: -0.3, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -503,7 +503,7 @@ Hierarchy:
                                     Updaters: {}
                     6f03223a8da56c22189f6c7fff037f98: !TransformComponent
                         Id: 811c1eac-5ef2-4520-82fe-5206f803c0b4
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 0.0, Y: -0.3, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
