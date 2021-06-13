@@ -1,0 +1,45 @@
+!PrefabAsset
+Id: 125cf3f8-fb3a-4768-9244-488df70c8f07
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! a094e926-b825-49ef-add1-354e6791efdc
+    Parts:
+        -   Entity:
+                Id: a094e926-b825-49ef-add1-354e6791efdc
+                Name: NextLevelTrigger
+                Components:
+                    35e9e9771e562892e60b574588e88c85: !TransformComponent
+                        Id: 438250ac-f065-4e67-bf03-651e54998c61
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ae576f44a842f3f538c7fdbfee2d2f39: !RigidbodyComponent
+                        Id: ee8d700c-61f3-4514-9366-fa136859a2b3
+                        CollisionGroup: SensorTrigger
+                        CanCollideWith: CharacterFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            3de8d99829ac8e0fe56107bfa2dfb2db: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    624c364be40c1dc877e592720b53d51a: !ProjectStepUp.NextLevelTrigger,ProjectStepUp
+                        Id: 7b609dc3-35d2-48b0-b0aa-989e780b118f
+                        NextLevelIndex: 0
