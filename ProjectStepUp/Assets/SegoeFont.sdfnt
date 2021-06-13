@@ -1,0 +1,13 @@
+!SpriteFont
+Id: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !SystemFontProvider
+    FontName: Segoe UI
+    Style: Regular
+FontType: !SignedDistanceFieldSpriteFontType
+    CharacterSet: null
+    CharacterRegions:
+        2190718de23942b1b8d0da4ed8f0ae1e:
+            Start: ' '
+            End: "\x7F"

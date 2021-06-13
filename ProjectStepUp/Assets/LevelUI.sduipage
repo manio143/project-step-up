@@ -39,7 +39,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: HeavyTextEnergy
                 Text: 100
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:SegoeFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !StackPanel
@@ -65,7 +65,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Text: Menu
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:SegoeFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !Button
@@ -100,7 +100,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: EnergyLabel
                 Text: Energy
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:SegoeFont
                 TextSize: 35.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
@@ -116,7 +116,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: LevelName
                 Text: Level Name
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:SegoeFont
                 TextSize: 40.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !StackPanel
@@ -146,7 +146,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: LightSlider
-                Value: 50.0
+                Value: 1.0
                 Maximum: 100.0
                 Step: 1.0
                 TrackBackgroundImage: !SpriteFromTexture
@@ -177,7 +177,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Name: HeavySlider
-                Value: 100.0
+                Value: 1.0
                 Maximum: 100.0
                 Step: 1.0
                 TrackBackgroundImage: !SpriteFromTexture
@@ -228,7 +228,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: 
                 Text: Retry
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:SegoeFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !TextBlock
@@ -242,7 +242,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: LightTextEnergy
                 Text: 100
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:SegoeFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !ModalElement
@@ -269,6 +269,6 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Text: You ran out of energy!
-                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                Font: 4c149b21-3da6-4bd9-b4aa-bc609020d3d8:SegoeFont
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
