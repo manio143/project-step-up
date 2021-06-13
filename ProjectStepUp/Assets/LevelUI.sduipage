@@ -1,0 +1,152 @@
+!UIPageAsset
+Id: 473e6b65-ca32-4376-bd43-a498a28e2a5f
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! 8a57a256-82f6-4966-92ef-4306a1038962
+    Parts:
+        -   UIElement: !TextBlock
+                Id: 07f02994-7d6a-4229-9cbc-7ce35acaf4e1
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                VerticalAlignment: Top
+                Margin: {Left: 18.0, Top: 185.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: HeavyTextEnergy
+                Text: 100
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 42297f63-8c83-4cd8-8824-40b7acf51bfe
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 95.0, Top: 80.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: EnergyLabel
+                Text: Energy
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 35.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !TextBlock
+                Id: 64319442-d5c4-40d6-b98e-901c4db164db
+                DependencyProperties:
+                    1099fc631e87947c6e955b30597ea8a7~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Top
+                Margin: {Top: 40.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: LevelName
+                Text: Level Name
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 40.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Slider
+                Id: 6e250271-7319-4193-8593-4730eac2283c
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Opacity: 0.8
+                DrawLayerNumber: 5
+                IsEnabled: false
+                CanBeHitByUser: false
+                VerticalAlignment: Top
+                Margin: {Left: 10.0, Top: 130.0, Right: 125.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: LightSlider
+                Value: 50.0
+                Maximum: 100.0
+                Step: 1.0
+                TrackBackgroundImage: !SpriteFromTexture
+                    Texture: 654f5b4b-6649-47ca-a185-9f5975d92c8a:UI/energy_slider_bg_light
+                    Center: {X: 0.0, Y: 0.0}
+                TrackStartingOffsets: {X: 3.0, Y: 3.0}
+                ThumbImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 7
+                MouseOverThumbImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 6
+                TickImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 8
+                TickOffset: 13.0
+        -   UIElement: !Slider
+                Id: 7587c48e-aef2-41ae-ae24-49a1773fc678
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Opacity: 0.8
+                DrawLayerNumber: 5
+                IsEnabled: false
+                CanBeHitByUser: false
+                VerticalAlignment: Top
+                Margin: {Left: 10.0, Top: 180.0, Right: 125.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: HeavySlider
+                Value: 100.0
+                Maximum: 100.0
+                Step: 1.0
+                TrackBackgroundImage: !SpriteFromTexture
+                    Texture: d9d3f181-2a7c-42ed-8f3d-667b0765c3c7:UI/energy_slider_bg_heavy
+                    Center: {X: 0.0, Y: 0.0}
+                TrackStartingOffsets: {X: 3.0, Y: 3.0}
+                ThumbImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 7
+                MouseOverThumbImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 6
+                TickImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 8
+                TickOffset: 13.0
+        -   UIElement: !Grid
+                Id: 8a57a256-82f6-4966-92ef-4306a1038962
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    6486dc9b7a9e2010f6fb96075cbc8bbb: !TextBlock ref!! 42297f63-8c83-4cd8-8824-40b7acf51bfe
+                    6108ba034e28d31bdf03ebfbc80f2ff8: !Slider ref!! 6e250271-7319-4193-8593-4730eac2283c
+                    63faaf940890c8a9bdf400ba6bf68d08: !Slider ref!! 7587c48e-aef2-41ae-ae24-49a1773fc678
+                    45b0a5c421b3f2f4bb6e02f54f3e5dd0: !TextBlock ref!! c080c0ad-ba28-412d-bf53-916d1f2be42d
+                    13fd72b8f70283eb65af4c3d3758d071: !TextBlock ref!! 07f02994-7d6a-4229-9cbc-7ce35acaf4e1
+                    353cd6cec17781fe7fbd83b09d1d131b: !TextBlock ref!! 64319442-d5c4-40d6-b98e-901c4db164db
+                RowDefinitions: {}
+                ColumnDefinitions:
+                    2c474a7a44d29e8627b67415ab611994: {}
+                    ab89b27bb63876635bd24fc048c4b159: {}
+                    4568c3fc68534dafef9dfe5cf75f61f6: {}
+                LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: c080c0ad-ba28-412d-bf53-916d1f2be42d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                VerticalAlignment: Top
+                Margin: {Left: 18.0, Top: 135.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: LightTextEnergy
+                Text: 100
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}

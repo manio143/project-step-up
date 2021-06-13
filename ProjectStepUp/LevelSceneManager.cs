@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using ProjectStepUp.Character;
+using ProjectStepUp.UI;
 using Stride.Core;
 using Stride.Engine;
 using Stride.Engine.Events;
@@ -21,6 +22,8 @@ namespace ProjectStepUp
         private Entity heavyCharacter;
         private Entity lightCharacter;
 
+        private LevelUIUpdater levelUIUpdater;
+
         public Prefab GlobalEntities { get; set; }
 
         public List<Level> Levels { get; set; } = new();
@@ -31,6 +34,7 @@ namespace ProjectStepUp
 
             heavyCharacter = globalEntities.First(e => e.Get<CharacterController>()?.Energy.Type == EnergyType.Heavy);
             lightCharacter = globalEntities.First(e => e.Get<CharacterController>()?.Energy.Type == EnergyType.Light);
+            levelUIUpdater = globalEntities.First(e => e.Get<LevelUIUpdater>() is not null).Get<LevelUIUpdater>();
 
             Entity.Scene.Entities.AddRange(globalEntities);
 
@@ -53,6 +57,8 @@ namespace ProjectStepUp
                     newLevelEntity.AddChild(entity);
                 }
 
+                Entity.Scene.Entities.Add(newLevelEntity);
+
                 if (currentLevel is not null)
                 {
                     // TODO: peform the transition, such that at the end new level is at 0,0,0
@@ -62,7 +68,8 @@ namespace ProjectStepUp
 
                 currentLevel = newLevel;
                 currentLevelParent = newLevelEntity;
-                Entity.Scene.Entities.Add(newLevelEntity);
+
+                levelUIUpdater.SetLevelName(newLevel.Name);
 
                 var heavyStartingPoint = currentLevelParent.GetChildren()
                     .First(e => e.Get<CharacterPlaceholder>()?.Type == EnergyType.Heavy)

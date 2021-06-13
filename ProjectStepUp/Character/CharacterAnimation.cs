@@ -23,20 +23,20 @@ namespace ProjectStepUp.Character
 
             if (direction != CharacterMovementDirection.None && state != CharacterMovementState.StandBy)
             {
-                Animation.Entity.Transform.Rotation = Quaternion.RotationY(MathUtil.PiOverTwo * (direction == CharacterMovementDirection.Right ? 1 : -1));
+                Animation.Entity.Transform.Rotation = Quaternion.RotationY(-MathUtil.PiOverTwo + (MathUtil.PiOverTwo - 0.25f)* (direction == CharacterMovementDirection.Right ? 1 : -1));
             }
 
             if (state == CharacterMovementState.StandBy)
             {
-                Animation.Crossfade("Idle", AnimationCrossfadeTime);
+                Animation.Crossfade("Idle", AnimationCrossfadeTime / 2);
             }
             else if (state == CharacterMovementState.Walking)
             {
-                Animation.Crossfade("Run", AnimationCrossfadeTime);
+                Animation.Crossfade("Run", AnimationCrossfadeTime / 2);
             }
             else if (state == CharacterMovementState.Jumping)
             {
-                Animation.Crossfade("Jump", AnimationCrossfadeTime);
+                Animation.Crossfade("Jump", AnimationCrossfadeTime / 2);
             }
         }
         /*

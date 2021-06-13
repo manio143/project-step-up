@@ -19,6 +19,7 @@ Hierarchy:
         - ref!! bd6a7452-ad96-4993-8cd7-b932b37ae72d
         - ref!! 4b082b19-a82c-43ab-99b5-8efecc92188c
         - ref!! 19cad3e6-fd75-4203-9bb5-b06a34da0eb4
+        - ref!! d53bef62-bde2-4f79-9150-0ee51c72c99b
         - ref!! ac3c8768-5918-4e22-acc2-7d599cf5daad
         - ref!! 3f1fe984-e738-4766-8983-305f888d3f24
         - ref!! 1527201c-3799-4b79-ad3e-c6de2ca337f3
@@ -845,21 +846,21 @@ Hierarchy:
                     26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
                         Id: 651e4925-f7dd-44ce-8525-b227bf64b041
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 0.8, Y: 0.8, Z: 0.8}
                         Children: {}
                     3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
                         Id: 7e0981bd-e44c-421c-8c98-2d6bf6ae9230
-                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Model: 36cba3d3-cccb-43e9-a9ba-96b6dec9cf35:Character/Models/Robot
                         Materials:
                             bc64ab8bf77020f29b4d6ddc19c7b054~0: 11f4d8a3-dbd8-4695-bab3-05fca9606707:Character/Models/SecondaryBodyColorLightHeavy
                             27af64117dee46be2c5369d13a68b848~1: 51f99519-8e16-4603-8d44-2ccea1973118:Character/Models/PrimaryBodyColorHeavy
                     b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
                         Id: 3837d34f-cbb1-495a-8dbd-0df6bfc08be9
                         Animations:
-                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
-                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
-                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 4450f4c4-1438-4f0d-bce1-e94e22be202e:Character/Animations/Robot_Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 3df77ea9-8c16-4218-b406-777e196de6e1:Character/Animations/Robot_Jump
+                            1e6de28eb1e49635b6608bce16333852~Run: c8d8cfde-ec2b-4fe3-8772-95c88d0b716a:Character/Animations/Robot_Run
             Base:
                 BasePartAsset: 9a41a8ef-9534-4b92-be0e-011b5313f984:GlobalSceneComponents
                 BasePartId: a2a12142-1c8c-4785-9334-463e8b5e7536
@@ -1098,19 +1099,19 @@ Hierarchy:
                     26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
                         Id: bcd3c0bb-afb1-46c7-af09-1e1ac626f15f
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 0.8, Y: 0.8, Z: 0.8}
                         Children: {}
                     3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
                         Id: 3071689b-f48d-46d6-a835-a183d7667cd1
-                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Model: 36cba3d3-cccb-43e9-a9ba-96b6dec9cf35:Character/Models/Robot
                         Materials: {}
                     b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
                         Id: b5a9651f-4f90-48ad-b465-d25b5bf7ddb3
                         Animations:
-                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
-                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
-                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 4450f4c4-1438-4f0d-bce1-e94e22be202e:Character/Animations/Robot_Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 3df77ea9-8c16-4218-b406-777e196de6e1:Character/Animations/Robot_Jump
+                            1e6de28eb1e49635b6608bce16333852~Run: c8d8cfde-ec2b-4fe3-8772-95c88d0b716a:Character/Animations/Robot_Run
             Base:
                 BasePartAsset: 9a41a8ef-9534-4b92-be0e-011b5313f984:GlobalSceneComponents
                 BasePartId: c99b258a-1566-4c35-b2e2-74cf785c1e4d
@@ -2060,9 +2061,6 @@ Hierarchy:
                     0790ea54083e8e7943930fdde420de53: !ProjectStepUp.MovablePlatformDetectCharacter,ProjectStepUp
                         Id: deed6e12-df23-4d41-8668-a7e1a3f60ebb
                         Priority: 10
-                    35a61752f66ccce9d9b911c3d1f29a02: !ProjectStepUp.DebugPositionPrint,ProjectStepUp
-                        Id: e93cee4f-da47-4832-98f8-a81c3fe2c5ae
-                        PrintLinePosition: 40
             Base:
                 BasePartAsset: fecab50a-783b-43b9-877e-922db080fe02:Levels/DemoLevel3
                 BasePartId: 77b63c47-48d1-47f4-b2ea-4680d3ae01af
@@ -2590,6 +2588,30 @@ Hierarchy:
                 BasePartAsset: 92d431e6-5841-472d-944f-b1daca0fb2e5:Levels/DemoLevel2
                 BasePartId: bb0afa87-8094-4d92-9346-5383b78b8515
                 InstanceId: c5b13711-4534-4604-a503-33c592a77c9e
+        -   Entity:
+                Id: d53bef62-bde2-4f79-9150-0ee51c72c99b
+                Name: UI
+                Components:
+                    0757773099098d07617734cc4158d8f1: !TransformComponent
+                        Id: 5310ae06-9e69-41b7-b32e-b0ff99627192
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b17a6b4772409853c50d057411adf12d: !UIComponent
+                        Id: 12129564-1b67-4418-99c4-bfa5451a545b
+                        Page: 473e6b65-ca32-4376-bd43-a498a28e2a5f:LevelUI
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    d9bfe0983970d18c08050434f451d136: !ProjectStepUp.UI.LevelUIUpdater,ProjectStepUp
+                        Id: f21f8604-ad4f-43b2-8b0c-f101b1ff7704
+                        Priority: 50
+                        LightCharacter: ref!! dea4820a-c710-4d96-83c8-67f1bc295e66
+                        HeavyCharacter: ref!! 4690b522-0d35-4648-9cc3-584658e0b764
+            Base:
+                BasePartAsset: 9a41a8ef-9534-4b92-be0e-011b5313f984:GlobalSceneComponents
+                BasePartId: a1a8d414-bb10-4204-be7a-77163d1433bb
+                InstanceId: a4a7f0bd-b527-4319-8273-7aa18f7b5207
         -   Folder: null
             Entity:
                 Id: d569678f-7b64-47b6-8afe-d23384aff6a3
