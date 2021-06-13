@@ -1,0 +1,120 @@
+!UIPageAsset
+Id: 7913a7d5-7b05-4aec-a46c-cca36cd54b4c
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1000.0, Y: 500.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! 0ee56ed0-7700-4699-a273-b89cf02834d4
+    Parts:
+        -   UIElement: !TextBlock
+                Id: 0150d130-6673-4a09-85a4-7d7c57a4c440
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                Text: Movement
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !Grid
+                Id: 0ee56ed0-7700-4699-a273-b89cf02834d4
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                Children:
+                    3e7781f367a1bbb117c2bf05e07525f2: !TextBlock ref!! 0150d130-6673-4a09-85a4-7d7c57a4c440
+                    6a579c86c784b6257a996d8cb2d14168: !TextBlock ref!! 82ad3665-cdc0-4627-91ae-ee096b565bb9
+                    64f1a1b035496064102f754f04c0530c: !TextBlock ref!! 105d9169-9599-4690-8bcd-e2d13a2c68cf
+                    3bae8e9556eb159985ed36b5d720687d: !TextBlock ref!! 1b83cdbe-a909-4f25-ab4c-c93580e1942a
+                    125f90f1e389564956f8e764bd748c29: !TextBlock ref!! 7efa685c-f1b7-4d36-93ee-7cc7df7184bf
+                    3f5cde5134b84e0397e502385b3d74bb: !TextBlock ref!! 9efa5fe1-ca68-432f-b509-2a0c234d38b2
+                    96534a0c561212c70095ee478f03775b: !TextBlock ref!! 65f488b2-8c81-4813-b299-0b270b7a5ca2
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: 105d9169-9599-4690-8bcd-e2d13a2c68cf
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Top: 100.0, Right: 300.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: RightL
+                Text: D
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: 1b83cdbe-a909-4f25-ab4c-c93580e1942a
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Top: 60.0, Right: 400.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: TopL
+                Text: W
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: 65f488b2-8c81-4813-b299-0b270b7a5ca2
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Left: 450.0, Top: 60.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: TopH
+                Text: up
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: 7efa685c-f1b7-4d36-93ee-7cc7df7184bf
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Left: 300.0, Top: 100.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: LeftH
+                Text: left
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: 82ad3665-cdc0-4627-91ae-ee096b565bb9
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Top: 100.0, Right: 500.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: LeftL
+                Text: A
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: 9efa5fe1-ca68-432f-b509-2a0c234d38b2
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {Left: 600.0, Top: 100.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: RightH
+                Text: right
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 28.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center

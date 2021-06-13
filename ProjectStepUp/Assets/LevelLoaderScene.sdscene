@@ -23,6 +23,9 @@ Hierarchy:
                         Id: 4aeb23c3-6fdf-43df-8319-5c207e6b5201
                         GlobalEntities: 9a41a8ef-9534-4b92-be0e-011b5313f984:GlobalSceneComponents
                         Levels:
+                            3fc76a8b8e1f895cdbe545a03eeda3bd:
+                                Name: Your first steps
+                                Entities: 3474abe1-fe1f-47ed-854f-232627768407:Levels/DemoLevel0
                             4aaa63b1433f68b4a76db98e20b7252c:
                                 Name: Jump!
                                 Entities: b024ac66-1312-477a-98d5-baf175189724:Levels/DemoLevel1

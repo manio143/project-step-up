@@ -212,7 +212,7 @@ Hierarchy:
                                             DisplayParticleRotation: false
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
-                                            RandomSize: {X: 0.01, Y: 0.05}
+                                            RandomSize: {X: 0.02, Y: 0.05}
                                         60f104f2e233f74db11694c75710fd52: !InitialVelocitySeed
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -247,7 +247,7 @@ Hierarchy:
                                             FixedLength: 0
                                             PositionMin: {X: -0.3, Y: -0.3, Z: -0.3}
                                             PositionMax: {X: 0.3, Y: 0.3, Z: 0.3}
-                                            SeedOffset: 0
+                                            SeedOffset: 42
                                         98629572a706f14d9325d057ca87c38f: !InitialSpawnOrder
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
