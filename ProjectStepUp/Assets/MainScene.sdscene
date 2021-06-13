@@ -109,6 +109,7 @@ Hierarchy:
                 Components:
                     8b484f62caf94e583c13e8c4bc3f9f4c: !ProjectStepUp.Input.InputManager,ProjectStepUp
                         Id: b78be214-ac3f-4152-af3a-763a2ce2049a
+                        Enabled: true
                         LightCharacter: ref!! ec89728d-79e8-4b45-83d5-de3b679044be
                         HeavyCharacter: ref!! 176ccad6-4fe6-4740-ab94-09a2af27cc06
                         InputConfiguration:

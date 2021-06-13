@@ -7,6 +7,8 @@ namespace ProjectStepUp.Input
 {
     public class InputManager : SyncScript
     {
+        public bool Enabled { get; set; } = true;
+
         public CharacterController LightCharacter { get; set; }
         public CharacterController HeavyCharacter { get; set; }
 
@@ -14,6 +16,8 @@ namespace ProjectStepUp.Input
 
         public override void Update()
         {
+            if (!Enabled) return;
+
             if(Input.IsKeyDown(InputConfiguration[InputAction.HeavyCharacterRight]))
                 HeavyCharacter.Move(CharacterMovementDirection.Right);
             else if (Input.IsKeyDown(InputConfiguration[InputAction.HeavyCharacterLeft]))

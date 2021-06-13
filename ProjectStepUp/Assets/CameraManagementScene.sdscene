@@ -494,6 +494,7 @@ Hierarchy:
                         Children: {}
                     aa1e1469c371d3612cdec3895b26db12: !ProjectStepUp.Input.InputManager,ProjectStepUp
                         Id: f515d725-d7b0-44c1-b42b-6a720e446963
+                        Enabled: true
                         LightCharacter: ref!! cc497c92-5a15-4007-9686-31649df131f1
                         HeavyCharacter: ref!! f8059c04-6e9b-43a2-8a31-4068043a56f1
                         InputConfiguration:

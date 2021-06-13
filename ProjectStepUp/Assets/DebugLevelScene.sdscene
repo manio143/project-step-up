@@ -2603,6 +2603,7 @@ Hierarchy:
                         Page: 473e6b65-ca32-4376-bd43-a498a28e2a5f:LevelUI
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                        RenderGroup: Group31
                     d9bfe0983970d18c08050434f451d136: !ProjectStepUp.UI.LevelUIUpdater,ProjectStepUp
                         Id: f21f8604-ad4f-43b2-8b0c-f101b1ff7704
                         Priority: 50
@@ -2831,6 +2832,7 @@ Hierarchy:
                         Children: {}
                     00ce0f69ea1cf5d61a4e48199e6527cc: !ProjectStepUp.Input.InputManager,ProjectStepUp
                         Id: 773203b2-3505-4043-aafe-a6abe14e65ba
+                        Enabled: true
                         LightCharacter: ref!! dea4820a-c710-4d96-83c8-67f1bc295e66
                         HeavyCharacter: ref!! 4690b522-0d35-4648-9cc3-584658e0b764
                         InputConfiguration:
