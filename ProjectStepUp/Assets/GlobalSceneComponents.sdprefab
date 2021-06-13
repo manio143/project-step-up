@@ -105,7 +105,7 @@ Hierarchy:
                     8a15cf924895f5c984f927ab04afd3ad: !TransformComponent
                         Id: 92c536cb-bee2-4e1a-b738-18a2b6ffe6d7
                         Position: {X: 0.0, Y: 2.0, Z: 0.0}
-                        Rotation: {X: -0.25881904, Y: 0.0, Z: 0.0, W: 0.9659258}
+                        Rotation: {X: -0.25488698, Y: -0.16773126, Z: -0.044943456, W: 0.9512512}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     29b2ccb4d769dd6940d7470f5c12daa1: !LightComponent
@@ -122,7 +122,7 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
                                 BiasParameters: {}
-                        Intensity: 20.0
+                        Intensity: 5.0
         -   Entity:
                 Id: 4531392c-b368-421a-ba48-632ac4490aa0
                 Name: EnergyLinkMonitor

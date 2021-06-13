@@ -5,6 +5,7 @@ Tags: []
 Hierarchy:
     RootParts:
         - ref!! 3f1ddd9e-43fd-4bbc-96ad-3af62c1d04e4
+        - ref!! 3ad89b3b-0117-4894-88d8-4232c9cdeb3d
         - ref!! 364785d4-c31a-47d7-944a-498877ce7a5e
         - ref!! 966d121b-9a3e-4b17-99d1-ec9a068122b5
         - ref!! c49e6d4c-ec0b-40ac-b42a-dcec15444199
@@ -13,9 +14,10 @@ Hierarchy:
         - ref!! d0d3f2c9-98f6-4ade-8f17-ddf8ff9f4f60
         - ref!! fd915946-3fb6-4eff-b38d-ced2a1c8028d
         - ref!! 594b46c6-1f5e-4950-afa2-cf62fc5d192a
-        - ref!! 49618ffd-1be2-48e5-ae3a-fca7e97cc2eb
         - ref!! 6ffee9d3-2bcc-463d-ab08-f2fe2ffaf417
-        - ref!! 16d23ebc-af9d-400d-90c3-afb7b3887144
+        - ref!! 1e883dd0-a39c-47e8-875a-6d1badae73d2
+        - ref!! 50d2590f-cdb7-445e-8474-c5650d36e65f
+        - ref!! ececff68-80f9-44bd-932a-ce6402da2a74
         - ref!! 64f22748-9b43-4ca7-aac2-4136104aefff
         - ref!! 38a62234-2f9d-49b0-b85f-f0a118b3b83f
     Parts:
@@ -93,16 +95,91 @@ Hierarchy:
                 InstanceId: 51cc9af3-3d54-4455-a067-d931c9f636be
         -   Folder: null
             Entity:
-                Id: 16d23ebc-af9d-400d-90c3-afb7b3887144
+                Id: 1d42d14b-9b9f-4a06-b7ba-915ec30e1828
+                Name: Platform1x2
+                Components:
+                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
+                        Id: c8b9f2de-1abd-43ba-b78b-814c933f58bc
+                        Position*: {X: 5.78801, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
+                        Id: 9520b00b-5a32-4538-a357-267962c3c906
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
+                        Id: fc99a2e6-c3c8-49a5-bb7a-b81c56cbc525
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
+                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
+                InstanceId: 3c9b025d-ac69-4fcf-a86f-61276e09a315
+        -   Folder: null
+            Entity:
+                Id: 1e883dd0-a39c-47e8-875a-6d1badae73d2
                 Name: Wall
                 Components:
                     a74e4243799f7b6602e41f453a11c6cf: !TransformComponent
-                        Id: 3743d62f-bfb4-4082-ae0c-20b19f4aa156
-                        Position: {X: 6.0, Y: 2.5, Z: 0.0}
+                        Id: ba7134d0-e063-423b-ac7b-7b2c76f01e92
+                        Position: {X: -9.765591, Y: 2.5, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.5, Z: 3.0}
+                        Children:
+                            3001e8d3b8c512717c4aebd928c5ac8e: ref!! 2c637846-3699-4b65-9303-7df8cd204056
+                            c7434b5720ed6fdd3df6ad6d37bbb3a6: ref!! b1438919-1013-4c31-9967-5a7e5e3fd47b
+                            0ac7101eb02c9814fbe3b45f4a08d634: ref!! 969a4e5d-538d-4c05-bba0-e8680194bffa
+                            2b669759fce3fd9b3cf769c255044922: ref!! 95b672c8-7948-4107-affa-1101b103052d
+                            1509942e25f08a8fb61c300220e1f3c6: ref!! fccf0343-e767-4ca0-bde1-70965ecdb005
+                            c61c09a473c9ff4f46f28891fd035493: ref!! 64593405-18dd-413f-b9f1-dd12306f304a
+        -   Folder: null
+            Entity:
+                Id: 21044d7e-3d89-4449-a2b7-5c285a9e2764
+                Name: Platform1x2
+                Components:
+                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
+                        Id: 6d77cc20-2f8f-4aac-ab1c-817bf3b73c57
+                        Position*: {X: 5.78801, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            3001e8d3b8c512717c4aebd928c5ac8e: ref!! 1e28397d-65e0-4610-80b1-beee61ed6ead
+                        Children: {}
+                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
+                        Id: b4d6bd94-215e-433c-971e-894d7d80fe81
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
+                        Id: 94c482f2-2a5b-4bc7-ab56-ac75c347a454
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
+                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
+                InstanceId: 85b7792d-c5dd-4f27-a6c4-0cfab7257c51
         -   Entity:
                 Id: 2512ac26-c5d9-43e1-8ff8-b44b4c9255cc
                 Name: Platform1x2
@@ -137,6 +214,41 @@ Hierarchy:
                 BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
                 BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
                 InstanceId: 388ae932-1e97-4820-b129-8515e56d9ec3
+        -   Folder: null
+            Entity:
+                Id: 2af3146b-5c64-4583-a498-2a4cceffa89b
+                Name: Platform1x2
+                Components:
+                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
+                        Id: 7b03cbcc-85a0-4344-a866-f3316d5fb2dc
+                        Position*: {X: 4.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
+                        Id: 900e7b88-6746-4d2e-9026-c8872f0d8aef
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
+                        Id: 3844c49d-8319-41a5-979c-84526834b56f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
+                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
+                InstanceId: 3a230cb1-f4e3-4659-ac9d-513ce13b9ae1
         -   Entity:
                 Id: 364785d4-c31a-47d7-944a-498877ce7a5e
                 Name: LowerDoor
@@ -194,6 +306,22 @@ Hierarchy:
                 BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
                 BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
                 InstanceId: 9307d1e4-a74c-4153-9dc0-4e45b40fcac1
+        -   Folder: null
+            Entity:
+                Id: 3ad89b3b-0117-4894-88d8-4232c9cdeb3d
+                Name: PlatformPrefab2x1
+                Components:
+                    d1b0d424872b20343c80149d95c5dae3: !TransformComponent
+                        Id: 1f2c9ca5-3000-4013-8aa1-1f8b7e3eaaa1
+                        Position: {X: -0.8931923, Y: 5.9009438, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            3dcdab16358abfe3277030204b8e2e26: ref!! b4475c12-42ff-4b7d-adcc-721d10f42302
+                            64a064c6e6ceffd3c83a2fb9fe011223: ref!! 2be40006-7825-41a8-8745-ec6f3f27a222
+                            22a48c8a0b3ca66d1647062c8d1f2874: ref!! 7b03cbcc-85a0-4344-a866-f3316d5fb2dc
+                            47e55370e2d7f629ff2783fd956680f3: ref!! c8b9f2de-1abd-43ba-b78b-814c933f58bc
+                            758d1f79333268d3931e32bfcc7d43c0: ref!! d90d9d68-5e96-4a82-b68e-166a71cd7d8a
         -   Entity:
                 Id: 3f1ddd9e-43fd-4bbc-96ad-3af62c1d04e4
                 Name: PlatformPrefab2x1
@@ -207,7 +335,7 @@ Hierarchy:
                             3dcdab16358abfe3277030204b8e2e26: ref!! de082813-3aa9-4cef-b20e-de2f785787dc
                             64a064c6e6ceffd3c83a2fb9fe011223: ref!! 670f18b8-63e6-4ad8-8fea-5224e90b40ae
                             22a48c8a0b3ca66d1647062c8d1f2874: ref!! 33ca8170-6018-4624-aac6-99a575067882
-                            3934387274ab4238bc4be267dc47e424: ref!! bf4335a0-7079-47ce-9708-bc719557b859
+                            47e55370e2d7f629ff2783fd956680f3: ref!! 6d77cc20-2f8f-4aac-ab1c-817bf3b73c57
                             758d1f79333268d3931e32bfcc7d43c0: ref!! 029d214d-b34d-4912-acf2-4c5fe4d6fd69
                             b140cf8e6b754db6056fea0724ce9ac0: ref!! c76544c6-06dc-404b-bbb9-e60f11bcd281
         -   Folder: null
@@ -224,18 +352,6 @@ Hierarchy:
                     570fff5e579e3f0600e19a7908b3feeb: !ProjectStepUp.Character.CharacterPlaceholder,ProjectStepUp
                         Id: 0eb03124-9f9c-46b8-b603-0e0a029ae359
                         Type: Heavy
-        -   Folder: null
-            Entity:
-                Id: 49618ffd-1be2-48e5-ae3a-fca7e97cc2eb
-                Name: Wall
-                Components:
-                    a74e4243799f7b6602e41f453a11c6cf: !TransformComponent
-                        Id: 3b4779e2-6ee3-404f-a939-9ffd4b0aa761
-                        Position: {X: 6.0, Y: 0.5, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            3001e8d3b8c512717c4aebd928c5ac8e: ref!! 5bb51272-7f1b-447f-83f0-46d97417c198
         -   Folder: null
             Entity:
                 Id: 4a525e38-8ff5-4c32-9c44-69bd664724cc
@@ -292,7 +408,7 @@ Hierarchy:
                                             DisplayParticleRotation: false
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
-                                            RandomSize: {X: 0.02, Y: 0.05}
+                                            RandomSize: {X: 0.01, Y: 0.05}
                                         60f104f2e233f74db11694c75710fd52: !InitialVelocitySeed
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -327,7 +443,7 @@ Hierarchy:
                                             FixedLength: 0
                                             PositionMin: {X: -0.3, Y: -0.3, Z: -0.3}
                                             PositionMax: {X: 0.3, Y: 0.3, Z: 0.3}
-                                            SeedOffset: 42
+                                            SeedOffset: 0
                                         98629572a706f14d9325d057ca87c38f: !InitialSpawnOrder
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -353,21 +469,37 @@ Hierarchy:
                 InstanceId: e350fa64-5086-4e39-86e5-0eed85711425
         -   Folder: null
             Entity:
-                Id: 55eb0933-7aa6-4048-a177-852fd62015a0
-                Name: Platform1x2
+                Id: 50d2590f-cdb7-445e-8474-c5650d36e65f
+                Name: Wall
                 Components:
-                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
-                        Id: bf4335a0-7079-47ce-9708-bc719557b859
-                        Position*: {X: 6.0, Y: 0.0, Z: 0.0}
+                    a74e4243799f7b6602e41f453a11c6cf: !TransformComponent
+                        Id: 239ac6d0-392c-4fb2-b50e-f07b5b17a5b4
+                        Position: {X: 6.900118, Y: 2.5, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.5, Z: 3.0}
+                        Children:
+                            3001e8d3b8c512717c4aebd928c5ac8e: ref!! 31ac487c-e95d-46a6-9334-3c6258f0b296
+                            c7434b5720ed6fdd3df6ad6d37bbb3a6: ref!! 97b9b14c-eec5-4fb4-9501-733fe9700bbf
+                            0ac7101eb02c9814fbe3b45f4a08d634: ref!! 56acd382-78d5-4faf-8c27-05e9ed66ed0d
+                            2b669759fce3fd9b3cf769c255044922: ref!! 9ef3fc4c-4ccc-46fa-be2c-69c45ae008df
+                            1509942e25f08a8fb61c300220e1f3c6: ref!! 6b4f8741-ab06-4553-8fe7-d442902ce505
+                            c61c09a473c9ff4f46f28891fd035493: ref!! 20b92539-10b6-4b4f-a36f-b8f22e6b5c3d
+        -   Entity:
+                Id: 57c58594-57f4-4acb-bc18-5d6eb74a6ef4
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 2c637846-3699-4b65-9303-7df8cd204056
+                        Position*: {X: -4.286181E-08, Y: -1.511361, Z: -0.2397006}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
-                        Id: 52d06bd8-584d-4d10-a534-7b69374af952
-                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 7849a340-8030-4e32-a710-261b87497722
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
                         Materials: {}
-                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
-                        Id: 03949696-5d7b-42f1-a61d-1c3a80716e1e
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: f4eb4333-d580-4b11-acd9-0e7937807f13
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -377,15 +509,15 @@ Hierarchy:
                         IsTrigger: false
                         AlwaysUpdateNaviMeshCache: false
                         ColliderShapes:
-                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
-                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
-                InstanceId: 999149e8-118d-4b32-9079-be14c9de7617
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: 08cef29b-8f65-469e-9a4f-1e50d7deeffa
         -   Entity:
                 Id: 594b46c6-1f5e-4950-afa2-cf62fc5d192a
                 Name: Wall
@@ -397,6 +529,216 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             3001e8d3b8c512717c4aebd928c5ac8e: ref!! fcde7a2e-ef8e-4565-8354-2ab26831469a
+        -   Folder: null
+            Entity:
+                Id: 5b2e0a3c-d7ad-41f4-9281-984ccde84596
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: fccf0343-e767-4ca0-bde1-70965ecdb005
+                        Position*: {X: 1.3289437E-07, Y: -1.511361, Z: 0.743199}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 8c0cfa4c-5d0b-47fa-97e5-fc61ed95ab52
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 1dfdf73a-bd72-4e98-97c4-ad37871ad2c7
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: d5fe67ad-4193-496e-b1fa-b738cda7dfc4
+        -   Folder: null
+            Entity:
+                Id: 612786c7-b0c9-48c9-a996-77d7f651c98f
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: ad74ced4-0162-42d3-9d2e-aa1667d7fed3
+                        Position*: {X: -4.672943E-08, Y: 0.39826655, Z: -0.2613299}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: de18af55-c404-4822-b4fb-507cbd7a1330
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: fbee0b5d-e1c4-460e-ab18-bbec24574761
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: 9078c20a-adc9-4b82-92c0-8e146e379368
+        -   Folder: null
+            Entity:
+                Id: 61c02ba9-3233-431b-93f7-5b2d69e3f6cc
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 65a8a306-60d5-4152-ad22-9cc168dba106
+                        Position*: {X: 3.0785543E-07, Y: -1.511361, Z: 1.721652}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: ce5935f9-3bfa-4149-8604-ca27a2bf89b5
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: e6ebb022-acde-49bf-a5cd-32c67cb4f291
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: c650c5d7-f6ae-450c-b808-1ee44fa6ec27
+        -   Folder: null
+            Entity:
+                Id: 62a47a88-fb15-4090-87d7-72518bbf745c
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: b1438919-1013-4c31-9967-5a7e5e3fd47b
+                        Position*: {X: -4.672943E-08, Y: 0.39826655, Z: -0.2613299}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 4e8c140a-3a46-46ed-b123-094098bffe64
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: c1f0dc5e-1193-40e2-8bd8-6dd717c32fbd
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: 0ae83a21-8b53-4ff0-83a3-1fc375efb5de
+        -   Folder: null
+            Entity:
+                Id: 62a89bee-57b2-4ba5-a3e0-9ae5d146e422
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 56acd382-78d5-4faf-8c27-05e9ed66ed0d
+                        Position*: {X: 1.272601E-07, Y: 0.39826655, Z: 0.7116899}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: c99e193b-f58e-4bad-936c-812fd1c078dd
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: b501191c-789d-4724-b01c-f834454d866e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: c289afc6-1c26-49ba-b646-456857601fce
+        -   Folder: null
+            Entity:
+                Id: 64a36567-48d9-4e82-beb0-5fa50db81746
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 95b672c8-7948-4107-affa-1101b103052d
+                        Position*: {X: 2.771655E-07, Y: 0.39826655, Z: 1.5500214}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: ccc368f7-cad8-476c-a169-29571dc15fab
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 15a0c538-0ddb-4455-b57e-fcbf31f94aff
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: a3815e5e-ad71-424a-9ce7-c542f75234d2
         -   Folder: null
             Entity:
                 Id: 64f22748-9b43-4ca7-aac2-4136104aefff
@@ -429,11 +771,50 @@ Hierarchy:
                 Components:
                     a74e4243799f7b6602e41f453a11c6cf: !TransformComponent
                         Id: 298e8ec3-4a31-4e08-a630-9703753d4cf1
-                        Position: {X: -3.7552912, Y: 2.5, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Position: {X: -1.6975411, Y: 2.5, Z: -0.8752065}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.5, Z: 3.0}
                         Children:
                             3001e8d3b8c512717c4aebd928c5ac8e: ref!! 326a00cb-e5dd-4aa1-b92f-bd464b065772
+                            c7434b5720ed6fdd3df6ad6d37bbb3a6: ref!! ad74ced4-0162-42d3-9d2e-aa1667d7fed3
+                            0ac7101eb02c9814fbe3b45f4a08d634: ref!! ed110e3a-7357-4570-b7ea-3489ac4aa4dd
+                            2b669759fce3fd9b3cf769c255044922: ref!! 3508022d-e600-4393-b43a-ef03eaa78b78
+                            1509942e25f08a8fb61c300220e1f3c6: ref!! 18cb23ed-5a67-40e8-9da0-7412eec1b0f2
+                            c61c09a473c9ff4f46f28891fd035493: ref!! 65a8a306-60d5-4152-ad22-9cc168dba106
+        -   Entity:
+                Id: 7198ceb4-c044-475f-b3d5-5899bb253a6f
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: f0f67e66-2b3f-4c32-b8a8-496f86a8385f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 9261925f-66a1-4fb1-981b-58ea60eaf6d2
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 84349a7e-018d-437f-a582-eab9911e8af8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: d17004ea-313a-4492-ba8d-af70244fbfb9
         -   Entity:
                 Id: 777e9b3f-7343-48b1-b0f7-6c1a90a4750c
                 Name: Wall
@@ -468,40 +849,6 @@ Hierarchy:
                 BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
                 BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
                 InstanceId: 9205d01e-5121-490f-8fcf-2557b36bfef4
-        -   Entity:
-                Id: 77b14978-1726-4de0-8100-33ae3c16db01
-                Name: Wall
-                Components:
-                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
-                        Id: 5bb51272-7f1b-447f-83f0-46d97417c198
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
-                        Id: cc049ac9-49d6-439c-b008-cf187861d73d
-                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
-                        Materials: {}
-                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
-                        Id: 64f54597-a9f4-440e-b05b-96517e369f91
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        AlwaysUpdateNaviMeshCache: false
-                        ColliderShapes:
-                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-            Base:
-                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
-                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
-                InstanceId: 624eb0f0-4fe1-4f90-9106-45dcd306479e
         -   Folder: null
             Entity:
                 Id: 7d9b9e98-2ad8-4ff2-b26d-dda9ea0b9298
@@ -548,6 +895,110 @@ Hierarchy:
                 BasePartAsset: b760a6d1-bcdf-4f8f-ac55-5afd7173badd:Environment/PressurePlate
                 BasePartId: 1a28eb29-9826-4291-ad57-da6d3bb51dad
                 InstanceId: 4fb5ef27-2742-4190-92f3-ed39a41d92ca
+        -   Folder: null
+            Entity:
+                Id: 7f65e390-1279-40a9-82fd-c8b0dad26497
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 6b4f8741-ab06-4553-8fe7-d442902ce505
+                        Position*: {X: 1.3289437E-07, Y: -1.511361, Z: 0.743199}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: f6a7a9b3-e2b2-4cb1-9376-16da6ea715c0
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 0f76d970-62df-4310-83dd-048abde1f8cc
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: 82647651-12c4-46b8-98ca-9dece5feb209
+        -   Folder: null
+            Entity:
+                Id: 841c7b10-eb78-4073-b2d7-39107c76007a
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 18cb23ed-5a67-40e8-9da0-7412eec1b0f2
+                        Position*: {X: 1.3289437E-07, Y: -1.511361, Z: 0.743199}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 445fd926-438d-4940-8707-520df2883b79
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: fd15429a-34ed-4ec1-bd6e-3e69034a0310
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: 549c40a4-63ea-448c-8332-8e5107e4523a
+        -   Entity:
+                Id: 89f8dd37-9848-4195-b09b-a6eebaad0c63
+                Name: Platform1x2
+                Components:
+                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
+                        Id: d90d9d68-5e96-4a82-b68e-166a71cd7d8a
+                        Position*: {X: -2.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
+                        Id: 329ede8f-e1cf-49e5-b762-bb0c5ace7321
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
+                        Id: 695276e1-49ec-43de-821e-769f741c75c4
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
+                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
+                InstanceId: 1b443c6e-a4ab-459d-835f-4a7acd1ff7ef
         -   Entity:
                 Id: 8bd831c1-9166-46dd-9d45-e6d1353f59f1
                 Name: Entity
@@ -583,6 +1034,75 @@ Hierarchy:
                 BasePartId: 9736f628-ffb3-4022-88b5-6129427d2786
                 InstanceId: 51cc9af3-3d54-4455-a067-d931c9f636be
         -   Entity:
+                Id: 8c1e6a33-3b01-4843-b3f6-b977aa3586e2
+                Name: Platform1x2
+                Components:
+                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
+                        Id: 2be40006-7825-41a8-8745-ec6f3f27a222
+                        Position*: {X: 2.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
+                        Id: f9781261-4987-4be5-b826-66574c08c312
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
+                        Id: 203b9260-baa0-4494-9e68-63a29e9f8050
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
+                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
+                InstanceId: f86a8ff9-4d9a-4345-a04a-fd027265466b
+        -   Folder: null
+            Entity:
+                Id: 901d7ebd-3fab-4cf3-a32e-020665a2b71a
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 969a4e5d-538d-4c05-bba0-e8680194bffa
+                        Position*: {X: 1.272601E-07, Y: 0.39826655, Z: 0.7116899}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: bbf10896-5dd0-44d5-9492-09118a447fb5
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 6055766e-ef54-4402-b09e-76b33cf2274b
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: b1486091-3973-4cea-af20-0a4c46a98880
+        -   Entity:
                 Id: 966d121b-9a3e-4b17-99d1-ec9a068122b5
                 Name: PressurePlate
                 Components:
@@ -594,6 +1114,109 @@ Hierarchy:
                         Children:
                             0e9848b004483647b9b4bd10999ea5e8: ref!! 38dee9da-6341-4bdc-897d-6c60405a2fa5
                             437fd7d042daf8ca41a7c23f044d3fb8: ref!! f777628a-f123-43a9-86f4-7960ac9cdb48
+        -   Entity:
+                Id: 9d39e26b-8edf-4f86-9410-0d73ba624825
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 31ac487c-e95d-46a6-9334-3c6258f0b296
+                        Position*: {X: -4.286181E-08, Y: -1.511361, Z: -0.2397006}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: fc23f159-cc38-4411-a89e-e2512a363844
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 4ea7b066-0ef0-417b-8dfc-e4ebcf4aeffe
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: d23852e6-00f1-4b1e-9dde-d710e5ffc0f0
+        -   Folder: null
+            Entity:
+                Id: ac3dc525-b0a3-46ba-abe4-7a52b4965d17
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 9ef3fc4c-4ccc-46fa-be2c-69c45ae008df
+                        Position*: {X: 2.771655E-07, Y: 0.39826655, Z: 1.5500214}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: d5948c4e-b5d2-4a40-8952-bd3670705e0c
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: f85477c8-478a-4986-8048-3702fa40757d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: be96f2b2-d5b0-4e1e-b679-2eebc96d1d25
+        -   Entity:
+                Id: b2b2d1c2-4053-4792-8542-767afff676df
+                Name: Platform1x2
+                Components:
+                    08535564ea713f1a1b3f4752f590b4fa: !TransformComponent
+                        Id: b4475c12-42ff-4b7d-adcc-721d10f42302
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9fcbb533a365db179551c2e211e1ae7f: !ModelComponent
+                        Id: e993ba5a-d199-411b-b6f9-d321e4c4fa3a
+                        Model: f1d82c11-8b88-49cc-9617-f02906935976:Platform1x2
+                        Materials: {}
+                    f9cd8d46b25c2aba918f14a5ab1dedc2: !StaticColliderComponent
+                        Id: 98575fb9-2d11-41b2-9aa5-66f5c9c1980d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            cbdc5b6d124d480735ba64129a792db6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
+                BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
+                InstanceId: 49cfc990-de30-4d72-86e1-441837c050ce
         -   Entity:
                 Id: b803766e-3c4d-4d72-92b8-b585df83f076
                 Name: Wall
@@ -662,6 +1285,76 @@ Hierarchy:
                 BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
                 BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
                 InstanceId: 2037c12c-3475-47ab-8932-07df55daa403
+        -   Folder: null
+            Entity:
+                Id: bd0f980a-7ab5-49d2-9569-23999fc98365
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 20b92539-10b6-4b4f-a36f-b8f22e6b5c3d
+                        Position*: {X: 2.7509293E-07, Y: -1.511361, Z: 1.5384309}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: f32cd794-a884-417f-83a4-96dcd347364c
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 43915e73-22f6-4840-b40f-701a4aa8ed23
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: e4a7efbe-e7fa-4dff-b21e-fa6f7f4fa1c3
+        -   Folder: null
+            Entity:
+                Id: c1b121e7-2e7c-4393-a872-5286b4779833
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 97b9b14c-eec5-4fb4-9501-733fe9700bbf
+                        Position*: {X: -4.672943E-08, Y: 0.39826655, Z: -0.2613299}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 99c9dd0f-926b-4c1c-ba8f-08604debc53e
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: c5a49d01-a199-4567-9820-9efa668270b8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: e3969d09-cbf3-42bd-b4e0-44a6daf88ce2
         -   Entity:
                 Id: c49e6d4c-ec0b-40ac-b42a-dcec15444199
                 Name: SwitchLD
@@ -674,6 +1367,41 @@ Hierarchy:
                         Children:
                             c9faaac35d4e8cb2235a6c855eec7b4b: ref!! 8ae7e3c3-e291-4dd4-a663-87be5e8ffe53
                             d7a6d09f2d6e42dcc742a9c1acd02e0c: ref!! 152d24e9-5184-42eb-b414-dd777f37b72a
+        -   Folder: null
+            Entity:
+                Id: ca828562-7cf1-4253-b85d-b2ffbd3bb587
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 64593405-18dd-413f-b9f1-dd12306f304a
+                        Position*: {X: 2.7509293E-07, Y: -1.511361, Z: 1.5384309}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 4e39701b-c2c2-49c6-bc1f-0829921adf27
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 68874da0-25b3-4695-ba40-24889e0295f5
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: 801183f7-0aff-417d-b029-5d8562a284d4
         -   Folder: null
             Entity:
                 Id: cb35d631-fba2-41f7-84f9-3a12774c57a4
@@ -805,6 +1533,41 @@ Hierarchy:
                             d62c6fb946c04672133acb84d7bed4ef: PressurePlate
                             47f9772fe5718d5aca1970bf7a16a781: SwitchLD
                         DoorName: LowerDoor
+        -   Folder: null
+            Entity:
+                Id: d48f185d-097c-48c6-b151-c2107b6bab33
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: ed110e3a-7357-4570-b7ea-3489ac4aa4dd
+                        Position*: {X: 1.272601E-07, Y: 0.39826655, Z: 0.7116899}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: fe6efd92-2bf8-4718-be76-e51736b211ed
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: 6b0d62f4-8ab9-48de-b00f-264033dc8201
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: b96f72fd-2b40-4b48-87b3-08d9c7d262ce
         -   Entity:
                 Id: d798b696-390a-4991-96c5-d3b8b26a4299
                 Name: Platform1x2
@@ -840,40 +1603,6 @@ Hierarchy:
                 BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
                 InstanceId: fb79716c-0fe0-4b4e-aed5-3e9ed9303505
         -   Entity:
-                Id: e069d03a-727f-4710-bcee-ada0cdfe9283
-                Name: Wall
-                Components:
-                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
-                        Id: 1e28397d-65e0-4610-80b1-beee61ed6ead
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
-                        Id: 65ee5808-1213-4a1a-90fd-539a6e39a7d6
-                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
-                        Materials: {}
-                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
-                        Id: 3cabe3e5-11dc-47f7-93f5-d50160930bf3
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        AlwaysUpdateNaviMeshCache: false
-                        ColliderShapes:
-                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-            Base:
-                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
-                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
-                InstanceId: ff20d1b2-eb96-4c92-9f5c-c265229b75aa
-        -   Entity:
                 Id: e328367e-e608-428e-ba80-a357869304bd
                 Name: Cylinder
                 Components:
@@ -897,7 +1626,7 @@ Hierarchy:
                 Components:
                     af5e77744ef1f9def8b6740d152ec907: !TransformComponent
                         Id: 326a00cb-e5dd-4aa1-b92f-bd464b065772
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: -4.286181E-08, Y: -1.511361, Z: -0.2397006}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -960,6 +1689,18 @@ Hierarchy:
                 BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
                 BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
                 InstanceId: 5c764308-6dd6-45e9-aead-dc54d1eed9f1
+        -   Folder: null
+            Entity:
+                Id: ececff68-80f9-44bd-932a-ce6402da2a74
+                Name: Wall
+                Components:
+                    a74e4243799f7b6602e41f453a11c6cf: !TransformComponent
+                        Id: 7041b7d5-bdd0-4998-9847-15cbebd511e7
+                        Position: {X: -3.7552912, Y: 2.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            3001e8d3b8c512717c4aebd928c5ac8e: ref!! f0f67e66-2b3f-4c32-b8a8-496f86a8385f
         -   Entity:
                 Id: ed081977-f136-4f79-b748-f0a6e2dda261
                 Name: Door
@@ -1037,6 +1778,41 @@ Hierarchy:
                 BasePartAsset: d3425dc3-8573-42d2-9a08-3abc2bae8198:PlatformPrefab2x1
                 BasePartId: 32fd3908-9259-4022-bc9b-1f2f6fa32a9a
                 InstanceId: 0bbe1b82-5693-4fbb-a1a1-71300bf7d37c
+        -   Folder: null
+            Entity:
+                Id: f3ccb6e4-8969-477f-935b-945cded2630e
+                Name: Wall
+                Components:
+                    af5e77744ef1f9def8b6740d152ec907: !TransformComponent
+                        Id: 3508022d-e600-4393-b43a-ef03eaa78b78
+                        Position*: {X: 3.0358376E-07, Y: 0.39826655, Z: 1.697763}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67163a71bee82a4ec51ead3071ad14e8: !ModelComponent
+                        Id: 39dc3eeb-1a72-4587-8e7d-139c876f36be
+                        Model: 42f5d00b-903b-400e-a168-bcb4ab13a6bd:Cube
+                        Materials: {}
+                    a9d750c68f46dfce934fa326dcbe16ac: !StaticColliderComponent
+                        Id: ff6c2e6a-99f5-4636-a091-5765874380df
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            4633e594502dc21e8607d92d244a7526: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 2.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 45097525-8a03-4cd6-8993-989b2a5a9d10:Environment/Wall
+                BasePartId: b1b516c3-567b-418e-a56e-52c3a588f8ad
+                InstanceId: f0fae25f-bf6e-482a-896b-9b9efdf97f35
         -   Entity:
                 Id: fd915946-3fb6-4eff-b38d-ced2a1c8028d
                 Name: NextLevelTrigger
