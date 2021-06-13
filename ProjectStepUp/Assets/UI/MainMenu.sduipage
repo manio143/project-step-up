@@ -28,6 +28,7 @@ Hierarchy:
                 Id: 06846f9b-5900-41ad-9d28-212c260e8b25
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Visibility: Hidden
                 DrawLayerNumber: 2
                 Margin: {Top: 10.0, Bottom: 10.0}
                 MaximumWidth: 3.4028235E+38
@@ -98,7 +99,7 @@ Hierarchy:
                 DependencyProperties:
                     3b0a21e996c7fca33308a333f6cd9583~GridBase.ColumnPropertyKey: 1
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                Margin: {Top: 40.0, Bottom: 100.0}
+                Margin: {Top: 40.0, Bottom: 250.0}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
