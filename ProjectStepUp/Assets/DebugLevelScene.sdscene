@@ -845,21 +845,21 @@ Hierarchy:
                     26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
                         Id: 651e4925-f7dd-44ce-8525-b227bf64b041
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 0.8, Y: 0.8, Z: 0.8}
                         Children: {}
                     3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
                         Id: 7e0981bd-e44c-421c-8c98-2d6bf6ae9230
-                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Model: 36cba3d3-cccb-43e9-a9ba-96b6dec9cf35:Character/Models/Robot
                         Materials:
                             bc64ab8bf77020f29b4d6ddc19c7b054~0: 11f4d8a3-dbd8-4695-bab3-05fca9606707:Character/Models/SecondaryBodyColorLightHeavy
                             27af64117dee46be2c5369d13a68b848~1: 51f99519-8e16-4603-8d44-2ccea1973118:Character/Models/PrimaryBodyColorHeavy
                     b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
                         Id: 3837d34f-cbb1-495a-8dbd-0df6bfc08be9
                         Animations:
-                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
-                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
-                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 4450f4c4-1438-4f0d-bce1-e94e22be202e:Character/Animations/Robot_Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 3df77ea9-8c16-4218-b406-777e196de6e1:Character/Animations/Robot_Jump
+                            1e6de28eb1e49635b6608bce16333852~Run: c8d8cfde-ec2b-4fe3-8772-95c88d0b716a:Character/Animations/Robot_Run
             Base:
                 BasePartAsset: 9a41a8ef-9534-4b92-be0e-011b5313f984:GlobalSceneComponents
                 BasePartId: a2a12142-1c8c-4785-9334-463e8b5e7536
@@ -1098,19 +1098,19 @@ Hierarchy:
                     26867cb967f5ece49c3b0ca8bd5df24f: !TransformComponent
                         Id: bcd3c0bb-afb1-46c7-af09-1e1ac626f15f
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 0.8, Y: 0.8, Z: 0.8}
                         Children: {}
                     3e65be12760ed5e0a54e779a38ee61eb: !ModelComponent
                         Id: 3071689b-f48d-46d6-a835-a183d7667cd1
-                        Model: 33471c8d-19d6-4291-b89d-7c28ca9b2ae8:Character/Models/xbot
+                        Model: 36cba3d3-cccb-43e9-a9ba-96b6dec9cf35:Character/Models/Robot
                         Materials: {}
                     b3d60403432121ed3a6904a4a0d47b70: !AnimationComponent
                         Id: b5a9651f-4f90-48ad-b465-d25b5bf7ddb3
                         Animations:
-                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 7aaa35e4-88fc-4560-8069-4e10ced48f60:Character/Animations/Zombie Idle
-                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 61ab3f4a-4552-4052-b3a4-592031f68607:Character/Animations/Jumping Up
-                            1e6de28eb1e49635b6608bce16333852~Run: 2a859cfe-542c-46d5-8f7e-2df0637fd25e:Character/Animations/Walking
+                            281e6c1e66be6569bf10e1e0f24fdbb7~Idle: 4450f4c4-1438-4f0d-bce1-e94e22be202e:Character/Animations/Robot_Idle
+                            e6f61d1a0f37ac7f058cac09c16a4fb8~Jump: 3df77ea9-8c16-4218-b406-777e196de6e1:Character/Animations/Robot_Jump
+                            1e6de28eb1e49635b6608bce16333852~Run: c8d8cfde-ec2b-4fe3-8772-95c88d0b716a:Character/Animations/Robot_Run
             Base:
                 BasePartAsset: 9a41a8ef-9534-4b92-be0e-011b5313f984:GlobalSceneComponents
                 BasePartId: c99b258a-1566-4c35-b2e2-74cf785c1e4d
