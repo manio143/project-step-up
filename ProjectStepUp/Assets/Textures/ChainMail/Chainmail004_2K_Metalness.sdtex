@@ -1,0 +1,6 @@
+!Texture
+Id: 233e6201-96dd-4251-8891-0fdc3f3c795d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Chainmail004_2K-PNG/Chainmail004_2K_Metalness.png
+Type: !GrayscaleTextureType {}

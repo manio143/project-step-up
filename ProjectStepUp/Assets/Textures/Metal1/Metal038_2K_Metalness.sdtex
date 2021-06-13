@@ -1,0 +1,6 @@
+!Texture
+Id: 58178bf4-f136-4d26-b26f-c7c4f35a5693
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Metal038_2K-PNG/Metal038_2K_Metalness.png
+Type: !GrayscaleTextureType {}

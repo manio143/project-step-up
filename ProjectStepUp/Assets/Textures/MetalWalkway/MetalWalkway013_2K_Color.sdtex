@@ -1,0 +1,7 @@
+!Texture
+Id: ff1614f0-bce0-4c5b-ada8-506d317b50e6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/MetalWalkway013_2K-PNG/MetalWalkway013_2K_Color.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

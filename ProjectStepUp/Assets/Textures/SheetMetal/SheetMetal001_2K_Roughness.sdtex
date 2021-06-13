@@ -1,0 +1,6 @@
+!Texture
+Id: 28847dbb-7e4a-4d6b-a067-1c9cc3b6eda3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/SheetMetal001_2K-PNG/SheetMetal001_2K_Roughness.png
+Type: !GrayscaleTextureType {}

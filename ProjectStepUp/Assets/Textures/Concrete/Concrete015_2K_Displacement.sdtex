@@ -1,0 +1,6 @@
+!Texture
+Id: b2fb7b27-5f58-4c25-8aa0-1478a9d95a17
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Concrete015_2K-PNG/Concrete015_2K_Displacement.png
+Type: !GrayscaleTextureType {}

@@ -1,0 +1,8 @@
+!MaterialAsset
+Id: a10e1110-f7ee-497d-ad0e-d665bdbe0962
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

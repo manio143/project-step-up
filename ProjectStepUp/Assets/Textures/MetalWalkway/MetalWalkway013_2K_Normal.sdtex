@@ -1,0 +1,6 @@
+!Texture
+Id: 766dc33f-81c4-45c4-86c1-ca9c3bc76438
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/MetalWalkway013_2K-PNG/MetalWalkway013_2K_Normal.png
+Type: !NormalMapTextureType {}

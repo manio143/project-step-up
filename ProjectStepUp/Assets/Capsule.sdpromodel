@@ -8,4 +8,4 @@ Type: !CapsuleProceduralModel
     LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
     NumberOfTextureCoordinates: 10
     MaterialInstance:
-        Material: 9192b45f-4804-4232-8d0f-d2a78c9acf22:Sphere Material
+        Material: 9192b45f-4804-4232-8d0f-d2a78c9acf22:Materials/Sphere Material

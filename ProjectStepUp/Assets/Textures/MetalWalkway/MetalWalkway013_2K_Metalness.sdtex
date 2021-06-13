@@ -1,0 +1,6 @@
+!Texture
+Id: 3b044557-ab00-483b-b564-defb69f61456
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/MetalWalkway013_2K-PNG/MetalWalkway013_2K_Metalness.png
+Type: !GrayscaleTextureType {}

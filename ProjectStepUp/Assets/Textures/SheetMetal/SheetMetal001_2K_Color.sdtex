@@ -1,0 +1,7 @@
+!Texture
+Id: d0c924c7-bb66-4392-b6ed-c89fa85d5c5f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/SheetMetal001_2K-PNG/SheetMetal001_2K_Color.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

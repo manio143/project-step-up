@@ -1,0 +1,6 @@
+!Texture
+Id: 2a62e521-b44b-41da-94c5-0dee2c04d042
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Chainmail004_2K-PNG/Chainmail004_2K_Normal.png
+Type: !NormalMapTextureType {}

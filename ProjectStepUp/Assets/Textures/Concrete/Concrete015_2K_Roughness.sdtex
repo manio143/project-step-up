@@ -1,0 +1,6 @@
+!Texture
+Id: 733fe83d-f553-43c8-83e3-d2a1a6c3e13f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Concrete015_2K-PNG/Concrete015_2K_Roughness.png
+Type: !GrayscaleTextureType {}

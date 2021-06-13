@@ -1,0 +1,6 @@
+!Texture
+Id: eae1a01c-5738-42d5-ab08-6f33f3e165e7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/MaterialTextures/Metal038_2K-PNG/Metal038_2K_Roughness.png
+Type: !GrayscaleTextureType {}
